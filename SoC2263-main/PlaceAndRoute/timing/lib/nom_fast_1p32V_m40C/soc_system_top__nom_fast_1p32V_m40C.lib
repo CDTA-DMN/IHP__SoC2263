@@ -1,0 +1,94 @@
+library (soc_system_top) {
+  comment                        : "";
+  delay_model                    : table_lookup;
+  simulation                     : false;
+  capacitive_load_unit (1,pF);
+  leakage_power_unit             : 1pW;
+  current_unit                   : "1uA";
+  pulling_resistance_unit        : "1kohm";
+  time_unit                      : "1ns";
+  voltage_unit                   : "1v";
+  library_features(report_delay_calculation);
+
+  input_threshold_pct_rise : 50;
+  input_threshold_pct_fall : 50;
+  output_threshold_pct_rise : 50;
+  output_threshold_pct_fall : 50;
+  slew_lower_threshold_pct_rise : 20;
+  slew_lower_threshold_pct_fall : 20;
+  slew_upper_threshold_pct_rise : 80;
+  slew_upper_threshold_pct_fall : 80;
+  slew_derate_from_library : 1.0;
+
+
+  nom_process                    : 1.0;
+  nom_temperature                : -40.0;
+  nom_voltage                    : 1.32;
+
+
+  cell ("soc_system_top") {
+    area : 324251.781 
+    is_macro_cell : true;
+    pin("VDD1v5") {
+      direction : inout;
+      capacitance : 16.0000;
+    }
+    pin("adc_done_PAD") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+    pin("clk_PAD") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+    pin("reset_n_PAD") {
+      direction : inout;
+      capacitance : 0.2399;
+    }
+    pin("sc_enable_PAD") {
+      direction : inout;
+      capacitance : 0.2399;
+    }
+    pin("sc_vout_PAD") {
+      direction : inout;
+      capacitance : 16.0000;
+    }
+    pin("sc_vref_PAD") {
+      direction : inout;
+      capacitance : 16.0000;
+    }
+    pin("sensor_PAD") {
+      direction : inout;
+      capacitance : 16.0000;
+    }
+    pin("state_out_0_PAD") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+    pin("state_out_1_PAD") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+    pin("state_out_2_PAD") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+    pin("trigger_PAD") {
+      direction : inout;
+      capacitance : 0.2399;
+    }
+    pin("tx_PAD") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+    pin("vbg_PAD") {
+      direction : inout;
+      capacitance : 16.0000;
+    }
+    pin("vramp_PAD") {
+      direction : inout;
+      capacitance : 16.0000;
+    }
+  }
+
+}

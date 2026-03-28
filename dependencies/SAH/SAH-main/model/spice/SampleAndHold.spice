@@ -1,0 +1,30 @@
+** sch_path: /foss/designs/xschemas/aymen/SampleAndHold.sch
+.subckt SampleAndHold vdd en Nbulk Vout Vin VSS
+*.PININFO Vout:O Vin:I en:I vdd:I Nbulk:B VSS:B
+x2 vdd en net1 VSS Pbulk Nbulk inverter
+x1 net1 Vin Vout Nbulk en Pbulk T_gate
+C1 Vout VSS cap_cmim w=40e-6 l=120e-6
+R1 vdd Pbulk ntap1 A=7.635e-12 P=52.1e-6
+R2 VSS Nbulk ptap1 A=5.499e-12 P=37.86e-6
+.ends
+
+* expanding   symbol:  /foss/designs/xschemas/aymen/inverter.sym # of pins=6
+** sym_path: /foss/designs/xschemas/aymen/inverter.sym
+** sch_path: /foss/designs/xschemas/aymen/inverter.sch
+.subckt inverter vdd vi vo gnd Pbulk Nbulk
+*.PININFO vi:B vo:B gnd:B vdd:B Pbulk:B Nbulk:B
+M5 vo vi vdd Pbulk sg13_lv_pmos w=1200n l=130n ng=1
+M7 vo vi gnd Nbulk sg13_lv_nmos w=780n l=130n ng=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/xschemas/aymen/T_gate.sym # of pins=6
+** sym_path: /foss/designs/xschemas/aymen/T_gate.sym
+** sch_path: /foss/designs/xschemas/aymen/T_gate.sch
+.subckt T_gate !Control Vin Vout gnd Control vdd
+*.PININFO Vout:B Vin:B !Control:B Control:B gnd:B vdd:B
+M1 Vin Control Vout gnd sg13_lv_nmos w=6u l=0.13u ng=1
+M2 Vin !Control Vout vdd sg13_lv_pmos w=10u l=0.13u ng=1
+.ends
+
+.GLOBAL VSS

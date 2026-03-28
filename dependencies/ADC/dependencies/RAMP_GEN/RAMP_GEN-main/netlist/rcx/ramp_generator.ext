@@ -1,0 +1,246 @@
+timestamp 0
+version 8.3
+tech ihp-sg13g2
+style ngspice()
+scale 1000 1 0.5
+resistclasses 3000000 67000 110 88 88 88 88 18 11
+parameters sg13_lv_nmos l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sg13_lv_pmos l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters cap_cmim w=w l=l
+port "RAMP_REF" 12 -8240 -50 -1000 50 m2
+port "RAMP_RESET" 14 -8240 -1114 4778 -1042 m2
+port "VRAMP" 7 7910 -870 8238 1566 m1
+port "RAMP_EN" 10 -8240 2141 -2316 2181 m2
+port "VDD" 3 -2292 2589 2292 2649 m1
+port "VSS" 5 -3706 -4364 3650 -1048 m1
+node "a_4528_n1108#" 0 16.828 4528 -1108 ndif 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "RAMP_REF" 59 15216.5 -8240 -50 m2 0 0 0 0 497690 28556 911518 24162 0 0 0 0 0 0 0 0 0 0
+equiv "RAMP_REF" "ramp_generator_nmos_mirror_0.ramp_ref"
+node "a_n4540_n1108#" 0 18.3578 -4540 -1108 ndif 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "RAMP_RESET" 17 13844.7 -8240 -1114 m2 0 0 0 0 11760 728 959416 26496 0 0 0 0 0 0 0 0 0 0
+node "a_4600_321#" 0 62.6542 4600 321 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n5600_321#" 0 62.6542 -5600 321 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_4600_505#" 0 16.453 4600 505 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n5600_505#" 0 16.453 -5600 505 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_4600_689#" 0 16.453 4600 689 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n5600_689#" 0 16.453 -5600 689 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_4600_873#" 0 16.453 4600 873 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n5600_873#" 0 16.453 -5600 873 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_4600_1057#" 0 16.453 4600 1057 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VRAMP" 33 190916 7910 -870 m1 0 0 0 0 1109712 23780 1090312 18432 1025728 17104 1025728 17104 135795200 49440 0 0 0 0
+node "a_n5600_1057#" 0 16.453 -5600 1057 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_4600_1241#" 0 16.453 4600 1241 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n5600_1241#" 0 16.453 -5600 1241 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_4600_1425#" 0 16.453 4600 1425 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n5600_1425#" 0 16.453 -5600 1425 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_4600_1609#" 0 73.0741 4600 1609 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n5600_1609#" 0 73.0741 -5600 1609 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ramp_generator_nmos_mirror_0.pmos_ref" 224 7577.44 -4360 321 p 0 0 0 0 2899661 148594 749654 22926 0 0 0 0 0 0 0 0 0 0
+node "RAMP_EN" 14 5566.79 -8240 2141 m2 0 0 0 0 5880 364 249160 12538 0 0 0 0 0 0 0 0 0 0
+node "VDD" 17 4610.57 -2292 2589 m1 0 0 0 0 8386248 73458 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSS" 0 0 -3706 -4364 m1 0 0 0 0 30161156 63798 897432 14956 897432 14956 897432 14956 912144 14960 134387344 48848 0 0
+equiv "VSS" "ramp_generator_nmos_mirror_0.vss"
+cap "a_4600_505#" "a_4600_321#" 150.282
+cap "VDD" "a_n5600_1057#" 720.704
+cap "a_4600_873#" "a_4600_689#" 150.282
+cap "a_4600_689#" "VRAMP" 0.668691
+cap "RAMP_EN" "VRAMP" 964.49
+cap "a_n5600_1609#" "ramp_generator_nmos_mirror_0.pmos_ref" 3.5762
+cap "VRAMP" "a_4600_1425#" 0.668691
+cap "a_n5600_1425#" "ramp_generator_nmos_mirror_0.pmos_ref" 3.5762
+cap "a_n5600_505#" "a_n5600_689#" 150.282
+cap "VRAMP" "a_n5600_689#" 0.668691
+cap "VDD" "RAMP_RESET" 41.1798
+cap "a_4600_321#" "VRAMP" 8.59568
+cap "VRAMP" "RAMP_REF" 2198.64
+cap "a_n5600_1241#" "VRAMP" 0.668691
+cap "VDD" "a_n5600_1609#" 830.678
+cap "VDD" "a_n5600_1425#" 720.704
+cap "a_4600_321#" "RAMP_RESET" 10.7576
+cap "a_n5600_1241#" "a_n5600_1057#" 150.282
+cap "RAMP_RESET" "RAMP_REF" 794.196
+cap "RAMP_EN" "a_n5600_1609#" 1.51405
+cap "a_4600_1241#" "ramp_generator_nmos_mirror_0.pmos_ref" 3.5762
+cap "a_4600_1609#" "VRAMP" 10.6431
+cap "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 47059.4
+cap "a_n5600_321#" "a_n5600_505#" 150.282
+cap "a_n5600_321#" "VRAMP" 7.5877
+cap "a_4600_689#" "ramp_generator_nmos_mirror_0.pmos_ref" 3.5762
+cap "RAMP_EN" "ramp_generator_nmos_mirror_0.pmos_ref" 1271.25
+cap "a_4600_1425#" "ramp_generator_nmos_mirror_0.pmos_ref" 3.5762
+cap "a_n5600_689#" "ramp_generator_nmos_mirror_0.pmos_ref" 3.5762
+cap "a_4600_321#" "ramp_generator_nmos_mirror_0.pmos_ref" 3.5762
+cap "RAMP_REF" "ramp_generator_nmos_mirror_0.pmos_ref" 3210.9
+cap "a_n5600_1241#" "a_n5600_1425#" 150.282
+cap "a_n5600_321#" "RAMP_RESET" 10.7647
+cap "VDD" "a_4600_1241#" 720.704
+cap "a_n5600_1241#" "ramp_generator_nmos_mirror_0.pmos_ref" 3.5762
+cap "VDD" "a_4600_689#" 720.704
+cap "VDD" "RAMP_EN" 4452.71
+cap "a_4600_1241#" "a_4600_1425#" 150.282
+cap "a_4600_873#" "a_4600_1057#" 150.282
+cap "VDD" "a_4600_1425#" 720.704
+cap "VRAMP" "a_4600_1057#" 0.668691
+cap "VDD" "a_n5600_689#" 720.704
+cap "VDD" "a_4600_321#" 830.678
+cap "VDD" "RAMP_REF" 890.81
+cap "a_4600_1609#" "ramp_generator_nmos_mirror_0.pmos_ref" 3.5762
+cap "VRAMP" "a_n5600_873#" 0.668691
+cap "a_n5600_321#" "ramp_generator_nmos_mirror_0.pmos_ref" 3.5762
+cap "a_n5600_1057#" "a_n5600_873#" 150.282
+cap "VRAMP" "a_n4540_n1108#" -1.25329e-17
+cap "a_n5600_1241#" "VDD" 720.704
+cap "a_4600_505#" "VRAMP" 0.668691
+cap "a_4600_1609#" "VDD" 830.678
+cap "a_n5600_505#" "VRAMP" 0.668691
+cap "a_4600_873#" "VRAMP" 0.668691
+cap "RAMP_RESET" "a_n4540_n1108#" -2.46136e-16
+cap "a_n5600_321#" "VDD" 830.678
+cap "a_n5600_1057#" "VRAMP" 0.668691
+cap "a_4600_1609#" "a_4600_1425#" 150.282
+cap "a_4600_1057#" "ramp_generator_nmos_mirror_0.pmos_ref" 3.5762
+cap "RAMP_RESET" "VRAMP" 2259.96
+cap "a_n5600_873#" "ramp_generator_nmos_mirror_0.pmos_ref" 3.5762
+cap "a_n5600_321#" "RAMP_REF" 5.26125
+cap "RAMP_RESET" "a_4528_n1108#" -2.25625e-16
+cap "a_4600_505#" "ramp_generator_nmos_mirror_0.pmos_ref" 3.5762
+cap "a_4600_1241#" "a_4600_1057#" 150.282
+cap "VRAMP" "a_n5600_1609#" 10.2647
+cap "VDD" "a_4600_1057#" 720.704
+cap "VRAMP" "a_n5600_1425#" 0.668691
+cap "a_n5600_505#" "ramp_generator_nmos_mirror_0.pmos_ref" 3.5762
+cap "a_4600_873#" "ramp_generator_nmos_mirror_0.pmos_ref" 3.5762
+cap "VDD" "a_n5600_873#" 720.704
+cap "VRAMP" "ramp_generator_nmos_mirror_0.pmos_ref" 5688.23
+cap "a_n5600_1057#" "ramp_generator_nmos_mirror_0.pmos_ref" 3.5762
+cap "a_4600_505#" "VDD" 720.704
+cap "a_n5600_689#" "a_n5600_873#" 150.282
+cap "RAMP_RESET" "ramp_generator_nmos_mirror_0.pmos_ref" 312.586
+cap "a_4600_505#" "a_4600_689#" 150.282
+cap "VDD" "a_n5600_505#" 720.704
+cap "a_4600_1241#" "VRAMP" 0.668691
+cap "VDD" "a_4600_873#" 720.704
+cap "VDD" "VRAMP" 4037.65
+cap "a_n5600_1609#" "a_n5600_1425#" 150.282
+device csubckt cap_cmim 120 -4000 121 -3999 w=8000 l=8000 "None" "VSS" 415152 0 "VRAMP" 0 135795200,80572
+device csubckt cap_cmim -8120 -4000 -8119 -3999 w=8000 l=8000 "None" "VSS" 415152 0 "VRAMP" 0 135795200,80572
+device msubckt sg13_lv_nmos 5481 -912 5482 -911 l=26 w=660 "VSS" "RAMP_RESET" 52 0 "VSS" 660 25080,736 "VRAMP" 660 44880,1456
+device msubckt sg13_lv_nmos 5379 -912 5380 -911 l=26 w=660 "VSS" "RAMP_RESET" 52 0 "VRAMP" 660 25080,736 "VSS" 660 25080,736
+device msubckt sg13_lv_nmos 5277 -912 5278 -911 l=26 w=660 "VSS" "RAMP_RESET" 52 0 "VSS" 660 25080,736 "VRAMP" 660 25080,736
+device msubckt sg13_lv_nmos 5175 -912 5176 -911 l=26 w=660 "VSS" "RAMP_RESET" 52 0 "VRAMP" 660 25080,736 "VSS" 660 25080,736
+device msubckt sg13_lv_nmos 5073 -912 5074 -911 l=26 w=660 "VSS" "RAMP_RESET" 52 0 "VSS" 660 25080,736 "VRAMP" 660 25080,736
+device msubckt sg13_lv_nmos 4971 -912 4972 -911 l=26 w=660 "VSS" "RAMP_RESET" 52 0 "VRAMP" 660 25080,736 "VSS" 660 25080,736
+device msubckt sg13_lv_nmos 4869 -912 4870 -911 l=26 w=660 "VSS" "RAMP_RESET" 52 0 "VSS" 660 25080,736 "VRAMP" 660 25080,736
+device msubckt sg13_lv_nmos 4767 -912 4768 -911 l=26 w=660 "VSS" "RAMP_RESET" 52 0 "VRAMP" 660 44880,1456 "VSS" 660 25080,736
+device msubckt sg13_lv_nmos 2300 -912 2301 -911 l=2000 w=60 "VSS" "VSS" 4000 0 "VSS" 0 0 "VSS" 120 4080,256
+device msubckt sg13_lv_nmos 38 -912 39 -911 l=2000 w=60 "VSS" "RAMP_REF" 4000 0 "VSS" 60 2280,136 "RAMP_REF" 60 4080,256
+device msubckt sg13_lv_nmos -2038 -912 -2037 -911 l=2000 w=60 "VSS" "RAMP_REF" 4000 0 "RAMP_REF" 60 4080,256 "VSS" 60 2280,136
+device msubckt sg13_lv_nmos -4300 -912 -4299 -911 l=2000 w=60 "VSS" "VSS" 4000 0 "VSS" 0 0 "VSS" 120 4080,256
+device msubckt sg13_lv_nmos 2300 -712 2301 -711 l=2000 w=60 "VSS" "VSS" 4000 0 "VSS" 0 0 "VSS" 120 4080,256
+device msubckt sg13_lv_nmos 38 -712 39 -711 l=2000 w=60 "VSS" "RAMP_REF" 4000 0 "VSS" 60 2280,136 "ramp_generator_nmos_mirror_0.pmos_ref" 60 4080,256
+device msubckt sg13_lv_nmos -2038 -712 -2037 -711 l=2000 w=60 "VSS" "RAMP_REF" 4000 0 "RAMP_REF" 60 4080,256 "VSS" 60 2280,136
+device msubckt sg13_lv_nmos -4300 -712 -4299 -711 l=2000 w=60 "VSS" "VSS" 4000 0 "VSS" 0 0 "VSS" 120 4080,256
+device msubckt sg13_lv_nmos 2300 -512 2301 -511 l=2000 w=60 "VSS" "VSS" 4000 0 "VSS" 0 0 "VSS" 120 4080,256
+device msubckt sg13_lv_nmos 38 -512 39 -511 l=2000 w=60 "VSS" "RAMP_REF" 4000 0 "VSS" 60 2280,136 "RAMP_REF" 60 4080,256
+device msubckt sg13_lv_nmos -2038 -512 -2037 -511 l=2000 w=60 "VSS" "RAMP_REF" 4000 0 "ramp_generator_nmos_mirror_0.pmos_ref" 60 4080,256 "VSS" 60 2280,136
+device msubckt sg13_lv_nmos -4300 -512 -4299 -511 l=2000 w=60 "VSS" "VSS" 4000 0 "VSS" 0 0 "VSS" 120 4080,256
+device msubckt sg13_lv_nmos 2300 -312 2301 -311 l=2000 w=60 "VSS" "VSS" 4000 0 "VSS" 0 0 "VSS" 120 4080,256
+device msubckt sg13_lv_nmos 38 -312 39 -311 l=2000 w=60 "VSS" "RAMP_REF" 4000 0 "VSS" 60 2280,136 "RAMP_REF" 60 4080,256
+device msubckt sg13_lv_nmos -2038 -312 -2037 -311 l=2000 w=60 "VSS" "RAMP_REF" 4000 0 "RAMP_REF" 60 4080,256 "VSS" 60 2280,136
+device msubckt sg13_lv_nmos -4300 -312 -4299 -311 l=2000 w=60 "VSS" "VSS" 4000 0 "VSS" 0 0 "VSS" 120 4080,256
+device msubckt sg13_lv_nmos -4794 -912 -4793 -911 l=26 w=660 "VSS" "RAMP_RESET" 52 0 "VSS" 660 25080,736 "VRAMP" 660 44880,1456
+device msubckt sg13_lv_nmos -4896 -912 -4895 -911 l=26 w=660 "VSS" "RAMP_RESET" 52 0 "VRAMP" 660 25080,736 "VSS" 660 25080,736
+device msubckt sg13_lv_nmos -4998 -912 -4997 -911 l=26 w=660 "VSS" "RAMP_RESET" 52 0 "VSS" 660 25080,736 "VRAMP" 660 25080,736
+device msubckt sg13_lv_nmos -5100 -912 -5099 -911 l=26 w=660 "VSS" "RAMP_RESET" 52 0 "VRAMP" 660 25080,736 "VSS" 660 25080,736
+device msubckt sg13_lv_nmos -5202 -912 -5201 -911 l=26 w=660 "VSS" "RAMP_RESET" 52 0 "VSS" 660 25080,736 "VRAMP" 660 25080,736
+device msubckt sg13_lv_nmos -5304 -912 -5303 -911 l=26 w=660 "VSS" "RAMP_RESET" 52 0 "VRAMP" 660 25080,736 "VSS" 660 25080,736
+device msubckt sg13_lv_nmos -5406 -912 -5405 -911 l=26 w=660 "VSS" "RAMP_RESET" 52 0 "VSS" 660 25080,736 "VRAMP" 660 25080,736
+device msubckt sg13_lv_nmos -5508 -912 -5507 -911 l=26 w=660 "VSS" "RAMP_RESET" 52 0 "VRAMP" 660 44880,1456 "VSS" 660 25080,736
+device msubckt sg13_lv_pmos 4600 357 4601 358 l=1000 w=30 "VDD" "a_4600_321#" 2000 0 "VDD" 0 0 "VDD" 60 4020,268
+device msubckt sg13_lv_pmos 2360 357 2361 358 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268 "VDD" 30 4020,268
+device msubckt sg13_lv_pmos 120 357 121 358 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "VDD" 30 4020,268 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268
+device msubckt sg13_lv_pmos -2120 357 -2119 358 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268 "VDD" 30 4020,268
+device msubckt sg13_lv_pmos -4360 357 -4359 358 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "VDD" 30 4020,268 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268
+device msubckt sg13_lv_pmos -5600 357 -5599 358 l=1000 w=30 "VDD" "a_n5600_321#" 2000 0 "VDD" 0 0 "VDD" 60 4020,268
+device msubckt sg13_lv_pmos 4600 541 4601 542 l=1000 w=30 "VDD" "a_4600_505#" 2000 0 "VDD" 0 0 "VDD" 60 4020,268
+device msubckt sg13_lv_pmos 2360 541 2361 542 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268 "VDD" 30 4020,268
+device msubckt sg13_lv_pmos 120 541 121 542 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "VDD" 30 4020,268 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268
+device msubckt sg13_lv_pmos -2120 541 -2119 542 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268 "VDD" 30 4020,268
+device msubckt sg13_lv_pmos -4360 541 -4359 542 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "VDD" 30 4020,268 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268
+device msubckt sg13_lv_pmos -5600 541 -5599 542 l=1000 w=30 "VDD" "a_n5600_505#" 2000 0 "VDD" 0 0 "VDD" 60 4020,268
+device msubckt sg13_lv_pmos 4600 725 4601 726 l=1000 w=30 "VDD" "a_4600_689#" 2000 0 "VDD" 0 0 "VDD" 60 4020,268
+device msubckt sg13_lv_pmos 2360 725 2361 726 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268 "VDD" 30 4020,268
+device msubckt sg13_lv_pmos 120 725 121 726 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "VDD" 30 4020,268 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268
+device msubckt sg13_lv_pmos -2120 725 -2119 726 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268 "VDD" 30 4020,268
+device msubckt sg13_lv_pmos -4360 725 -4359 726 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "VDD" 30 4020,268 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268
+device msubckt sg13_lv_pmos -5600 725 -5599 726 l=1000 w=30 "VDD" "a_n5600_689#" 2000 0 "VDD" 0 0 "VDD" 60 4020,268
+device msubckt sg13_lv_pmos 4600 909 4601 910 l=1000 w=30 "VDD" "a_4600_873#" 2000 0 "VDD" 0 0 "VDD" 60 4020,268
+device msubckt sg13_lv_pmos 2360 909 2361 910 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268 "VDD" 30 4020,268
+device msubckt sg13_lv_pmos 120 909 121 910 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "VDD" 30 4020,268 "VRAMP" 30 4020,268
+device msubckt sg13_lv_pmos -2120 909 -2119 910 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268 "VDD" 30 4020,268
+device msubckt sg13_lv_pmos -4360 909 -4359 910 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "VDD" 30 4020,268 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268
+device msubckt sg13_lv_pmos -5600 909 -5599 910 l=1000 w=30 "VDD" "a_n5600_873#" 2000 0 "VDD" 0 0 "VDD" 60 4020,268
+device msubckt sg13_lv_pmos 4600 1093 4601 1094 l=1000 w=30 "VDD" "a_4600_1057#" 2000 0 "VDD" 0 0 "VDD" 60 4020,268
+device msubckt sg13_lv_pmos 2360 1093 2361 1094 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268 "VDD" 30 4020,268
+device msubckt sg13_lv_pmos 120 1093 121 1094 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "VDD" 30 4020,268 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268
+device msubckt sg13_lv_pmos -2120 1093 -2119 1094 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "VRAMP" 30 4020,268 "VDD" 30 4020,268
+device msubckt sg13_lv_pmos -4360 1093 -4359 1094 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "VDD" 30 4020,268 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268
+device msubckt sg13_lv_pmos -5600 1093 -5599 1094 l=1000 w=30 "VDD" "a_n5600_1057#" 2000 0 "VDD" 0 0 "VDD" 60 4020,268
+device msubckt sg13_lv_pmos 4600 1277 4601 1278 l=1000 w=30 "VDD" "a_4600_1241#" 2000 0 "VDD" 0 0 "VDD" 60 4020,268
+device msubckt sg13_lv_pmos 2360 1277 2361 1278 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268 "VDD" 30 4020,268
+device msubckt sg13_lv_pmos 120 1277 121 1278 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "VDD" 30 4020,268 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268
+device msubckt sg13_lv_pmos -2120 1277 -2119 1278 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268 "VDD" 30 4020,268
+device msubckt sg13_lv_pmos -4360 1277 -4359 1278 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "VDD" 30 4020,268 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268
+device msubckt sg13_lv_pmos -5600 1277 -5599 1278 l=1000 w=30 "VDD" "a_n5600_1241#" 2000 0 "VDD" 0 0 "VDD" 60 4020,268
+device msubckt sg13_lv_pmos 4600 1461 4601 1462 l=1000 w=30 "VDD" "a_4600_1425#" 2000 0 "VDD" 0 0 "VDD" 60 4020,268
+device msubckt sg13_lv_pmos 2360 1461 2361 1462 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268 "VDD" 30 4020,268
+device msubckt sg13_lv_pmos 120 1461 121 1462 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "VDD" 30 4020,268 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268
+device msubckt sg13_lv_pmos -2120 1461 -2119 1462 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268 "VDD" 30 4020,268
+device msubckt sg13_lv_pmos -4360 1461 -4359 1462 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "VDD" 30 4020,268 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268
+device msubckt sg13_lv_pmos -5600 1461 -5599 1462 l=1000 w=30 "VDD" "a_n5600_1425#" 2000 0 "VDD" 0 0 "VDD" 60 4020,268
+device msubckt sg13_lv_pmos 4600 1645 4601 1646 l=1000 w=30 "VDD" "a_4600_1609#" 2000 0 "VDD" 0 0 "VDD" 60 4020,268
+device msubckt sg13_lv_pmos 2360 1645 2361 1646 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268 "VDD" 30 4020,268
+device msubckt sg13_lv_pmos 120 1645 121 1646 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "VDD" 30 4020,268 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268
+device msubckt sg13_lv_pmos -2120 1645 -2119 1646 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268 "VDD" 30 4020,268
+device msubckt sg13_lv_pmos -4360 1645 -4359 1646 l=2000 w=30 "VDD" "ramp_generator_nmos_mirror_0.pmos_ref" 4000 0 "VDD" 30 4020,268 "ramp_generator_nmos_mirror_0.pmos_ref" 30 4020,268
+device msubckt sg13_lv_pmos -5600 1645 -5599 1646 l=1000 w=30 "VDD" "a_n5600_1609#" 2000 0 "VDD" 0 0 "VDD" 60 4020,268
+device msubckt sg13_lv_pmos 1976 2227 1977 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276 "VDD" 200 13600,536
+device msubckt sg13_lv_pmos 1874 2227 1875 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "VDD" 200 7600,276 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276
+device msubckt sg13_lv_pmos 1772 2227 1773 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276 "VDD" 200 7600,276
+device msubckt sg13_lv_pmos 1670 2227 1671 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "VDD" 200 7600,276 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276
+device msubckt sg13_lv_pmos 1568 2227 1569 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276 "VDD" 200 7600,276
+device msubckt sg13_lv_pmos 1466 2227 1467 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "VDD" 200 7600,276 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276
+device msubckt sg13_lv_pmos 1364 2227 1365 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276 "VDD" 200 7600,276
+device msubckt sg13_lv_pmos 1262 2227 1263 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "VDD" 200 7600,276 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276
+device msubckt sg13_lv_pmos 1160 2227 1161 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276 "VDD" 200 7600,276
+device msubckt sg13_lv_pmos 1058 2227 1059 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "VDD" 200 7600,276 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276
+device msubckt sg13_lv_pmos 956 2227 957 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276 "VDD" 200 7600,276
+device msubckt sg13_lv_pmos 854 2227 855 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "VDD" 200 7600,276 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276
+device msubckt sg13_lv_pmos 752 2227 753 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276 "VDD" 200 7600,276
+device msubckt sg13_lv_pmos 650 2227 651 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "VDD" 200 7600,276 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276
+device msubckt sg13_lv_pmos 548 2227 549 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276 "VDD" 200 7600,276
+device msubckt sg13_lv_pmos 446 2227 447 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "VDD" 200 7600,276 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276
+device msubckt sg13_lv_pmos 344 2227 345 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276 "VDD" 200 7600,276
+device msubckt sg13_lv_pmos 242 2227 243 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "VDD" 200 7600,276 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276
+device msubckt sg13_lv_pmos 140 2227 141 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276 "VDD" 200 7600,276
+device msubckt sg13_lv_pmos 38 2227 39 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "VDD" 200 7600,276 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276
+device msubckt sg13_lv_pmos -64 2227 -63 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276 "VDD" 200 7600,276
+device msubckt sg13_lv_pmos -166 2227 -165 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "VDD" 200 7600,276 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276
+device msubckt sg13_lv_pmos -268 2227 -267 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276 "VDD" 200 7600,276
+device msubckt sg13_lv_pmos -370 2227 -369 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "VDD" 200 7600,276 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276
+device msubckt sg13_lv_pmos -472 2227 -471 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276 "VDD" 200 7600,276
+device msubckt sg13_lv_pmos -574 2227 -573 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "VDD" 200 7600,276 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276
+device msubckt sg13_lv_pmos -676 2227 -675 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276 "VDD" 200 7600,276
+device msubckt sg13_lv_pmos -778 2227 -777 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "VDD" 200 7600,276 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276
+device msubckt sg13_lv_pmos -880 2227 -879 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276 "VDD" 200 7600,276
+device msubckt sg13_lv_pmos -982 2227 -981 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "VDD" 200 7600,276 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276
+device msubckt sg13_lv_pmos -1084 2227 -1083 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276 "VDD" 200 7600,276
+device msubckt sg13_lv_pmos -1186 2227 -1185 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "VDD" 200 7600,276 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276
+device msubckt sg13_lv_pmos -1288 2227 -1287 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276 "VDD" 200 7600,276
+device msubckt sg13_lv_pmos -1390 2227 -1389 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "VDD" 200 7600,276 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276
+device msubckt sg13_lv_pmos -1492 2227 -1491 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276 "VDD" 200 7600,276
+device msubckt sg13_lv_pmos -1594 2227 -1593 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "VDD" 200 7600,276 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276
+device msubckt sg13_lv_pmos -1696 2227 -1695 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276 "VDD" 200 7600,276
+device msubckt sg13_lv_pmos -1798 2227 -1797 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "VDD" 200 7600,276 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276
+device msubckt sg13_lv_pmos -1900 2227 -1899 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276 "VDD" 200 7600,276
+device msubckt sg13_lv_pmos -2002 2227 -2001 2228 l=26 w=200 "VDD" "RAMP_EN" 52 0 "VDD" 200 13600,536 "ramp_generator_nmos_mirror_0.pmos_ref" 200 7600,276

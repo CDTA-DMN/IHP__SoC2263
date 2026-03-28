@@ -1,0 +1,336 @@
+** sch_path: /foss/designs/xschemas/top_conditionning.sch
+.subckt top_conditionning VSS IOVDD VOUT S0 S1 S2 S3 SEL_CAL SEL_SENSOR VBG VBIASH EN VBIAS VDD CMP_RESULT SENSOR nbulk
+*.PININFO VBIAS:B VOUT:B S0:B S1:B S2:B S3:B VSS:B SEL_SENSOR:B SEL_CAL:B VDD:B CMP_RESULT:B VBIASH:B IOVDD:B VBG:B EN:B SENSOR:B
+XOPAMP1 CMP_RESULT VSS VDD VBIAS Vmin Vamp EN VSS ota_lv_gmid_comparator
+xOPAMP4 IOVDD VBIASH Vamp Vn3 VOUT VSS cond_en VSS ota_hv_slow_gmid
+xI1 IOVDD cond_en VBG I1mA VBIASH VSS V96 VSS current_source_1mA
+x2 IOVDD EN cond_en VSS VSS level_shifter
+XOPAMP2 Vamp1 VSS VDD VBIAS V96 Vn1 EN VSS ota_slow_gmid
+XOPAMP3 Vamp VSS VDD VBIAS Vtemp Vn2 EN VSS ota_slow_gmid
+xref1 V96 SEL_CAL S0 VSS Vmin Vtemp S1 S2 S3 SENSOR SEL_SENSOR I1mA VSS ref_selector
+R2 Vn1 net1 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R6 net1 Vamp1 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R7 net7 net2 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R10 net2 Vn1 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R11 net7 net3 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R12 net3 net8 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R13 net9 net4 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R14 net4 net8 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R15 net9 net5 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R16 net5 net10 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R17 VSS net6 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R18 net6 net10 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R5 net11 Vn2 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R3 Vamp1 net11 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R4 net12 Vamp rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R19 net17 net12 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R20 net13 net18 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R21 net17 net13 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R22 net14 net18 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R23 net19 net14 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R24 net15 net20 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R25 net19 net15 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R26 net16 net20 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R27 Vn2 net16 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R1 VSS VSS rhigh w=0.5e-6 l=1.6e-6 m=6 b=0 ps=0
+R31 VSS VSS rhigh w=0.5e-6 l=0.96e-6 m=16 b=0 ps=0
+R32 VSS VSS ptap1 A=40.755e-12 P=249.62e-6
+R8 net21 Vn3 rhigh w=0.5e-6 l=1.23e-6 m=1 b=0 ps=0
+R9 net21 net22 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R28 net23 net22 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R29 net23 net24 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R30 VSS net24 rhigh w=0.5e-6 l=1.23e-6 m=1 b=0 ps=0
+R33 net25 net62 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R34 net25 net26 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R35 net31 net26 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R36 net27 net31 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R37 net27 net28 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R38 net29 net28 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R39 net29 net30 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R40 net41 net30 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R41 net32 net41 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R42 net32 net33 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R43 net34 net33 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R44 net34 net35 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R45 net40 net35 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R46 net36 net40 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R47 net36 net37 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R48 net38 net37 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R49 net38 net39 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R50 net61 net39 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R51 net42 VOUT rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R52 net42 net43 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R53 net44 net43 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R54 net44 net45 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R55 net50 net45 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R56 net46 net50 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R57 net46 net47 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R58 net48 net47 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R59 net48 net49 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R60 net60 net49 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R61 net51 net60 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R62 net51 net52 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R63 net53 net52 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R64 net53 net54 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R65 net59 net54 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R66 net55 net59 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R67 net55 net56 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R68 net57 net56 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R69 net57 net58 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R70 net61 net58 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R71 net63 net62 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+R72 net63 Vn3 rhigh w=0.5e-6 l=0.96e-6 m=1 b=0 ps=0
+.ends
+
+* expanding   symbol:  /foss/designs/xschemas/ota_lv_gmid_comparator.sym # of pins=7
+** sym_path: /foss/designs/xschemas/ota_lv_gmid_comparator.sym
+** sch_path: /foss/designs/xschemas/ota_lv_gmid_comparator.sch
+.subckt ota_lv_gmid_comparator Vout VSS VDD Ibias VP VN EN_IN nbulk
+*.PININFO VDD:B VSS:B VP:I VN:I Ibias:I Vout:B EN_IN:I
+M1 net1 VP net2 Pbulk sg13_lv_pmos w=2.5u l=5u ng=1 m=2
+M2 vota VN net2 Pbulk sg13_lv_pmos w=2.5u l=5u ng=1 m=2
+M3 vota net1 VSS VSS sg13_lv_nmos w=0.5u l=10u ng=1 m=2
+M4 net1 net1 VSS VSS sg13_lv_nmos w=0.5u l=10u ng=1 m=2
+M5 net2 Ibias VDD Pbulk sg13_lv_pmos w=2u l=0.5u ng=1
+M6 net3 Ibias VDD Pbulk sg13_lv_pmos w=2u l=0.5u ng=1
+M7 net3 vota VSS VSS sg13_lv_nmos w=0.5u l=10u ng=1 m=4
+M14 net4 EN_IN VSS VSS sg13_lv_nmos w=2u l=0.13u ng=1
+M15 net4 EN_IN VDD Pbulk sg13_lv_pmos w=2u l=0.13u ng=1
+M8 Ibias EN VDD Pbulk sg13_lv_pmos w=1.425u l=0.13u ng=1 m=14
+XSCHMITT1 VSS VDD net5 net3 VSS Pbulk ring_schmitt
+M10 EN net4 VSS VSS sg13_lv_nmos w=2u l=0.13u ng=1
+M11 EN net4 VDD Pbulk sg13_lv_pmos w=2u l=0.13u ng=1
+M12 net6 net5 VSS VSS sg13_lv_nmos w=2u l=0.13u ng=1
+M13 net6 net5 VDD Pbulk sg13_lv_pmos w=2u l=0.13u ng=1
+M16 Vout net6 VSS VSS sg13_lv_nmos w=2u l=0.13u ng=1
+M17 Vout net6 VDD Pbulk sg13_lv_pmos w=2u l=0.13u ng=1
+R1 VDD Pbulk ntap1 A=60.213e-12 P=354.9e-6
+R2 VSS VSS ptap1 A=28.05e-12 P=188.2e-6
+M18 VDD VDD VDD VDD sg13_lv_pmos w=3u l=3u ng=1 m=2
+R3 VDD VDD rhigh w=0.5e-6 l=3e-6 m=4 b=0 ps=0
+R4 VDD VDD rhigh w=0.5e-6 l=2.5e-6 m=4 b=0 ps=0
+M19 VSS VSS VSS VSS sg13_lv_nmos w=0.5u l=2u ng=1 m=8
+M20 VDD Ibias VDD Pbulk sg13_lv_pmos w=2u l=0.5u ng=1
+M21 VDD VDD VDD Pbulk sg13_lv_pmos w=1u l=0.5u ng=1 m=6
+M22 VDD VDD VDD Pbulk sg13_lv_pmos w=2.5u l=2u ng=1 m=8
+M9 net3 EN VDD Pbulk sg13_lv_pmos w=1.425u l=0.13u ng=1 m=14
+**** begin user architecture code
+
+
+R0 net1 0 10G
+
+
+**** end user architecture code
+.ends
+
+
+* expanding   symbol:  /foss/designs/xschemas/ota_hv_slow_gmid.sym # of pins=7
+** sym_path: /foss/designs/xschemas/ota_hv_slow_gmid.sym
+** sch_path: /foss/designs/xschemas/ota_hv_slow_gmid.sch
+.subckt ota_hv_slow_gmid IOVDD Ibias VP VN Vout VSS EN_IN nbulk
+*.PININFO VSS:B IOVDD:B Ibias:I VP:B VN:B Vout:B EN_IN:I
+M1 net2 VN net1 Pbulk sg13_hv_pmos w=1.785u l=3u ng=1 m=2
+M2 VOTA VP net1 Pbulk sg13_hv_pmos w=1.785u l=3u ng=1 m=2
+M3 net2 net2 VSS Nbulk sg13_hv_nmos w=4.275u l=10u ng=1 m=2
+M4 VOTA net2 VSS Nbulk sg13_hv_nmos w=4.275u l=10u ng=1 m=2
+M5 net1 Ibias IOVDD Pbulk sg13_hv_pmos w=1u l=0.5u ng=1 m=2
+M6 VAMP Ibias IOVDD Pbulk sg13_hv_pmos w=1u l=0.5u ng=1 m=2
+M8 Ibiasn Ibias IOVDD Pbulk sg13_hv_pmos w=1u l=0.5u ng=1 m=2
+C1 VOTA VAMP cap_cmim w=20e-6 l=20e-6
+M10 Ibiasn Ibiasn VSS Nbulk sg13_hv_nmos w=1u l=1u ng=1
+M11 Vout Ibiasn VSS Nbulk sg13_hv_nmos w=1u l=1u ng=1 m=2
+M9 IOVDD VAMP Vout Nbulk sg13_hv_nmos w=1u l=1u ng=1 m=10
+M12 Ibias EN IOVDD Pbulk sg13_hv_pmos w=8.94u l=0.4u ng=1
+M13 EN_N EN_IN IOVDD Pbulk sg13_hv_pmos w=2u l=0.45u ng=1
+M14 EN_N EN_IN VSS Nbulk sg13_hv_nmos w=1.2u l=0.45u ng=1
+M15 VAMP EN_N VSS Nbulk sg13_hv_nmos w=44.76u l=0.45u ng=10
+M16 EN EN_N IOVDD Pbulk sg13_hv_pmos w=2u l=0.45u ng=1
+M17 EN EN_N VSS Nbulk sg13_hv_nmos w=1.2u l=0.45u ng=1
+M7 VAMP VOTA VSS Nbulk sg13_hv_nmos w=4.275u l=10u ng=1 m=4
+M18 VSS VSS VSS Nbulk sg13_hv_nmos w=4.275u l=4u ng=1 m=8
+M19 IOVDD IOVDD IOVDD Pbulk sg13_hv_pmos w=1.785u l=3u ng=1 m=12
+M20 IOVDD IOVDD IOVDD Pbulk sg13_hv_pmos w=1u l=0.5u ng=1 m=12
+M21 VSS VSS VSS Nbulk sg13_hv_nmos w=1u l=1u ng=1 m=7
+M22 VSS VSS Ibiasn Nbulk sg13_hv_nmos w=1u l=1u ng=1
+R1 IOVDD Pbulk ntap1 A=68.477e-12 P=336.32e-6
+R2 VSS Nbulk ptap1 A=81.9645e-12 P=420.3e-6
+.ends
+
+
+* expanding   symbol:  /foss/designs/xschemas/current_source_1mA.sym # of pins=7
+** sym_path: /foss/designs/xschemas/current_source_1mA.sym
+** sch_path: /foss/designs/xschemas/current_source_1mA.sch
+.subckt current_source_1mA IOVDD EN_IN Vbg_1V I1mA Ibias VSS I100uA nbulk
+*.PININFO IOVDD:B Ibias:I VSS:B EN_IN:I Vbg_1V:I I1mA:O I100uA:O
+M1 Iref Vota Vcp Nbulk sg13_hv_nmos w=6u l=0.5u ng=8
+M2 Iref Iref IOVDD Pbulk sg13_hv_pmos w=1.5u l=0.5u ng=1 m=2
+xopamp1 IOVDD Ibias Vcp Vbg_1V Vota VSS EN_IN Pbulk Nbulk ota_med_hv_gmid
+M3 I1mA Iref IOVDD Pbulk sg13_hv_pmos w=1.5u l=0.5u ng=1 m=20
+M4 I100uA Iref IOVDD Pbulk sg13_hv_pmos w=1.5u l=0.5u ng=1 m=2
+M8 Iref EN_IN IOVDD Pbulk sg13_hv_pmos w=14u l=0.4u ng=7
+R6 net1 Vcp rppd w=0.5e-6 l=1.775e-6 m=1 b=1 ps=0.18e-6
+R7 net2 net1 rppd w=0.5e-6 l=1.775e-6 m=1 b=1 ps=0.18e-6
+R8 net3 net2 rppd w=0.5e-6 l=1.775e-6 m=1 b=1 ps=0.18e-6
+R9 net4 net3 rppd w=0.5e-6 l=1.775e-6 m=1 b=1 ps=0.18e-6
+R10 VSS net4 rppd w=0.5e-6 l=1.675e-6 m=1 b=1 ps=0.18e-6
+R3 VSS VSS rppd w=0.5e-6 l=1.755e-6 m=10 b=1 ps=0.18e-6
+M5 VSS VSS Vcp Nbulk sg13_hv_nmos w=0.75u l=0.5u ng=1 m=2
+M6 IOVDD IOVDD IOVDD Pbulk sg13_hv_pmos w=1.5u l=0.5u ng=1 m=8
+R4 IOVDD Pbulk ntap1 A=54.8005e-12 P=273.23e-6
+R1 VSS Nbulk ptap1 A=37.6962e-12 P=225.34e-6
+.ends
+
+
+* expanding   symbol:  /foss/designs/xschemas/level_shifter.sym # of pins=4
+** sym_path: /foss/designs/xschemas/level_shifter.sym
+** sch_path: /foss/designs/xschemas/level_shifter.sch
+.subckt level_shifter IOVDD IN OUT VSS nbulk
+*.PININFO IN:I OUT:O IOVDD:B VSS:B
+M1 shift IN IOVDD IOVDD sg13_hv_pmos w=0.6u l=0.45u ng=1
+M2 shift IN VSS VSS sg13_hv_nmos w=5u l=0.45u ng=1
+M3 OUT shift IOVDD IOVDD sg13_hv_pmos w=2u l=0.45u ng=1
+M4 OUT shift VSS VSS sg13_hv_nmos w=1.2u l=0.45u ng=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/xschemas/ota_slow_gmid.sym # of pins=7
+** sym_path: /foss/designs/xschemas/ota_slow_gmid.sym
+** sch_path: /foss/designs/xschemas/ota_slow_gmid.sch
+.subckt ota_slow_gmid Vout VSS VDD Ibias Vp Vn EN_IN nbulk
+*.PININFO VDD:B VSS:B Vp:I Vn:I Ibias:I EN_IN:I Vout:B
+M1 net1 Vn net2 Pbulk sg13_lv_pmos w=2.5u l=5u ng=1 m=2
+M2 vota Vp net2 Pbulk sg13_lv_pmos w=2.5u l=5u ng=1 m=2
+M3 vota net1 VSS VSS sg13_lv_nmos w=0.5u l=10u ng=1 m=2
+M4 net1 net1 VSS VSS sg13_lv_nmos w=0.5u l=10u ng=1 m=2
+M5 net2 Ibias VDD Pbulk sg13_lv_pmos w=1u l=0.5u ng=1 m=2
+M6 Vout1 Ibias VDD Pbulk sg13_lv_pmos w=1u l=0.5u ng=1 m=2
+M7 Vout1 vota VSS VSS sg13_lv_nmos w=0.5u l=10u ng=1 m=4
+M8 net3 vota net3 net3 sg13_lv_pmos w=3u l=3u ng=1 m=3
+R1 net3 Vout1 rhigh w=0.5e-6 l=22e-6 m=1 b=0 ps=0
+M11 Ibiasn Ibiasn VSS VSS sg13_lv_nmos w=0.25u l=0.5u ng=1 m=4
+M12 Ibiasn Ibias VDD Pbulk sg13_lv_pmos w=1u l=0.5u ng=1 m=2
+M13 Ibias EN VDD Pbulk sg13_lv_pmos w=10u l=0.13u ng=10 m=2
+M14 EN_N EN_IN VSS VSS sg13_lv_nmos w=2u l=0.13u ng=1
+M15 EN_N EN_IN VDD Pbulk sg13_lv_pmos w=2u l=0.13u ng=1
+M16 EN EN_N VSS VSS sg13_lv_nmos w=2u l=0.13u ng=1
+M17 EN EN_N VDD Pbulk sg13_lv_pmos w=2u l=0.13u ng=1
+M18 Vout1 EN_N VSS VSS sg13_lv_nmos w=12u l=0.13u ng=10 m=2
+M19 Vout Ibiasn VSS VSS sg13_lv_nmos w=0.25u l=0.5u ng=1 m=60
+M21 VDD Vout1 Vout VSS sg13_lv_nmos w=1u l=0.13u ng=1
+M9 VSS VSS VSS VSS sg13_lv_nmos w=0.25u l=0.5u ng=1 m=32
+M10 VSS VSS VSS VSS sg13_lv_nmos w=1u l=0.13u ng=1 m=12
+M20 Vout VSS VSS VSS sg13_lv_nmos w=1u l=0.13u ng=1
+M22 VSS VSS VDD VSS sg13_lv_nmos w=1u l=0.13u ng=1
+M23 VSS VSS VSS VSS sg13_lv_nmos w=0.5u l=2u ng=1 m=8
+M24 VDD VDD VDD Pbulk sg13_lv_pmos w=2.5u l=2u ng=1 m=8
+R3 VSS VSS rhigh w=0.5e-6 l=3e-6 m=2 b=0 ps=0
+R4 VSS VSS rhigh w=0.5e-6 l=2.5e-6 m=2 b=0 ps=0
+M25 VDD VDD VDD Pbulk sg13_lv_pmos w=1u l=0.5u ng=1 m=6
+R2 VDD Pbulk ntap1 A=45.85335e-12 P=251.98e-6
+R5 VSS VSS ptap1 A=57.8892e-12 P=342.32e-6
+.ends
+
+
+* expanding   symbol:  /foss/designs/xschemas/ref_selector.sym # of pins=12
+** sym_path: /foss/designs/xschemas/ref_selector.sym
+** sch_path: /foss/designs/xschemas/ref_selector.sch
+.subckt ref_selector Vref Scal S0 VSS Vmin Vmeas S1 S2 S3 Sen Ssen i1mA nbulk
+*.PININFO VSS:B S0:I S1:I S2:I S3:I Vref:B Vmeas:B Vmin:B Scal:I Ssen:I Sen:B i1mA:B
+M2 Vref S0 R0 Nbulk sg13_lv_nmos w=3u l=0.13u ng=1
+M3 Vref S1 R1 Nbulk sg13_lv_nmos w=3u l=0.13u ng=1
+M4 Vref S2 R2 Nbulk sg13_lv_nmos w=3u l=0.13u ng=1
+M5 Vref S3 R3 Nbulk sg13_lv_nmos w=3u l=0.13u ng=1
+M6 i1mA Ssen Sen Nbulk sg13_lv_nmos w=10u l=0.13u ng=1
+M8 i1mA Scal Vcal Nbulk sg13_lv_nmos w=10u l=0.13u ng=1
+M1 Vmeas Ssen Sen Nbulk sg13_lv_nmos w=5u l=0.13u ng=1
+M7 Vmeas Scal Vcal Nbulk sg13_lv_nmos w=5u l=0.13u ng=1
+R1 Vmin Vref rppd w=0.5e-6 l=1.43e-6 m=1 b=0 ps=0e-6
+R4 net2 R3 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R5 net2 net1 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R6 Vmin net1 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R7 net4 net5 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R8 net4 net3 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R9 Vmin net3 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R10 net7 R2 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R11 net7 net6 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R12 net5 net6 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R13 net9 net10 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R14 net9 net8 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R15 Vmin net8 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R16 net12 net13 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R17 net12 net11 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R18 net10 net11 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R19 net15 net16 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R20 net15 net14 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R21 R1 net14 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R22 net18 net13 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R23 net18 net17 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R24 net16 net17 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R25 net20 net21 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R26 net20 net19 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R27 net22 net19 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R28 net24 net25 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R29 net24 net23 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R30 net21 net23 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R31 net27 net28 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R32 net27 net26 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R33 R0 net26 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R34 net30 net25 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R35 net30 net29 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R36 net28 net29 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R37 net32 net33 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R38 net32 net31 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R39 net22 net31 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R40 net35 net36 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R41 net35 net34 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R42 net33 net34 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R43 net38 net39 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R44 net38 net37 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R45 Vmin net37 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R46 net41 net36 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R47 net41 net40 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R48 net39 net40 rhigh w=0.5e-6 l=1.6e-6 m=1 b=0 ps=0
+R2 VSS Vcal rppd w=0.5e-6 l=1.43e-6 m=10 b=0 ps=0e-6
+C2 VSS Vmin cap_cmim w=20e-6 l=10e-6
+C1 VSS Vcal cap_cmim w=20e-6 l=10e-6
+R49 VSS Vmin rppd w=0.5e-6 l=1.43e-6 m=14 b=0 ps=0e-6
+R50 VSS VSS rhigh w=0.5e-6 l=1.6e-6 m=20 b=0 ps=0
+R51 VSS VSS rppd w=0.5e-6 l=1.43e-6 m=20 b=0 ps=0e-6
+R3 VSS Nbulk ptap1 A=60.426e-12 P=402.84e-6
+.ends
+
+
+* expanding   symbol:  /foss/designs/xschemas/ring_schmitt.sym # of pins=4
+** sym_path: /foss/designs/xschemas/ring_schmitt.sym
+** sch_path: /foss/designs/xschemas/ring_schmitt.sch
+.subckt ring_schmitt VSS VDD Y A nbulk pbulk
+*.PININFO A:I Y:O VDD:B VSS:B
+M1 Y A VSPL nbulk sg13_lv_nmos w=10u l=0.13u ng=5
+M2 Y A net1 pbulk sg13_lv_pmos w=6.25u l=0.13u ng=5
+M3 VSPL A VSS nbulk sg13_lv_nmos w=0.155u l=0.5u ng=1
+M4 net1 A VDD pbulk sg13_lv_pmos w=0.5u l=0.5u ng=1
+M5 VSS Y net1 pbulk sg13_lv_pmos w=2.5u l=1u ng=1
+M6 VDD Y VSPL nbulk sg13_lv_nmos w=2.945u l=0.5u ng=19
+.ends
+
+
+* expanding   symbol:  /foss/designs/xschemas/ota_med_hv_gmid.sym # of pins=9
+** sym_path: /foss/designs/xschemas/ota_med_hv_gmid.sym
+** sch_path: /foss/designs/xschemas/ota_med_hv_gmid.sch
+.subckt ota_med_hv_gmid IOVDD Ibias VN VP VOUT VSS EN_IN Pbulk Nbulk
+*.PININFO Ibias:I VP:I VN:I IOVDD:B VSS:B VOUT:B EN_IN:I Pbulk:I Nbulk:I
+M1 net2 net2 VSS Nbulk sg13_hv_nmos w=1.9u l=2u ng=1 m=2
+M2 net2 VN net1 Pbulk sg13_hv_pmos w=2.94u l=1u ng=1 m=2
+M3 net3 net2 VSS Nbulk sg13_hv_nmos w=1.9u l=2u ng=1 m=2
+M4 net3 VP net1 Pbulk sg13_hv_pmos w=2.94u l=1u ng=1 m=2
+M5 net1 Ibias IOVDD Pbulk sg13_hv_pmos w=1u l=0.5u ng=1 m=2
+M6 VOUT net3 VSS Nbulk sg13_hv_nmos w=1.9u l=2u ng=1 m=4
+M7 VOUT Ibias IOVDD Pbulk sg13_hv_pmos w=1u l=0.5u ng=1 m=2
+C1 VOUT net3 cap_cmim w=20e-6 l=26e-6
+M8 Ibias EN_IN IOVDD Pbulk sg13_hv_pmos w=14u l=0.4u ng=7
+M9 VSS VSS VSS Nbulk sg13_hv_nmos w=1.9u l=2u ng=1 m=4
+M10 IOVDD IOVDD IOVDD Pbulk sg13_hv_pmos w=2.94u l=1u ng=1 m=8
+M11 IOVDD IOVDD IOVDD Pbulk sg13_hv_pmos w=1u l=0.5u ng=1 m=16
+.ends
+
+.GLOBAL VSS

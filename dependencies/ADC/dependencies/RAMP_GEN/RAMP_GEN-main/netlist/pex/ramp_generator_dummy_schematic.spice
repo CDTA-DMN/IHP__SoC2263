@@ -1,0 +1,3 @@
+.subckt ramp_generator VDD VSS
+.ends
+.end

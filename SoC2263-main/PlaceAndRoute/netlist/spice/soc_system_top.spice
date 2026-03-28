@@ -1,0 +1,3267 @@
+* NGSPICE file created from soc_system_top.ext - technology: ihp-sg13g2
+
+* Black-box entry subcircuit for sg13g2_fill_1 abstract view
+.subckt sg13g2_fill_1 VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_decap_8 abstract view
+.subckt sg13g2_decap_8 VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_inv_1 abstract view
+.subckt sg13g2_inv_1 VDD Y A VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_fill_2 abstract view
+.subckt sg13g2_fill_2 VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_nand2_1 abstract view
+.subckt sg13g2_nand2_1 Y A B VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_dfrbpq_1 abstract view
+.subckt sg13g2_dfrbpq_1 RESET_B VSS VDD D Q CLK
+.ends
+
+* Black-box entry subcircuit for sg13g2_decap_4 abstract view
+.subckt sg13g2_decap_4 VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_a21oi_1 abstract view
+.subckt sg13g2_a21oi_1 VSS VDD A1 A2 Y B1
+.ends
+
+* Black-box entry subcircuit for sg13g2_dllrq_1 abstract view
+.subckt sg13g2_dllrq_1 D GATE_N RESET_B Q VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_buf_1 abstract view
+.subckt sg13g2_buf_1 A X VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_and2_1 abstract view
+.subckt sg13g2_and2_1 A B X VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_nor2_1 abstract view
+.subckt sg13g2_nor2_1 A B Y VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_nor3_1 abstract view
+.subckt sg13g2_nor3_1 A B C Y VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_nand3_1 abstract view
+.subckt sg13g2_nand3_1 B C A Y VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_nor2b_1 abstract view
+.subckt sg13g2_nor2b_1 A B_N Y VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_and3_1 abstract view
+.subckt sg13g2_and3_1 X A B C VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_a21o_1 abstract view
+.subckt sg13g2_a21o_1 A2 A1 B1 X VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_mux2_1 abstract view
+.subckt sg13g2_mux2_1 A0 A1 S X VDD VSS
+.ends
+
+* Black-box entry subcircuit for bondpad_70x70_novias abstract view
+.subckt bondpad_70x70_novias pad
+.ends
+
+* Black-box entry subcircuit for sg13g2_xnor2_1 abstract view
+.subckt sg13g2_xnor2_1 Y A B VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_tiehi abstract view
+.subckt sg13g2_tiehi VDD VSS L_HI
+.ends
+
+* Black-box entry subcircuit for sg13g2_IOPadAnalog abstract view
+.subckt sg13g2_IOPadAnalog iovdd iovss pad padres vdd vss
+.ends
+
+* Black-box entry subcircuit for sg13g2_xor2_1 abstract view
+.subckt sg13g2_xor2_1 B A X VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_mux4_1 abstract view
+.subckt sg13g2_mux4_1 S0 A0 A1 A2 A3 S1 X VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_nand2b_1 abstract view
+.subckt sg13g2_nand2b_1 Y B A_N VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_o21ai_1 abstract view
+.subckt sg13g2_o21ai_1 B1 VDD Y VSS A1 A2
+.ends
+
+* Black-box entry subcircuit for sg13g2_a22oi_1 abstract view
+.subckt sg13g2_a22oi_1 Y B1 B2 A2 A1 VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_nand4_1 abstract view
+.subckt sg13g2_nand4_1 B C A Y VDD VSS D
+.ends
+
+* Black-box entry subcircuit for sg13g2_or2_1 abstract view
+.subckt sg13g2_or2_1 VSS VDD X B A
+.ends
+
+* Black-box entry subcircuit for sg13g2_and4_1 abstract view
+.subckt sg13g2_and4_1 A B C D X VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_Corner abstract view
+.subckt sg13g2_Corner iovdd iovss vdd vss
+.ends
+
+* Black-box entry subcircuit for sg13g2_or3_1 abstract view
+.subckt sg13g2_or3_1 A B C X VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_IOPadOut16mA abstract view
+.subckt sg13g2_IOPadOut16mA c2p iovdd iovss pad vdd vss
+.ends
+
+* Black-box entry subcircuit for sg13g2_nor4_1 abstract view
+.subckt sg13g2_nor4_1 A B C D Y VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_IOPadIn abstract view
+.subckt sg13g2_IOPadIn iovdd iovss p2c pad vdd vss
+.ends
+
+* Black-box entry subcircuit for sg13g2_IOPadIOVdd abstract view
+.subckt sg13g2_IOPadIOVdd iovdd iovss vdd vss
+.ends
+
+* Black-box entry subcircuit for sg13g2_IOPadVss abstract view
+.subckt sg13g2_IOPadVss iovdd iovss vdd vss
+.ends
+
+* Black-box entry subcircuit for sg13g2_a221oi_1 abstract view
+.subckt sg13g2_a221oi_1 VDD VSS B2 C1 B1 A1 Y A2
+.ends
+
+* Black-box entry subcircuit for SoC_Analog_Top abstract view
+.subckt SoC_Analog_Top RESET CLK RAMP_EN RAMP_RESET ADC_SEL_CAL ADC_SEL_MEAS ADC_CMP_OUT
++ SC_CMP_RESULT SC_EN SC_SEL_SENSOR SC_SEL_CAL SC_S3 SC_S2 SC_S1 SC_S0 VDD SC_VREF
++ VRAMP VDD1v5 VSS SC_VOUT SENSOR
+.ends
+
+* Black-box entry subcircuit for sg13g2_or4_1 abstract view
+.subckt sg13g2_or4_1 A B C D X VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_IOPadVdd abstract view
+.subckt sg13g2_IOPadVdd iovdd iovss vdd vss
+.ends
+
+* Black-box entry subcircuit for sg13g2_IOPadIOVss abstract view
+.subckt sg13g2_IOPadIOVss iovdd iovss vdd vss
+.ends
+
+.subckt soc_system_top IOVDD VDD1v5 VSS_uq7 adc_done_PAD clk_PAD reset_n_PAD sc_enable_PAD
++ sc_vout_PAD sc_vref_PAD sensor_PAD state_out_0_PAD state_out_1_PAD state_out_2_PAD
++ trigger_PAD tx_PAD vbg_PAD vramp_PAD IOVSS VDD_uq6
+XFILLER_23_612 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_22_177 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_100 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_7 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_549 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_432_ VDD_uq6 _798_/A _895_/Q VSS_uq7 sg13g2_inv_1
+XFILLER_14_623 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_14_612 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_74 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_501_ _927_/D _820_/B _849_/A VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XFILLER_13_111 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_126 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_365 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_409 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_3_78 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_450 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_17_494 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_23_431 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_103 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_357 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_981_ fanout21/X VSS_uq7 VDD_uq6 _981_/D _981_/Q _819_/A sg13g2_dfrbpq_1
+XFILLER_12_65 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_14_475 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_269 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_228 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_28_567 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_23_272 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_31 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_445 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_895_ fanout38/X VSS_uq7 VDD_uq6 _895_/D _895_/Q _931_/CLK sg13g2_dfrbpq_1
+XFILLER_3_633 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_964_ fanout25/X VSS_uq7 VDD_uq6 _964_/D _964_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_2_187 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_110 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_589 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_0_35 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_504 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_231 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_614 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_386 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_28_342 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_680_ VSS_uq7 VDD_uq6 _678_/B _678_/C _680_/Y _761_/A sg13g2_a21oi_1
+XFILLER_18_75 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_581 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_559 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_7 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_878_ fanout33/X VSS_uq7 VDD_uq6 _878_/D _878_/Q _882_/CLK sg13g2_dfrbpq_1
+X_947_ _947_/D _487_/A _947__59/L_HI _947_/Q VDD_uq6 VSS_uq7 sg13g2_dllrq_1
+Xfanout7 _888_/Q _755_/B VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_29_117 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_323 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_529 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_43 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_640 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_801_ _802_/B _801_/B _896_/D VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_29_96 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_63 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_466 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_732_ _742_/A _880_/Q _732_/Y VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_663_ VSS_uq7 VDD_uq6 _705_/B _662_/X _677_/C _661_/X sg13g2_a21oi_1
+X_594_ _602_/A _594_/B _596_/B _982_/D VDD_uq6 VSS_uq7 sg13g2_nor3_1
+XFILLER_12_584 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_511 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_109 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_26_665 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_13_315 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_21 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_197 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_25_186 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_381 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_230 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_715_ _718_/B _718_/C _715_/A _715_/Y VDD_uq6 VSS_uq7 sg13g2_nand3_1
+XFILLER_17_654 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_665 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_646_ _792_/A _755_/B _647_/D VDD_uq6 VSS_uq7 sg13g2_nor2b_1
+X_577_ _584_/B _976_/Q _977_/Q _978_/Q VDD_uq6 VSS_uq7 sg13g2_and3_1
+XFILLER_8_385 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_370 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_429 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_407 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_635 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_22_156 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_517 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_500_ _835_/A _500_/C _925_/Q _849_/A VDD_uq6 VSS_uq7 sg13g2_nand3_1
+X_431_ VDD_uq6 _508_/B _896_/Q VSS_uq7 sg13g2_inv_1
+XFILLER_26_495 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_53 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_105 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_189 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_57 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_629_ _767_/B _629_/B _632_/B VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_17_473 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_661 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_23_410 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_638 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_23_487 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_336 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_980_ fanout21/X VSS_uq7 VDD_uq6 _980_/D _980_/Q _819_/A sg13g2_dfrbpq_1
+XFILLER_18_248 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_270 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_454 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_457 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_23_251 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_424 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_612 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_76 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_7_439 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_894_ fanout38/X VSS_uq7 VDD_uq6 _894_/D _894_/Q _931_/CLK sg13g2_dfrbpq_1
+X_963_ fanout25/X VSS_uq7 VDD_uq6 _963_/D _963_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_2_166 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_14 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_284 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_494 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_210 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_276 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_538 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_7_214 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_247 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_3_442 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_877_ fanout36/X VSS_uq7 VDD_uq6 _877_/D _877_/Q _935_/CLK sg13g2_dfrbpq_1
+X_946_ _946_/D _487_/A _946__58/L_HI _946_/Q VDD_uq6 VSS_uq7 sg13g2_dllrq_1
+XFILLER_15_7 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_321 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_22_519 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_582 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_387 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout8 _874_/Q _792_/A VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_6_291 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_302 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_596 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_508 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_99 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_800_ _799_/C _895_/Q _896_/Q _801_/B VDD_uq6 VSS_uq7 sg13g2_a21o_1
+X_662_ _756_/B _650_/B _662_/S _662_/X VDD_uq6 VSS_uq7 sg13g2_mux2_1
+XFILLER_29_75 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_42 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_445 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_731_ VSS_uq7 VDD_uq6 _726_/X _730_/Y _879_/D _729_/Y sg13g2_a21oi_1
+X_593_ _596_/B _981_/Q _982_/Q _593_/C VDD_uq6 VSS_uq7 sg13g2_and3_1
+XFILLER_16_346 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_12_563 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_294 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_929_ fanout35/X VSS_uq7 VDD_uq6 _929_/D _929_/Q _931_/CLK sg13g2_dfrbpq_1
+XFILLER_19_140 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_162 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_600 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_165 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_305 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_21_360 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_309 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_77 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_5_559 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_633 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_645_ _715_/A _755_/B _647_/C VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_714_ _713_/B _713_/A _713_/C _718_/C VDD_uq6 VSS_uq7 sg13g2_a21o_1
+XFILLER_29_493 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_286 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_576_ VSS_uq7 VDD_uq6 _976_/Q _977_/Q _578_/B _978_/Q sg13g2_a21oi_1
+XFILLER_16_154 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_570 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_364 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XIO_BOND_sg13g2_IOPadAnalog_sensor sensor_PAD bondpad_70x70_novias
+XFILLER_23_603 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_135 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_32 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_658 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_430_ VDD_uq6 _508_/A _897_/Q VSS_uq7 sg13g2_inv_1
+XFILLER_26_474 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_168 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_323 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_573 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_562 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_3_36 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_14 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_628_ _628_/A _627_/Y _872_/D VDD_uq6 VSS_uq7 sg13g2_nor2b_1
+XFILLER_17_452 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_20_617 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_628 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_9_640 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_559_ _970_/Q _560_/B _561_/B VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_27_216 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_12_67 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_2_315 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_227 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_610 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_433 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_665 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_5_175 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_219 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_271 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_20_436 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_470 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_219 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_230 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_23_55 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_418 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_403 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_646 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_145 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_536 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_893_ _494_/C VSS_uq7 VDD_uq6 _893_/D _893_/Q _931_/CLK sg13g2_dfrbpq_1
+X_962_ fanout25/X VSS_uq7 VDD_uq6 _962_/D _962_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_27_591 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_558 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_57 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_68 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_10_480 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_473 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_539 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_266 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_0_649 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_16_517 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_476 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_945_ fanout35/X VSS_uq7 VDD_uq6 _945_/D _945_/Q _487_/A sg13g2_dfrbpq_1
+XIO_BOND_sg13g2_IOPadAnalog_vdd1v5 VDD1v5 bondpad_70x70_novias
+X_876_ fanout35/X VSS_uq7 VDD_uq6 _876_/D _876_/Q _941_/CLK sg13g2_dfrbpq_1
+XFILLER_19_300 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_366 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_561 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout9 _874_/Q _781_/A VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_6_270 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_358 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_564 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_21_575 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_21_553 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_229 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_424 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_78 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_661_ _688_/B _705_/C _661_/X VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_29_21 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_592_ VSS_uq7 VDD_uq6 _981_/Q _593_/C _594_/B _982_/Q sg13g2_a21oi_1
+X_730_ _730_/Y _730_/A _730_/B VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+XFILLER_12_542 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_325 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_579 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_928_ _494_/C VSS_uq7 VDD_uq6 _928_/D _928_/Q _931_/CLK sg13g2_dfrbpq_1
+XFILLER_3_273 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_859_ _917_/Q _879_/Q _865_/S _917_/D VDD_uq6 VSS_uq7 sg13g2_mux2_1
+XFILLER_19_152 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_19_185 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_22_317 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_144 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_339 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_56 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_538 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_265 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_644_ _644_/Y _712_/B _668_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+X_713_ _713_/B _713_/C _713_/A _718_/B VDD_uq6 VSS_uq7 sg13g2_nand3_1
+XFILLER_29_472 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_483 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_575_ VSS_uq7 VDD_uq6 _976_/Q _977_/Q _977_/D _574_/Y sg13g2_a21oi_1
+XFILLER_16_133 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_343 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_188 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_582 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_637 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_22_114 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_309 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_948__60 VDD_uq6 VSS_uq7 _948__60/L_HI sg13g2_tiehi
+Xsg13g2_IOPadAnalog_sensor IOVDD IOVSS sensor_PAD sg13g2_IOPadAnalog_sensor/padres
++ VDD_uq6 VSS_uq7 sg13g2_IOPadAnalog
+XFILLER_26_453 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_88 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_125 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_5_302 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_5_379 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_627_ VSS_uq7 VDD_uq6 _781_/C _629_/B _627_/Y _934_/Q sg13g2_a21oi_1
+X_558_ _558_/B _969_/Q _969_/D VDD_uq6 VSS_uq7 sg13g2_xor2_1
+XFILLER_8_173 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_489_ _899_/Q _807_/A _815_/B VDD_uq6 VSS_uq7 sg13g2_nor2b_1
+XFILLER_11_607 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_23_445 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_139 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_7 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_46 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_79 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_206 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_412 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_644 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_132 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_415 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_283 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_28_559 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_23_286 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_89 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_459 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_961_ fanout24/X VSS_uq7 VDD_uq6 _961_/D _961_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_2_124 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_515 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_892_ fanout37/X VSS_uq7 VDD_uq6 _892_/D _892_/Q _931_/CLK sg13g2_dfrbpq_1
+XFILLER_0_49 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_242 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_452 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_518 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_592 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_245 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_628 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_356 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_24_595 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_24_573 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_11_212 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_89 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_455 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_944_ fanout35/X VSS_uq7 VDD_uq6 _944_/D _945_/D _487_/A sg13g2_dfrbpq_1
+X_875_ fanout35/X VSS_uq7 VDD_uq6 _875_/D _944_/D _941_/CLK sg13g2_dfrbpq_1
+XFILLER_15_540 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xsg13g2_IOPadAnalog_vdd1v5 IOVDD IOVSS VDD1v5 sg13g2_IOPadAnalog_vdd1v5/padres VDD_uq6
++ VSS_uq7 sg13g2_IOPadAnalog
+XFILLER_27_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_521 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_337 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_0_403 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_57 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_654 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_665 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_660_ _662_/S _699_/A _715_/A _710_/A _792_/A _755_/B _705_/C VDD_uq6 VSS_uq7 sg13g2_mux4_1
+X_591_ VDD_uq6 _981_/D _591_/A VSS_uq7 sg13g2_inv_1
+XFILLER_16_304 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_598 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_510 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_525 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_370 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_8_558 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_252 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_48 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_927_ fanout28/X VSS_uq7 VDD_uq6 _927_/D _927_/Q _939_/CLK sg13g2_dfrbpq_1
+X_858_ _916_/Q _878_/Q _865_/S _916_/D VDD_uq6 VSS_uq7 sg13g2_mux2_1
+X_789_ VDD_uq6 _889_/D _789_/A VSS_uq7 sg13g2_inv_1
+XFILLER_15_381 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_25_123 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_134 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_15_35 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_517 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_395 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_712_ _713_/C _712_/B _711_/B VDD_uq6 VSS_uq7 sg13g2_nand2b_1
+XFILLER_0_244 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_602 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_613 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_643_ _688_/B _643_/B _705_/B VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_29_451 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_574_ _603_/A VDD_uq6 _574_/Y VSS_uq7 _976_/Q _977_/Q sg13g2_o21ai_1
+XFILLER_16_112 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_384 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_399 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_91 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_605 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_432 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_67 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_104 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_119 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_358 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_597 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_1_564 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_626_ _781_/C _629_/B _628_/A VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_557_ _969_/Q _558_/B _560_/B VDD_uq6 VSS_uq7 sg13g2_and2_1
+X_488_ _807_/A _521_/B _940_/D VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_17_443 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_487 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_130 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_196 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_23_468 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_424 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_284 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_14_468 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_652 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_641 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_111 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_609_ _610_/A _608_/X _605_/X _606_/Y _761_/A VDD_uq6 VSS_uq7 sg13g2_a22oi_1
+XFILLER_23_265 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_438 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_626 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_960_ fanout24/X VSS_uq7 VDD_uq6 _960_/D _960_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_2_103 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_891_ fanout40/X VSS_uq7 VDD_uq6 _891_/D _891_/Q _891_/CLK sg13g2_dfrbpq_1
+XFILLER_27_571 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_27_560 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_28 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_90 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_571 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_224 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_607 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_335 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_874_ fanout38/X VSS_uq7 VDD_uq6 _874_/D _874_/Q _889_/CLK sg13g2_dfrbpq_1
+X_943_ fanout28/X VSS_uq7 VDD_uq6 _943_/D _943_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_15_596 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_316 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_36 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_56 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_459 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_633 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_89 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_187 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_590_ _589_/Y VDD_uq6 _591_/A VSS_uq7 _981_/Q _593_/C sg13g2_o21ai_1
+XFILLER_12_577 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_504 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_231 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_788_ _787_/Y VDD_uq6 _789_/A VSS_uq7 _935_/Q _666_/S sg13g2_o21ai_1
+X_926_ fanout29/X VSS_uq7 VDD_uq6 _926_/D _926_/Q _939_/CLK sg13g2_dfrbpq_1
+X_857_ _904_/Q _857_/B _865_/S VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_13_7 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_360 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_393 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_176 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_7_570 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_25_102 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_14 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_179 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_374 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_212 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_0_201 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_642_ _688_/B _656_/S _647_/B VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_711_ _890_/Q _711_/B _711_/Y VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_29_430 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_223 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_647 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_573_ _976_/Q _597_/A _976_/D VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_16_168 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_8_301 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_8_378 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_363 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_909_ fanout22/X VSS_uq7 VDD_uq6 _909_/D _909_/Q _912_/CLK sg13g2_dfrbpq_1
+XFILLER_23_628 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_149 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_70 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_488 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_411 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_46 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_182 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_21_193 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_315 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_1_587 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_1_521 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_293 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_271 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_625_ _887_/Q _625_/C _768_/A _629_/B VDD_uq6 VSS_uq7 _625_/D sg13g2_nand4_1
+XFILLER_17_422 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_487_ _487_/A _948_/Q _487_/X VDD_uq6 VSS_uq7 sg13g2_and2_1
+X_556_ _819_/B _556_/B _558_/B _968_/D VDD_uq6 VSS_uq7 sg13g2_nor3_1
+XFILLER_17_466 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_654 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_665 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_23_403 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_329 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_620 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_263 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_447 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_491 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_189 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_241 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_296 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_608_ _866_/Q _761_/A _608_/X VDD_uq6 VSS_uq7 sg13g2_xor2_1
+X_539_ _541_/D _960_/Q _961_/Q _540_/B VDD_uq6 VSS_uq7 sg13g2_a21o_1
+XFILLER_9_440 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_9_484 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_4_82 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_244 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_417 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_605 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_69 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_890_ fanout40/X VSS_uq7 VDD_uq6 _890_/D _890_/Q _891_/CLK sg13g2_dfrbpq_1
+XFILLER_2_159 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_233 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_14_277 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_487 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_170 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_18_550 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_203 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_281 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_520 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_16_509 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_28_358 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_18_14 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_207 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_435 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_873_ fanout38/X VSS_uq7 VDD_uq6 _873_/D _873_/Q _889_/CLK sg13g2_dfrbpq_1
+X_942_ fanout28/X VSS_uq7 VDD_uq6 _943_/Q _942_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_19_314 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_575 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_391 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_27_380 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_280 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_490 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_6_284 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_339 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_21_589 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_501 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_29_612 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_35 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_100 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_0_438 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_361 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_339 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_556 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_287 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_3_210 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_925_ fanout29/X VSS_uq7 VDD_uq6 _925_/D _925_/Q _939_/CLK sg13g2_dfrbpq_1
+X_787_ _786_/Y VDD_uq6 _787_/Y VSS_uq7 _763_/A _785_/Y sg13g2_o21ai_1
+X_856_ _856_/A _856_/B _915_/D VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_19_133 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XIO_BOND_sg13g2_IOPadAnalog_sc_vout sc_vout_PAD bondpad_70x70_novias
+XFILLER_7_593 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_158 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_309 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_21_353 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_641_ VSS_uq7 VDD_uq6 _668_/B _656_/S _662_/S sg13g2_or2_1
+X_710_ _747_/B _710_/A _710_/B VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+XFILLER_0_279 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_572_ VDD_uq6 _603_/A _597_/A VSS_uq7 sg13g2_inv_1
+XFILLER_16_147 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_357 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_596 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_563 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_908_ fanout22/X VSS_uq7 VDD_uq6 _908_/D _908_/Q _912_/CLK sg13g2_dfrbpq_1
+X_839_ _847_/D _909_/Q _910_/Q _839_/C VDD_uq6 VSS_uq7 sg13g2_and3_1
+XFILLER_22_128 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_467 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_555 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_624_ VDD_uq6 _871_/D _624_/A VSS_uq7 sg13g2_inv_1
+XFILLER_29_250 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_555_ _966_/Q _967_/Q _968_/Q _555_/D _558_/B VDD_uq6 VSS_uq7 sg13g2_and4_1
+XFILLER_17_401 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_622 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_9_633 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_486_ _487_/A _947_/Q _486_/X VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_16_91 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_382 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_187 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_27_209 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_459 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_2_308 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_242 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_603 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_470 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_426 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_658 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_146 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_1_352 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_538_ _961_/Q _541_/D _960_/Q _542_/B VDD_uq6 VSS_uq7 sg13g2_nand3_1
+X_607_ _605_/X _606_/Y _866_/Q _866_/D VDD_uq6 VSS_uq7 sg13g2_mux2_1
+X_469_ _469_/A _469_/B _625_/D VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_20_429 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_481 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_61 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_212 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_48 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_639 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_7 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_138 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_529 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_584 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_212 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_256 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_39 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_10_473 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_466 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_259 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_260 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_226 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_11_259 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_3_469 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_941_ fanout35/X VSS_uq7 VDD_uq6 _941_/D _941_/Q _941_/CLK sg13g2_dfrbpq_1
+X_872_ fanout38/X VSS_uq7 VDD_uq6 _872_/D _872_/Q _889_/CLK sg13g2_dfrbpq_1
+XFILLER_19_359 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_554 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_263 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_546 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_417 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_14 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_524 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_24_340 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_318 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_29 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_3_266 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_924_ fanout28/X VSS_uq7 VDD_uq6 _924_/D _924_/Q _939_/CLK sg13g2_dfrbpq_1
+XFILLER_10_82 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_786_ _786_/A _935_/Q _786_/Y VDD_uq6 VSS_uq7 sg13g2_nor2b_1
+X_855_ VSS_uq7 VDD_uq6 _852_/B _849_/B _856_/B _915_/Q sg13g2_a21oi_1
+XFILLER_19_91 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_112 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_156 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_19_189 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_25_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_627 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_49 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_332 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_258 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_640_ _662_/S _656_/S _643_/B VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_29_465 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_571_ _986_/Q _986_/D _597_/A VDD_uq6 VSS_uq7 sg13g2_nor2b_1
+XFILLER_16_126 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_336 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_321 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_12_310 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_398 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_838_ VDD_uq6 _909_/D _838_/A VSS_uq7 sg13g2_inv_1
+X_907_ fanout28/X VSS_uq7 VDD_uq6 _907_/D _907_/Q _939_/CLK sg13g2_dfrbpq_1
+X_769_ VDD_uq6 _769_/Y _782_/A VSS_uq7 sg13g2_inv_1
+XFILLER_22_107 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XIO_CORNER_NORTH_EAST_INST IOVDD IOVSS VDD_uq6 VSS_uq7 sg13g2_Corner
+XFILLER_26_446 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_652 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_619 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_13_118 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_317 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_623_ _624_/A _622_/X _605_/X _606_/Y _768_/A VDD_uq6 VSS_uq7 sg13g2_a22oi_1
+X_554_ _968_/Q _553_/A _556_/B VDD_uq6 VSS_uq7 sg13g2_nor2b_1
+X_485_ _946_/Q _487_/A _485_/X VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_13_652 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_490 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_166 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_144 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_12_173 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_23_438 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_39 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_221 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_405 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_637 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_125 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_397 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_221 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_468_ _775_/C _468_/C _792_/A _469_/B VDD_uq6 VSS_uq7 sg13g2_nand3_1
+XFILLER_27_91 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_537_ _819_/B _537_/B _960_/D VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_606_ VSS_uq7 VDD_uq6 _887_/Q _625_/D _606_/Y _934_/Q sg13g2_a21oi_1
+XFILLER_20_408 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_276 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_453 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_4_40 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_279 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_38 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_2_117 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_508 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_29 VDD_uq6 VSS_uq7 sg13g2_fill_2
+Xfanout50 _485_/X _882_/CLK VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_6_445 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_452 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_7 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_585 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_238 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_327 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_24_566 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_588 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_349 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_205 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_871_ fanout38/X VSS_uq7 VDD_uq6 _871_/D _871_/Q _891_/CLK sg13g2_dfrbpq_1
+X_940_ _494_/C VSS_uq7 VDD_uq6 _940_/D _941_/D _941_/CLK sg13g2_dfrbpq_1
+XFILLER_15_533 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_242 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_271 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_21_514 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_647 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_102 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_8_518 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_503 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_245 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_854_ _925_/Q _854_/B _856_/A VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_923_ fanout33/X VSS_uq7 VDD_uq6 _923_/D _923_/Q _937_/CLK sg13g2_dfrbpq_1
+X_785_ _785_/Y _769_/Y _463_/C _760_/Y _619_/B VDD_uq6 VSS_uq7 sg13g2_a22oi_1
+XFILLER_19_70 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_591 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_15_374 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_385 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_18_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_116 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_355 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_15_28 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_388 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_237 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_444 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_105 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_570_ _570_/A _569_/Y _973_/D VDD_uq6 VSS_uq7 sg13g2_nor2b_1
+XFILLER_12_377 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_768_ _782_/A _768_/A _780_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+X_837_ _838_/A _847_/C _836_/X _829_/B _909_/Q VDD_uq6 VSS_uq7 sg13g2_a22oi_1
+X_906_ fanout28/X VSS_uq7 VDD_uq6 _906_/D _906_/Q _912_/CLK sg13g2_dfrbpq_1
+XFILLER_11_7 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_699_ _744_/A _699_/A _699_/B VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+XFILLER_7_84 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_425 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_631 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_622_ _625_/C _768_/A _622_/X VDD_uq6 VSS_uq7 sg13g2_xor2_1
+XFILLER_13_631 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_620 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_484_ _893_/Q _484_/B _514_/C _484_/X VDD_uq6 VSS_uq7 sg13g2_or3_1
+X_553_ _553_/A _553_/B _967_/D VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_17_436 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_123 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_152 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_23_417 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_29 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_26_277 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_200 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_634 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_104 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_605_ _625_/D _605_/B _605_/X VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_17_255 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_467_ _781_/D _767_/B _468_/C VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_536_ _537_/B _960_/Q _541_/D VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+XFILLER_9_498 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_192 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_96 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_258 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_619 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_542 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_553 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_27_520 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_531 VDD_uq6 VSS_uq7 sg13g2_fill_1
+Xfanout51 _485_/X _891_/CLK VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout40 fanout41/X fanout40/X VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_6_402 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_413 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_10_431 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_663 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_18_564 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_520 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_519_ _519_/Y _519_/A _519_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XFILLER_9_295 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_291 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_217 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_490 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_870_ fanout38/X VSS_uq7 VDD_uq6 _870_/D _870_/Q _891_/CLK sg13g2_dfrbpq_1
+XFILLER_15_512 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_361 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_15_589 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_250 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_221 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_298 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_42 VDD_uq6 VSS_uq7 sg13g2_decap_4
+Xsg13g2_IOPadIn_clk _487_/A IOVDD IOVSS clk_PAD VDD_uq6 VSS_uq7 sg13g2_IOPadOut16mA
+XFILLER_25_309 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_394 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_29 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_49 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_626 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_224 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_784_ _755_/Y VDD_uq6 _888_/D VSS_uq7 _778_/Y _783_/Y sg13g2_o21ai_1
+X_922_ fanout34/X VSS_uq7 VDD_uq6 _922_/D _922_/Q _937_/CLK sg13g2_dfrbpq_1
+X_853_ _850_/B _914_/Q _852_/Y _914_/D VDD_uq6 VSS_uq7 sg13g2_a21o_1
+XFILLER_15_353 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_169 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_574 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_7_563 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_607 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_21_367 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_423 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_651 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_356 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_577 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_905_ fanout28/X VSS_uq7 VDD_uq6 _905_/D _943_/D _912_/CLK sg13g2_dfrbpq_1
+X_767_ _781_/A _767_/B _780_/B VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_836_ _839_/C _909_/Q _836_/X VDD_uq6 VSS_uq7 sg13g2_xor2_1
+X_698_ _699_/A _699_/B _702_/A VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_7_63 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_404 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_39 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_175 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_186 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_1_514 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_286 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_264 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_231 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_29_220 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_415 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_621_ VDD_uq6 _870_/D _621_/A VSS_uq7 sg13g2_inv_1
+X_552_ _555_/D _966_/Q _967_/Q _553_/B VDD_uq6 VSS_uq7 sg13g2_a21o_1
+XFILLER_8_102 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_131 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_61 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_459 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_483_ _491_/C _521_/B _514_/C VDD_uq6 VSS_uq7 sg13g2_nor2b_1
+XFILLER_9_647 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_341 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_175 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_4_396 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_819_ _819_/B _819_/A _903_/D VDD_uq6 VSS_uq7 sg13g2_xor2_1
+XFILLER_26_256 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_613 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_484 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_366 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_27_60 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_535_ _541_/D _535_/B _535_/C _535_/D _819_/B VDD_uq6 VSS_uq7 sg13g2_and4_1
+X_604_ _934_/Q _887_/Q _605_/B VDD_uq6 VSS_uq7 sg13g2_nor2b_1
+X_466_ _767_/B _715_/A _710_/A VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XFILLER_9_433 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_444 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_9_477 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_495 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_17_289 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_171 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_488 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_4_75 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_226 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_23_237 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_598 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout52 _485_/X _889_/CLK VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout41 _479_/X fanout41/X VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout30 fanout32/X _494_/C VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_10_410 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_226 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_642 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_487 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_1_163 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_543 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_518_ _935_/Q _742_/A _519_/B VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_449_ VDD_uq6 _580_/C _980_/Q VSS_uq7 sg13g2_inv_1
+XFILLER_9_274 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_270 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_524 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_3_428 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_7 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_307 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_568 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_373 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_340 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_2_483 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_277 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_21 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_605 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_28 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_354 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_582 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_12_549 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_203 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_921_ fanout33/X VSS_uq7 VDD_uq6 _921_/D _921_/Q _938_/CLK sg13g2_dfrbpq_1
+XFILLER_10_96 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_783_ _783_/Y _935_/Q _783_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+X_852_ _852_/A _852_/B _852_/C _852_/Y VDD_uq6 VSS_uq7 sg13g2_nor3_1
+XFILLER_19_126 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_310 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_11_582 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_7_586 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_542 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_192 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_346 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_479 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_29_402 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_630 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_523 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_4_589 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_556 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_904_ fanout28/X VSS_uq7 VDD_uq6 _904_/D _904_/Q _912_/CLK sg13g2_dfrbpq_1
+X_766_ _766_/Y _619_/B _765_/X _615_/B _780_/A VDD_uq6 VSS_uq7 sg13g2_a22oi_1
+X_697_ _699_/B _706_/A _697_/B VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+X_835_ _835_/A _841_/A _847_/C VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_15_184 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_7_42 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_0 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XIO_CORNER_SOUTH_EAST_INST IOVDD IOVSS VDD_uq6 VSS_uq7 sg13g2_Corner
+XFILLER_29_243 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_551_ _967_/Q _555_/D _966_/Q _553_/A VDD_uq6 VSS_uq7 sg13g2_nand3_1
+X_620_ _621_/A _619_/Y _605_/X _606_/Y _694_/A VDD_uq6 VSS_uq7 sg13g2_a22oi_1
+XFILLER_12_154 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_482_ _521_/B _808_/A _899_/Q VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XFILLER_16_40 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_84 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_375 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_320 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_818_ _954_/D _597_/A _818_/S _902_/D VDD_uq6 VSS_uq7 sg13g2_mux2_1
+X_749_ _933_/Q _885_/Q _749_/Y VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_26_235 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_463 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_419 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_139 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_323 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_465_ _771_/A _618_/B _625_/C VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_534_ _967_/Q _969_/Q _534_/C _534_/D _535_/D VDD_uq6 VSS_uq7 sg13g2_nor4_1
+X_603_ _603_/A _603_/B _974_/D VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_13_441 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_13_474 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_54 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_21 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_205 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_290 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_577 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_205 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout42 _487_/X _931_/CLK VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout31 fanout32/X fanout31/X VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_22_282 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_466 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_249 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout53 _903_/Q _819_/A VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout20 _867_/Q _761_/A VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_2_665 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_2_610 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_6_459 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_599 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_517_ _936_/D _517_/A _517_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+X_448_ VDD_uq6 _713_/A _891_/Q VSS_uq7 sg13g2_inv_1
+XFILLER_9_253 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_470 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_219 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_547 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_352 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_62 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_201 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_6_256 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_241 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_10_296 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_7 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_462 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_77 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_18_352 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_539 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_528 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xsg13g2_IOPadAnalog_sc_vout IOVDD IOVSS sc_vout_PAD sg13g2_IOPadAnalog_sc_vout/padres
++ VDD_uq6 VSS_uq7 sg13g2_IOPadAnalog
+XFILLER_28_138 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_517 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_528 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_24_333 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_561 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_920_ fanout34/X VSS_uq7 VDD_uq6 _920_/D _920_/Q _937_/CLK sg13g2_dfrbpq_1
+XFILLER_3_259 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_851_ _850_/Y VDD_uq6 _913_/D VSS_uq7 _913_/Q _852_/C sg13g2_o21ai_1
+XFILLER_10_42 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_75 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_782_ _782_/B _782_/C _782_/A _783_/B VDD_uq6 VSS_uq7 sg13g2_nand3_1
+XFILLER_27_171 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_84 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_105 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_322 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_7_521 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_281 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_18_171 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_325 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XIO_CORNER_NORTH_WEST_INST IOVDD IOVSS VDD_uq6 VSS_uq7 sg13g2_Corner
+XFILLER_17_609 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_29_458 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_119 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_74 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_21_30 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_4_502 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_329 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_834_ _829_/B _908_/Q _833_/Y _908_/D VDD_uq6 VSS_uq7 sg13g2_a21o_1
+X_903_ fanout25/X VSS_uq7 VDD_uq6 _903_/D _903_/Q _487_/A sg13g2_dfrbpq_1
+X_765_ _764_/Y _757_/A _763_/A _765_/X VDD_uq6 VSS_uq7 sg13g2_a21o_1
+XFILLER_16_620 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_696_ _697_/B _705_/B _705_/C VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XFILLER_7_21 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_351 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_7_340 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_98 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_373 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_16_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_645 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_439 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_111 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_19_480 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_155 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_550_ _555_/D _966_/Q _966_/D VDD_uq6 VSS_uq7 sg13g2_xor2_1
+X_481_ VSS_uq7 VDD_uq6 _491_/C _490_/B _807_/A sg13g2_or2_1
+XFILLER_13_645 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_605 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_25_483 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_137 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_159 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_148 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_12_166 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_593 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_817_ _805_/Y VDD_uq6 _901_/D VSS_uq7 _949_/Q _450_/Y sg13g2_o21ai_1
+X_748_ VSS_uq7 VDD_uq6 _726_/X _747_/Y _884_/D _746_/Y sg13g2_a21oi_1
+X_679_ _866_/Q _679_/B _730_/A VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_26_214 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_659 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_442 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_420 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_118 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_602_ _602_/A _602_/B _985_/D VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_533_ _534_/D _968_/Q _965_/Q VDD_uq6 VSS_uq7 sg13g2_nand2b_1
+X_464_ _775_/A _775_/C _736_/A _618_/B VDD_uq6 VSS_uq7 sg13g2_nand3_1
+XFILLER_17_214 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_225 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_5_663 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_8_490 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_567 VDD_uq6 VSS_uq7 sg13g2_decap_4
+Xfanout10 _873_/Q _715_/A VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout21 fanout22/X fanout21/X VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout32 _479_/X fanout32/X VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_22_261 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout43 fanout47/X _912_/CLK VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_10_445 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_42 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_97 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout54 _903_/Q _986_/CLK VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_18_578 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_534 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_447_ VDD_uq6 _712_/B _688_/B VSS_uq7 sg13g2_inv_1
+X_516_ _517_/B _936_/Q _625_/D VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XFILLER_9_232 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_559 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_331 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_15_526 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_235 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_275 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_10_264 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_496 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_441 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_507 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_21 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_781_ _781_/B _781_/C _781_/A _782_/C VDD_uq6 VSS_uq7 _781_/D sg13g2_nand4_1
+XFILLER_3_238 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_850_ _850_/Y _913_/Q _850_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XFILLER_28_662 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_27_150 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_63 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_367 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_595 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_2_260 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_979_ fanout21/X VSS_uq7 VDD_uq6 _979_/D _979_/Q _819_/A sg13g2_dfrbpq_1
+XFILLER_25_109 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_208 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_25_610 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_437 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_665 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_12_304 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_4_525 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_764_ _764_/Y _764_/B _756_/B VDD_uq6 VSS_uq7 sg13g2_nand2b_1
+X_833_ _839_/C _841_/A _833_/C _833_/Y VDD_uq6 VSS_uq7 sg13g2_nor3_1
+X_902_ _902__57/L_HI VSS_uq7 VDD_uq6 _902_/D _954_/D _986_/CLK sg13g2_dfrbpq_1
+XFILLER_16_665 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_695_ _691_/B _692_/A _891_/Q _706_/A VDD_uq6 VSS_uq7 sg13g2_a21o_1
+Xsg13g2_IOPadIn_trigger IOVDD IOVSS _494_/B trigger_PAD VDD_uq6 VSS_uq7 sg13g2_IOPadIn
+XFILLER_7_77 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_591 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_580 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_26_418 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_624 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_624 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_602 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_462 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_75 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_480_ _808_/A _899_/Q _490_/B VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_17_429 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_4_300 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_116 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_145 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_355 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_747_ _747_/Y _747_/A _747_/B VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+XFILLER_0_572 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_816_ VSS_uq7 VDD_uq6 _813_/B _815_/Y _900_/D _809_/C sg13g2_a21oi_1
+X_678_ _678_/B _678_/C _761_/A _682_/A VDD_uq6 VSS_uq7 sg13g2_nand3_1
+XFILLER_16_495 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_193 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_627 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_498 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_601_ _601_/B _985_/Q _602_/B VDD_uq6 VSS_uq7 sg13g2_xor2_1
+X_463_ _699_/A _463_/C _756_/B _781_/D VDD_uq6 VSS_uq7 sg13g2_nand3_1
+XFILLER_25_281 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_532_ _971_/Q _972_/Q _970_/Q _534_/C VDD_uq6 VSS_uq7 _973_/Q sg13g2_nand4_1
+XFILLER_17_248 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_642 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_141 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_185 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_89 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_270 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xsg13g2_IOPadAnalog_vramp IOVDD IOVSS vramp_PAD sg13g2_IOPadAnalog_vramp/padres VDD_uq6
++ VSS_uq7 sg13g2_IOPadAnalog
+XFILLER_27_513 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_535 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout11 _872_/Q _710_/A VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_22_240 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_402 VDD_uq6 VSS_uq7 sg13g2_decap_4
+Xfanout22 fanout27/X fanout22/X VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout44 fanout47/X _939_/CLK VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout33 fanout34/X fanout33/X VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout55 _900_/Q _807_/A VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_10_424 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_21 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_656 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_144 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_18_557 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_513 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_515_ _517_/A _934_/Q _515_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+X_446_ VDD_uq6 _446_/Y _892_/Q VSS_uq7 sg13g2_inv_1
+XFILLER_9_211 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_284 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_288 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_387 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_15_505 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_420 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_0 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_6_214 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_287 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_1_35 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_46 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_18_387 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_582 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_29_619 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_368 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_24_313 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_20_596 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_217 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_780_ _780_/B _780_/C _780_/A _782_/B VDD_uq6 VSS_uq7 sg13g2_nand3_1
+XFILLER_19_42 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_630 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_27_195 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_556 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_663 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_19_641 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_294 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_978_ fanout21/X VSS_uq7 VDD_uq6 _978_/D _978_/Q _986_/CLK sg13g2_dfrbpq_1
+XFILLER_29_416 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_644 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_132 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_20_371 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_12_349 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_76 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_901_ _818_/S VSS_uq7 VDD_uq6 _901_/D _975_/D _487_/A sg13g2_dfrbpq_1
+X_763_ VDD_uq6 _763_/Y _763_/A VSS_uq7 sg13g2_inv_1
+X_832_ VSS_uq7 VDD_uq6 _906_/Q _907_/Q _833_/C _908_/Q sg13g2_a21oi_1
+X_694_ _740_/B _694_/A _694_/B VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+XFILLER_16_633 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_15_110 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_7_56 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_382 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_168 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_279 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_257 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_213 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_408 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_441 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_124 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_54 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_98 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_618 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_4_334 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_551 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_389 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_746_ _933_/Q _884_/Q _746_/Y VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_28_290 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_677_ _727_/B _677_/C _713_/A _678_/C VDD_uq6 VSS_uq7 sg13g2_nand3_1
+X_815_ _940_/D _815_/B _815_/Y VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_16_452 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_161 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_7_172 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_249 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_606 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_477 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_359 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_531_ _960_/Q _962_/Q _961_/Q _964_/Q _535_/C VDD_uq6 VSS_uq7 sg13g2_nor4_1
+XFILLER_27_53 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_600_ _984_/D _603_/A _600_/B _601_/B VDD_uq6 VSS_uq7 sg13g2_and3_1
+X_462_ _757_/A _694_/A _463_/C VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_25_260 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_426 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_488 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_499 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_5_665 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_5_621 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_164 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_120 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_68 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_35 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_23_219 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_729_ _742_/A _879_/Q _729_/Y VDD_uq6 VSS_uq7 sg13g2_nor2_1
+Xfanout12 _871_/Q _699_/A VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout45 fanout47/X _938_/CLK VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout34 fanout41/X fanout34/X VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_14_219 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout56 _898_/Q _808_/A VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout23 fanout26/X _818_/S VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_22_296 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_635 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_514_ _941_/Q _514_/B _514_/C _515_/B VDD_uq6 VSS_uq7 sg13g2_nor3_1
+X_445_ VDD_uq6 _955_/D _955_/Q VSS_uq7 sg13g2_inv_1
+XFILLER_9_267 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_263 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_484 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_24_528 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_23_572 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_24_76 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_24_21 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_476 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_14 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_333 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_14_561 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_281 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_575 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_347 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_902__57 VDD_uq6 VSS_uq7 _902__57/L_HI sg13g2_tiehi
+XFILLER_20_586 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_10_56 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_89 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_21 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_98 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_119 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_303 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_575 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_542 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_553 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_7_579 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_535 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_7 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_977_ fanout21/X VSS_uq7 VDD_uq6 _977_/D _977_/Q _986_/CLK sg13g2_dfrbpq_1
+XFILLER_18_185 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_339 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_391 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_623 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_317 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_4_516 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_11 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_4_549 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_831_ _829_/Y VDD_uq6 _907_/D VSS_uq7 _841_/A _830_/Y sg13g2_o21ai_1
+X_900_ fanout31/X VSS_uq7 VDD_uq6 _900_/D _900_/Q _487_/A sg13g2_dfrbpq_1
+X_762_ _764_/B _776_/A _779_/B _763_/A VDD_uq6 VSS_uq7 sg13g2_a21o_1
+X_693_ _693_/Y _694_/A _694_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XIO_CORNER_SOUTH_WEST_INST IOVDD IOVSS VDD_uq6 VSS_uq7 sg13g2_Corner
+XFILLER_15_177 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_35 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_582 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_19_494 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_22_659 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_236 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_659 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_497 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_33 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_814_ VSS_uq7 VDD_uq6 _813_/B _812_/Y _899_/D _813_/Y sg13g2_a21oi_1
+X_745_ VSS_uq7 VDD_uq6 _726_/X _744_/X _883_/D _742_/Y sg13g2_a21oi_1
+X_676_ _690_/C VDD_uq6 _678_/B VSS_uq7 _891_/Q _679_/B sg13g2_o21ai_1
+XFILLER_8_663 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_7_140 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_191 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XIO_BOND_sg13g2_IOPadAnalog_vramp vramp_PAD bondpad_70x70_novias
+XFILLER_26_228 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_456 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_434 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_19_280 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_461_ _761_/A _866_/Q _775_/C VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_27_98 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_21 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_530_ _966_/Q _963_/Q _535_/B VDD_uq6 VSS_uq7 sg13g2_nor2b_1
+XFILLER_13_434 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_456 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_13_467 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_600 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_110 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_47 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_14 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_382 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_371 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_659_ _657_/X _705_/B _655_/X _727_/B VDD_uq6 VSS_uq7 sg13g2_a21o_1
+X_728_ VSS_uq7 VDD_uq6 _726_/X _727_/Y _878_/D _639_/Y sg13g2_a21oi_1
+Xfanout13 _871_/Q _768_/A VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout24 fanout26/X fanout24/X VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout35 fanout36/X fanout35/X VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_22_275 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout46 fanout47/X _937_/CLK VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_10_459 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_56 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_603 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_614 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_513_ _929_/D _513_/A _797_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XFILLER_13_242 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_231 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_444_ VDD_uq6 _514_/B _941_/D VSS_uq7 sg13g2_inv_1
+XFILLER_9_246 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_463 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_570 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_5_90 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_551 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_367 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_27_345 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_312 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_55 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_249 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_245 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_2_455 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_312 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_345 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_326 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_554 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_35 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_68 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_77 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_164 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_315 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_514 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_274 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_976_ fanout21/X VSS_uq7 VDD_uq6 _976_/D _976_/Q _986_/CLK sg13g2_dfrbpq_1
+XFILLER_19_665 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_19_621 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_7 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_318 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_370 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_67 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_23 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_761_ _761_/A _866_/Q _761_/C _764_/B VDD_uq6 VSS_uq7 sg13g2_nor3_1
+X_830_ _830_/Y _906_/Q _907_/Q VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+XFILLER_16_602 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_462 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_692_ _692_/B _692_/A _694_/B VDD_uq6 VSS_uq7 sg13g2_xor2_1
+XFILLER_7_14 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_333 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_362 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_959_ fanout24/X VSS_uq7 VDD_uq6 _959_/D _959_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_22_638 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_605 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_21_115 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_21_104 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_473 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_148 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XIO_BOND_sg13g2_IOPadIn_trigger trigger_PAD bondpad_70x70_novias
+XFILLER_16_12 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_13_638 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_616 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_9_609 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_25_476 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_159 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_314 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_20_170 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_586 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_744_ _744_/B _744_/A _744_/X VDD_uq6 VSS_uq7 sg13g2_xor2_1
+X_813_ _899_/Q _813_/B _813_/Y VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_675_ _684_/B _775_/A _675_/Y VDD_uq6 VSS_uq7 sg13g2_nor2b_1
+XFILLER_7_163 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_26_207 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_402 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_460_ VSS_uq7 VDD_uq6 _925_/Q _459_/X _937_/D _820_/A sg13g2_a21oi_1
+XFILLER_25_295 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_656 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_199 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_0_350 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_727_ _727_/Y _866_/Q _727_/B VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+X_658_ VSS_uq7 VDD_uq6 _705_/B _657_/X _679_/B _655_/X sg13g2_a21oi_1
+X_589_ VSS_uq7 VDD_uq6 _981_/Q _593_/C _589_/Y _597_/A sg13g2_a21oi_1
+XFILLER_16_284 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_8_483 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_549 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_27_527 VDD_uq6 VSS_uq7 sg13g2_decap_4
+Xfanout25 fanout26/X fanout25/X VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout36 fanout41/X fanout36/X VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_22_254 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_409 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_10_438 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout47 _486_/X fanout47/X VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_13_35 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout14 _870_/Q _694_/A VDD_uq6 VSS_uq7 sg13g2_buf_1
+XIO_BOND_sg13g2_IOPadIOVdd_io IOVDD bondpad_70x70_novias
+XFILLER_18_527 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_593 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_512_ _797_/B _929_/Q _512_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+X_443_ VDD_uq6 _847_/B _912_/Q VSS_uq7 sg13g2_inv_1
+XFILLER_9_225 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_210 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_442 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_298 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_180 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_497 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_15_519 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_596 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_78 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_6_228 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_202 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_235 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_10_257 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_434 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_390 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_272 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_10_14 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_143 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_56 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_522 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_393 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_4_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_600 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_286 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_975_ fanout25/X VSS_uq7 VDD_uq6 _975_/D _986_/D _986_/CLK sg13g2_dfrbpq_1
+XFILLER_25_603 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_658 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_113 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_760_ VDD_uq6 _760_/Y _761_/C VSS_uq7 sg13g2_inv_1
+X_691_ _891_/Q _691_/B _692_/B VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_15_146 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_7_312 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_396 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_551 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_889_ fanout39/X VSS_uq7 VDD_uq6 _889_/D _889_/Q _889_/CLK sg13g2_dfrbpq_1
+X_958_ fanout24/X VSS_uq7 VDD_uq6 _958_/D _958_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_19_452 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_617 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_29_227 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_25_455 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_68 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_661 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_8_109 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_138 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_359 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_4_348 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_565 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_532 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_743_ _693_/Y VDD_uq6 _744_/B VSS_uq7 _740_/A _740_/B sg13g2_o21ai_1
+X_674_ _674_/B _690_/D _684_/B VDD_uq6 VSS_uq7 sg13g2_xor2_1
+X_812_ VSS_uq7 VDD_uq6 _898_/Q _815_/B _812_/Y _514_/C sg13g2_a21oi_1
+XFILLER_16_488 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_665 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_8_621 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_186 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_392 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_293 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_414 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_27_67 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_274 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_458 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_5_635 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_480 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_178 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_134 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_591 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_657_ _761_/A _656_/X _662_/S _657_/X VDD_uq6 VSS_uq7 sg13g2_mux2_1
+X_726_ _726_/X _933_/Q _726_/B _726_/C VDD_uq6 VSS_uq7 sg13g2_and3_1
+XFILLER_16_230 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_588_ _602_/A _593_/C _588_/C _980_/D VDD_uq6 VSS_uq7 sg13g2_nor3_1
+XFILLER_8_440 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_263 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_506 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout15 _870_/Q _780_/A VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout26 fanout27/X fanout26/X VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout37 fanout41/X fanout37/X VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_22_233 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout48 _882_/CLK _941_/CLK VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_10_417 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_14 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_649 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_7 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_511_ _931_/D _511_/B _931_/Q VDD_uq6 VSS_uq7 sg13g2_nand2b_1
+XFILLER_18_506 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_26_572 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_277 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_442_ VDD_uq6 _442_/Y _951_/D VSS_uq7 sg13g2_inv_1
+XFILLER_5_421 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_709_ _709_/Y _710_/A _710_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XFILLER_27_369 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_2_413 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_207 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_28 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_575 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_586 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_14_542 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_5_251 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_295 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_306 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_317 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_19_35 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_634 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_27_122 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_549 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_501 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_243 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_656 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_634 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_974_ fanout27/X VSS_uq7 VDD_uq6 _974_/D _974_/Q _986_/CLK sg13g2_dfrbpq_1
+XFILLER_18_100 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_18_199 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_582 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_409 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_637 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_125 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_82 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_169 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_136 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_20_364 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_342 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_690_ _690_/A _727_/B _690_/C _690_/D _691_/B VDD_uq6 VSS_uq7 sg13g2_nor4_1
+XFILLER_23_191 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_7_49 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_375 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_364 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_3_530 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_957_ _818_/S VSS_uq7 VDD_uq6 _957_/D _957_/Q _487_/A sg13g2_dfrbpq_1
+X_888_ fanout39/X VSS_uq7 VDD_uq6 _888_/D _888_/Q _889_/CLK sg13g2_dfrbpq_1
+XIO_BOND_sg13g2_IOPadOut_state_out_0 state_out_0_PAD bondpad_70x70_novias
+XFILLER_19_431 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_191 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_206 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_412 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_25_401 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_47 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_640 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_544 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_511 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_327 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_811_ _810_/Y _813_/B _809_/A _898_/D VDD_uq6 VSS_uq7 sg13g2_a21o_1
+XFILLER_28_283 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_742_ _742_/A _883_/Q _742_/Y VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_673_ _736_/A _736_/B _700_/A VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_16_423 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_16_412 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_154 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_81 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_319 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_27_35 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XIO_BOND_sg13g2_IOPadVss_core VSS_uq7 bondpad_70x70_novias
+XFILLER_25_253 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_614 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_28 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_396 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_570 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_656_ _756_/B _757_/A _656_/S _656_/X VDD_uq6 VSS_uq7 sg13g2_mux2_1
+X_725_ _724_/C VDD_uq6 _726_/C VSS_uq7 _724_/A _724_/B sg13g2_o21ai_1
+X_587_ _980_/Q _587_/B _588_/C VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_16_242 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_481 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_297 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_0 VDD_uq6 VSS_uq7 sg13g2_fill_2
+Xfanout16 _736_/A _757_/A VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout27 _479_/X fanout27/X VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout38 fanout40/X fanout38/X VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout49 _882_/CLK _935_/CLK VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_22_212 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_289 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_551 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_441_ VDD_uq6 _519_/A _934_/Q VSS_uq7 sg13g2_inv_1
+X_510_ _929_/Q VDD_uq6 _511_/B VSS_uq7 _509_/A _509_/B sg13g2_o21ai_1
+XFILLER_13_256 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_400 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_477 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_595 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_708_ _710_/B _713_/B _708_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+X_639_ _742_/A _878_/Q _639_/Y VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_8_260 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_5_71 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_5_60 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_359 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_23_565 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_69 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_14 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_469 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_326 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_554 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_337 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_18_359 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_14_598 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_524 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_20_568 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_591 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_49 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_14 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_178 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_27_112 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_7_528 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_362 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_973_ _818_/S VSS_uq7 VDD_uq6 _973_/D _973_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_2_288 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_2_222 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_384 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_178 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_561 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_50 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XIO_BOND_sg13g2_IOPadIn_clk clk_PAD bondpad_70x70_novias
+XFILLER_20_321 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_509 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_616 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_24_660 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_11_332 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_7_28 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_347 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_956_ _818_/S VSS_uq7 VDD_uq6 _956_/D _956_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_11_81 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_887_ fanout37/X VSS_uq7 VDD_uq6 _887_/D _887_/Q _935_/CLK sg13g2_dfrbpq_1
+XIO_BOND_sg13g2_IOPadOut_state_out_1 state_out_1_PAD bondpad_70x70_novias
+XFILLER_16_7 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_19_421 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_19_487 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_619 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_14_170 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_26 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_151 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_810_ VSS_uq7 VDD_uq6 _900_/Q _899_/Q _810_/Y _808_/A sg13g2_a21oi_1
+X_741_ VSS_uq7 VDD_uq6 _726_/X _740_/Y _882_/D _739_/Y sg13g2_a21oi_1
+X_672_ _672_/B _690_/A _736_/B VDD_uq6 VSS_uq7 sg13g2_xor2_1
+XFILLER_12_663 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_12_641 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_8_656 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_91 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_3_350 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_133 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_184 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_939_ fanout29/X VSS_uq7 VDD_uq6 _939_/D _939_/Q _939_/CLK sg13g2_dfrbpq_1
+XFILLER_22_449 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_427 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_273 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_14 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_232 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_427 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xsg13g2_IOPadIOVdd_io IOVDD IOVSS VDD_uq6 VSS_uq7 sg13g2_IOPadIOVdd
+XFILLER_4_103 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_724_ _724_/A _724_/B _724_/C _726_/B VDD_uq6 VSS_uq7 sg13g2_or3_1
+XFILLER_0_364 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_655_ _688_/B _655_/B _655_/X VDD_uq6 VSS_uq7 sg13g2_and2_1
+X_586_ _980_/Q _587_/B _593_/C VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_8_497 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout39 fanout40/X fanout39/X VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_22_268 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout17 _869_/Q _736_/A VDD_uq6 VSS_uq7 sg13g2_buf_1
+Xfanout28 fanout32/X fanout28/X VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_1_106 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_13_49 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_508 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_26_530 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_440_ VDD_uq6 _513_/A _930_/Q VSS_uq7 sg13g2_inv_1
+XFILLER_13_224 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_239 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_235 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_5_456 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_707_ _706_/C _706_/A _706_/B _708_/B VDD_uq6 VSS_uq7 sg13g2_a21o_1
+XFILLER_0_161 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_194 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_563 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_574 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_638_ VSS_uq7 VDD_uq6 _434_/Y _754_/S _877_/D _519_/Y sg13g2_a21oi_1
+X_569_ VSS_uq7 VDD_uq6 _973_/Q _568_/B _569_/Y _819_/B sg13g2_a21oi_1
+XFILLER_8_294 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_290 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_83 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_533 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_27_338 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_27_305 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_327 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_23_544 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_48 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_216 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_2_448 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_305 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_242 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_14_81 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_481 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_20_547 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_10_28 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_157 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_341 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_972_ fanout26/X VSS_uq7 VDD_uq6 _972_/D _972_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_2_267 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_201 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_614 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_363 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_617 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_21_16 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_300 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_466 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_11_355 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_326 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_598 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_565 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_886_ _494_/C VSS_uq7 VDD_uq6 _886_/D _886_/Q _941_/CLK sg13g2_dfrbpq_1
+XFILLER_19_400 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_955_ _818_/S VSS_uq7 VDD_uq6 _955_/D _955_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_22_609 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XIO_BOND_sg13g2_IOPadOut_state_out_2 state_out_2_PAD bondpad_70x70_novias
+XFILLER_19_466 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_13_609 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_469 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_196 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_307 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_163 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_579 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_740_ _740_/Y _740_/A _740_/B VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+XFILLER_28_230 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_28_241 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_671_ VSS_uq7 VDD_uq6 _713_/A _690_/D _672_/B _674_/B sg13g2_a21oi_1
+XFILLER_12_620 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_635 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_22_70 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_112 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_130 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_869_ fanout36/X VSS_uq7 VDD_uq6 _869_/D _869_/Q _935_/CLK sg13g2_dfrbpq_1
+X_938_ fanout29/X VSS_uq7 VDD_uq6 _939_/Q _938_/Q _938_/CLK sg13g2_dfrbpq_1
+XFILLER_15_491 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_211 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_288 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_494 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_649 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_148 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_0_321 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_654_ _662_/S _694_/A _710_/A _699_/A _715_/A _656_/S _655_/B VDD_uq6 VSS_uq7 sg13g2_mux4_1
+X_723_ _724_/C _792_/A _723_/B VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+X_585_ _602_/A _587_/B _585_/C _979_/D VDD_uq6 VSS_uq7 sg13g2_nor3_1
+XFILLER_16_277 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_454 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_8_476 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout18 _775_/A _756_/B VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_22_247 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout29 fanout32/X fanout29/X VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_13_28 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_586 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_203 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_435 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_218 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_140 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_706_ _706_/B _706_/C _706_/A _713_/B VDD_uq6 VSS_uq7 sg13g2_nand3_1
+X_637_ _936_/Q _637_/B _754_/S VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_568_ _973_/Q _568_/B _570_/A VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_499_ _852_/C _925_/Q _835_/A VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XFILLER_23_501 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_589 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_228 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_427 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_339 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_14_512 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_523 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_26_383 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_60 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_276 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_5_265 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_372 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_394 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_136 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_49 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_515 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_386 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_397 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_971_ fanout25/X VSS_uq7 VDD_uq6 _971_/D _971_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_19_648 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_25_70 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_342 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_592 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_596 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_530 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_2_96 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_41 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_24_106 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_356 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_16_629 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_15_139 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_305 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_389 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_544 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xsg13g2_IOPadOut_state_out_0 _808_/A IOVDD IOVSS state_out_0_PAD VDD_uq6 VSS_uq7 sg13g2_IOPadOut16mA
+XFILLER_11_50 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_885_ fanout40/X VSS_uq7 VDD_uq6 _885_/D _885_/Q _891_/CLK sg13g2_dfrbpq_1
+X_954_ _818_/S VSS_uq7 VDD_uq6 _954_/D _954_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_19_445 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_448 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_654 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_665 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_20_120 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xsg13g2_IOPadVss_core IOVDD IOVSS VDD_uq6 VSS_uq7 sg13g2_IOPadVss
+XFILLER_0_558 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_525 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_670_ VSS_uq7 VDD_uq6 _679_/B _677_/C _674_/B _891_/Q sg13g2_a21oi_1
+XFILLER_28_297 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_16_459 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_12_665 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_12_643 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_8_614 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_179 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_385 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_799_ _895_/Q _799_/C _896_/Q _802_/B VDD_uq6 VSS_uq7 sg13g2_nand3_1
+X_868_ fanout38/X VSS_uq7 VDD_uq6 _868_/D _868_/Q _891_/CLK sg13g2_dfrbpq_1
+XFILLER_21_7 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_937_ fanout34/X VSS_uq7 VDD_uq6 _937_/D _937_/Q _937_/CLK sg13g2_dfrbpq_1
+XFILLER_19_231 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_19_286 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_470 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_95 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_267 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_628 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_473 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_451 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_462 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_4_127 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_300 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_584 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_653_ _710_/A _715_/A _755_/B _653_/X VDD_uq6 VSS_uq7 sg13g2_mux2_1
+X_722_ _713_/A VDD_uq6 _723_/B VSS_uq7 _713_/B _711_/Y sg13g2_o21ai_1
+XFILLER_16_223 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_584_ _979_/Q _584_/B _585_/C VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_16_256 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_650 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_433 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_182 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout19 _868_/Q _775_/A VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_22_226 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_565 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_292 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_5_414 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_631 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_705_ _705_/B _705_/C _713_/A _706_/C VDD_uq6 VSS_uq7 sg13g2_nand3_1
+XFILLER_29_381 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_636_ _517_/A VDD_uq6 _876_/D VSS_uq7 _519_/Y _635_/Y sg13g2_o21ai_1
+X_567_ _819_/B _567_/B _568_/B _972_/D VDD_uq6 VSS_uq7 sg13g2_nor3_1
+X_498_ _915_/Q _852_/B _500_/C VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_10_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_28 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_26_362 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_568 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_535 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_288 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_619_ _625_/C _619_/B _619_/Y VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_17_351 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_538 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_9_550 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_28 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_549 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_23_376 VDD_uq6 VSS_uq7 sg13g2_fill_1
+Xsg13g2_IOPadIn_sc_enable IOVDD IOVSS _484_/B sc_enable_PAD VDD_uq6 VSS_uq7 sg13g2_IOPadIn
+XFILLER_2_236 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_970_ fanout31/X VSS_uq7 VDD_uq6 _970_/D _970_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_14_321 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_137 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_571 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_398 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_64 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_2_75 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_291 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_20_335 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_173 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_23_184 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_523 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_953_ fanout32/X VSS_uq7 VDD_uq6 _953_/D _953_/Q _487_/A sg13g2_dfrbpq_1
+Xsg13g2_IOPadOut_state_out_1 _899_/Q IOVDD IOVSS state_out_1_PAD VDD_uq6 VSS_uq7 sg13g2_IOPadOut16mA
+XFILLER_11_95 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XIO_BOND_sg13g2_IOPadAnalog_sc_vref sc_vref_PAD bondpad_70x70_novias
+X_884_ fanout40/X VSS_uq7 VDD_uq6 _884_/D _884_/Q _891_/CLK sg13g2_dfrbpq_1
+XFILLER_15_652 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_151 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_184 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_361 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_633 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_504 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_147 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_198 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_936_ fanout36/X VSS_uq7 VDD_uq6 _936_/D _936_/Q _941_/CLK sg13g2_dfrbpq_1
+X_798_ _895_/D _798_/A _799_/C VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+XFILLER_14_7 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_867_ fanout36/X VSS_uq7 VDD_uq6 _867_/D _867_/Q _935_/CLK sg13g2_dfrbpq_1
+XFILLER_8_30 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_52 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_180 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_39 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_27_28 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_246 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_607 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_389 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_563 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_652_ _690_/A _650_/Y _651_/Y _711_/B _644_/Y VDD_uq6 VSS_uq7 sg13g2_a22oi_1
+X_721_ VSS_uq7 VDD_uq6 _709_/Y _715_/Y _724_/B _716_/Y sg13g2_a21oi_1
+X_583_ _979_/Q _584_/B _587_/B VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_16_202 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_412 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_474 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_94 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_161 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_919_ fanout33/X VSS_uq7 VDD_uq6 _919_/D _919_/Q _937_/CLK sg13g2_dfrbpq_1
+XFILLER_22_205 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_544 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_249 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_704_ _706_/B _705_/B _704_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XFILLER_0_175 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_17_522 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_360 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_93 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_635_ _876_/Q _637_/B _635_/Y VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_566_ _972_/Q _566_/B _568_/B VDD_uq6 VSS_uq7 sg13g2_and2_1
+X_497_ _820_/B _927_/Q _835_/A VDD_uq6 VSS_uq7 sg13g2_nand2b_1
+XFILLER_5_53 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_97 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_558 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_330 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_18_319 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_591 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_95 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_223 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_330 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_517 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_549_ _555_/D _549_/B _965_/D VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_618_ _771_/A _618_/B _619_/B VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_27_105 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_300 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_355 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_215 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_628 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_27_661 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_26_193 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_377 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_550 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_554 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_182 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_20_358 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_20_314 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_392 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_653 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_664 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_16_609 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_152 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_502 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_325 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_336 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_952_ _494_/C VSS_uq7 VDD_uq6 _953_/Q _952_/Q _487_/A sg13g2_dfrbpq_1
+X_883_ fanout40/X VSS_uq7 VDD_uq6 _883_/D _883_/Q _891_/CLK sg13g2_dfrbpq_1
+Xsg13g2_IOPadOut_state_out_2 _807_/A IOVDD IOVSS state_out_2_PAD VDD_uq6 VSS_uq7 sg13g2_IOPadOut16mA
+XFILLER_11_74 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_425 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_19_414 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_631 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_130 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_163 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_340 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_395 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_590 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_18_480 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_144 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_177 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_28_299 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_28_255 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_656 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_634 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_612 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_11_144 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_22_95 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_22_84 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_343 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_126 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_177 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_866_ fanout36/X VSS_uq7 VDD_uq6 _866_/D _866_/Q _935_/CLK sg13g2_dfrbpq_1
+X_935_ fanout37/X VSS_uq7 VDD_uq6 _935_/D _935_/Q _935_/CLK sg13g2_dfrbpq_1
+X_797_ _894_/D _894_/Q _797_/B VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+XFILLER_22_409 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_19_266 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_225 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_720_ VDD_uq6 VSS_uq7 _719_/B _747_/B _719_/A _703_/A _724_/A _703_/B sg13g2_a221oi_1
+XFILLER_0_357 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_335 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_29_542 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_651_ VSS_uq7 VDD_uq6 _666_/S _648_/X _651_/Y _688_/B sg13g2_a21oi_1
+X_582_ VSS_uq7 VDD_uq6 _602_/A _603_/B _597_/A sg13g2_or2_1
+XFILLER_17_51 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_497 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_3_140 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_849_ _850_/B _849_/A _849_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+X_918_ fanout34/X VSS_uq7 VDD_uq6 _918_/D _918_/Q _938_/CLK sg13g2_dfrbpq_1
+XFILLER_7_490 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_523 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_217 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xuut_soc_analog_top_wrapper _479_/A _487_/A _876_/Q _434_/Y _439_/Y _886_/Q _469_/A
++ _509_/A _484_/X _446_/Y _892_/Q _508_/A _508_/B _798_/A _796_/A uut_soc_analog_top_wrapper/VDD
++ uut_soc_analog_top_wrapper/SC_VREF uut_soc_analog_top_wrapper/VRAMP uut_soc_analog_top_wrapper/VDD1v5
++ uut_soc_analog_top_wrapper/VSS uut_soc_analog_top_wrapper/SC_VOUT uut_soc_analog_top_wrapper/SENSOR
++ SoC_Analog_Top
+XFILLER_1_622 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_449 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_703_ _703_/A _703_/B _747_/A VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_28_50 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_154 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_187 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_634_ _944_/D _519_/A _742_/A _875_/D VDD_uq6 VSS_uq7 sg13g2_a21o_1
+XFILLER_17_556 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_496_ _808_/A _808_/C _939_/D VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_565_ _972_/Q _566_/B _567_/B VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_5_21 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_221 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_12_283 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_76 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_537 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_23_526 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XIO_BOND_sg13g2_IOPadIn_sc_enable sc_enable_PAD bondpad_70x70_novias
+XFILLER_10_209 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_397 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_74 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_474 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_485 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_1_441 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_617_ VDD_uq6 _869_/D _617_/A VSS_uq7 sg13g2_inv_1
+X_479_ _479_/A _479_/B _479_/X VDD_uq6 VSS_uq7 sg13g2_and2_1
+X_548_ VSS_uq7 VDD_uq6 _964_/Q _547_/C _549_/B _965_/Q sg13g2_a21oi_1
+XFILLER_17_386 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_23_334 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_529 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_4_7 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_640 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_607 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_172 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_95 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_356 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_662 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_17_161 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_371 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_632 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_610 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_23_131 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_348 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_319 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_558 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_882_ fanout34/X VSS_uq7 VDD_uq6 _882_/D _882_/Q _882_/CLK sg13g2_dfrbpq_1
+X_951_ fanout25/X VSS_uq7 VDD_uq6 _951_/D _951_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_15_610 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_492 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_459 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_189 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XIO_BOND_sg13g2_IOPadVdd_core VDD_uq6 bondpad_70x70_novias
+XFILLER_8_639 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_8_628 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_495 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_7_105 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_123 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_63 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_322 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_796_ _796_/A _797_/B _799_/C VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_934_ fanout37/X VSS_uq7 VDD_uq6 _934_/D _934_/Q _935_/CLK sg13g2_dfrbpq_1
+XFILLER_3_399 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_865_ _923_/Q _885_/Q _865_/S _923_/D VDD_uq6 VSS_uq7 sg13g2_mux2_1
+XFILLER_15_484 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_21 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_26_0 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_25_204 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_487 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_521 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_650_ _650_/Y _650_/B _662_/S VDD_uq6 VSS_uq7 sg13g2_nand2b_1
+XFILLER_0_314 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_598 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_581_ _985_/Q _584_/B _581_/C _581_/D _603_/B VDD_uq6 VSS_uq7 sg13g2_and4_1
+XFILLER_12_421 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_30 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xsg13g2_IOPadIn_reset_n IOVDD IOVSS _479_/B reset_n_PAD VDD_uq6 VSS_uq7 sg13g2_IOPadIn
+XFILLER_8_447 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_469 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_664 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_3_196 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_779_ _780_/C _779_/B _867_/Q VDD_uq6 VSS_uq7 sg13g2_nand2b_1
+X_848_ _847_/Y VDD_uq6 _912_/D VSS_uq7 _847_/B _846_/A sg13g2_o21ai_1
+X_917_ fanout33/X VSS_uq7 VDD_uq6 _917_/D _917_/Q _938_/CLK sg13g2_dfrbpq_1
+XFILLER_26_579 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_502 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_428 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_133 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_633_ _934_/Q _633_/B _874_/D VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_702_ VSS_uq7 VDD_uq6 _703_/B _702_/B _702_/A sg13g2_or2_1
+XFILLER_29_395 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_200 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_495_ _808_/C _807_/A _899_/Q VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XFILLER_12_251 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_564_ _819_/B _564_/B _566_/B _971_/D VDD_uq6 VSS_uq7 sg13g2_nor3_1
+XFILLER_5_33 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_376 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_258 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_192 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_547_ _555_/D _964_/Q _965_/Q _547_/C VDD_uq6 VSS_uq7 sg13g2_and3_1
+XFILLER_17_365 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_616_ _617_/A _615_/X _605_/X _606_/Y _736_/A VDD_uq6 VSS_uq7 sg13g2_a22oi_1
+XFILLER_13_593 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_13_571 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_13_560 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_564 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_478_ _625_/D _936_/Q _933_/D VDD_uq6 VSS_uq7 sg13g2_nor2b_1
+XFILLER_27_129 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_508 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_151 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_63 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_501 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_14_335 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_585 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_589 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_523 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_534 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_2_89 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_34 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_641 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_140 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_349 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_427 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_23_198 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_110 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_537 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_21 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_11_43 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_950_ fanout27/X VSS_uq7 VDD_uq6 _974_/Q _951_/D _487_/A sg13g2_dfrbpq_1
+X_881_ fanout34/X VSS_uq7 VDD_uq6 _881_/D _881_/Q _882_/CLK sg13g2_dfrbpq_1
+XFILLER_19_438 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_360 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_14_198 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_375 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_947__59 VDD_uq6 VSS_uq7 _947__59/L_HI sg13g2_tiehi
+XFILLER_25_408 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_21_647 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_603 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_20_113 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_179 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_0_518 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_235 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_16_419 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_8_607 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_42 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_102 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_378 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_301 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_933_ fanout35/X VSS_uq7 VDD_uq6 _933_/D _933_/Q _941_/CLK sg13g2_dfrbpq_1
+X_795_ VSS_uq7 VDD_uq6 _438_/Y _928_/Q _893_/D _931_/Q sg13g2_a21oi_1
+X_864_ _922_/Q _884_/Q _865_/S _922_/D VDD_uq6 VSS_uq7 sg13g2_mux2_1
+XFILLER_19_224 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_463 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_194 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_66 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_8_88 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_466 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_21_422 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_29_577 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_500 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_580_ _979_/Q _981_/Q _580_/C _983_/Q _581_/D VDD_uq6 VSS_uq7 sg13g2_nor4_1
+XFILLER_24_271 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_16_216 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_249 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_643 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_426 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_488 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_3_175 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_916_ fanout33/X VSS_uq7 VDD_uq6 _916_/D _916_/Q _938_/CLK sg13g2_dfrbpq_1
+X_778_ VDD_uq6 VSS_uq7 _772_/Y _786_/A _771_/Y _760_/Y _778_/Y _766_/Y sg13g2_a221oi_1
+X_847_ _847_/B _847_/C _911_/Q _847_/Y VDD_uq6 VSS_uq7 _847_/D sg13g2_nand4_1
+XFILLER_22_219 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_558 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_285 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_296 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_5_407 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_112 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_632_ _781_/A _632_/B _633_/B VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_17_536 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_701_ _702_/B _699_/B _699_/A _694_/B _694_/A VDD_uq6 VSS_uq7 sg13g2_a22oi_1
+XFILLER_29_374 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_563_ _971_/Q _563_/B _566_/B VDD_uq6 VSS_uq7 sg13g2_and2_1
+X_494_ _886_/Q _494_/B _494_/C _494_/D _953_/D VDD_uq6 VSS_uq7 sg13g2_and4_1
+XFILLER_12_230 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_274 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_4_440 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_5_67 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_8_256 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_16_580 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_22_561 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_528 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_21 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_171 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_546_ _547_/C _964_/Q _964_/D VDD_uq6 VSS_uq7 sg13g2_xor2_1
+X_615_ _618_/B _615_/B _615_/X VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_17_344 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_598 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_543 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_477_ _932_/Q _625_/D _935_/D VDD_uq6 VSS_uq7 sg13g2_nor2_1
+Xsg13g2_IOPadOut_tx _453_/Y IOVDD IOVSS tx_PAD VDD_uq6 VSS_uq7 sg13g2_IOPadOut16mA
+XFILLER_23_369 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_229 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_42 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_314 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_564 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_531 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_568 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_18_620 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_68 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_2_57 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_284 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_529_ _529_/B _959_/Q _959_/D VDD_uq6 VSS_uq7 sg13g2_xor2_1
+XFILLER_20_328 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_391 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_24_601 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_23_177 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_23_166 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_516 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_88 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_880_ fanout33/X VSS_uq7 VDD_uq6 _880_/D _880_/Q _882_/CLK sg13g2_dfrbpq_1
+XFILLER_15_645 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_483 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_14_144 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_177 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_354 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_494 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_21_626 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_21 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_932_ fanout35/X VSS_uq7 VDD_uq6 _932_/D _932_/Q _941_/CLK sg13g2_dfrbpq_1
+X_863_ _921_/Q _883_/Q _865_/S _921_/D VDD_uq6 VSS_uq7 sg13g2_mux2_1
+X_794_ VSS_uq7 VDD_uq6 _513_/A _446_/Y _892_/D _931_/Q sg13g2_a21oi_1
+XFILLER_27_291 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_45 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_442 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_663 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_6_173 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_239 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_291 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_556 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_65 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_12_467 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_622 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_154 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_915_ fanout29/X VSS_uq7 VDD_uq6 _915_/D _915_/Q _938_/CLK sg13g2_dfrbpq_1
+X_846_ _846_/A _846_/B _911_/D VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_777_ _777_/A _777_/B _786_/A VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_7_471 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_537 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_700_ _700_/A _700_/B _740_/B _744_/A _703_/A VDD_uq6 VSS_uq7 sg13g2_or4_1
+XFILLER_0_168 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_631_ _632_/B _631_/B _873_/D VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_29_353 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_64 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_493_ _948_/D _494_/C _494_/D VDD_uq6 VSS_uq7 sg13g2_nand2_1
+X_562_ _971_/Q _563_/B _564_/B VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_12_297 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_46 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_829_ _829_/Y _907_/Q _829_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XFILLER_26_334 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_22_540 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_88 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_614_ _775_/C _756_/B _757_/A _615_/B VDD_uq6 VSS_uq7 sg13g2_a21o_1
+X_545_ _819_/B _545_/B _547_/C _963_/D VDD_uq6 VSS_uq7 sg13g2_nor3_1
+X_476_ VSS_uq7 VDD_uq6 _927_/Q _835_/A _924_/D _825_/A sg13g2_a21oi_1
+XFILLER_9_533 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_4_293 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_348 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_208 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_654 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_665 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_26_186 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_21 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_32 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_10_543 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_510 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_547 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_381 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_0 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_528_ _959_/Q _529_/B _541_/D VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_20_307 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_459_ _457_/X _458_/X _915_/Q _459_/X VDD_uq6 VSS_uq7 sg13g2_mux2_1
+XFILLER_17_186 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_17_175 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XIO_BOND_sg13g2_IOPadIOVSS_io_dummy IOVSS bondpad_70x70_novias
+Xsg13g2_IOPadAnalog_sc_vref IOVDD IOVSS sc_vref_PAD sg13g2_IOPadAnalog_sc_vref/padres
++ VDD_uq6 VSS_uq7 sg13g2_IOPadAnalog
+XFILLER_9_385 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_429 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_24_646 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_145 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xsg13g2_IOPadVdd_core IOVDD IOVSS VDD_uq6 VSS_uq7 sg13g2_IOPadVdd
+XFILLER_11_318 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_67 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_462 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_407 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_624 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_333 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_351 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_395 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_583 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_473 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_182 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_20_137 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_226 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_28_248 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_627 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_605 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_487 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_24_432 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_137 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_77 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_336 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_119 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_148 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_931_ fanout36/X VSS_uq7 VDD_uq6 _931_/D _931_/Q _931_/CLK sg13g2_dfrbpq_1
+X_862_ _920_/Q _882_/Q _865_/S _920_/D VDD_uq6 VSS_uq7 sg13g2_mux2_1
+X_793_ _792_/Y VDD_uq6 _891_/D VSS_uq7 _935_/Q _713_/A sg13g2_o21ai_1
+XFILLER_15_421 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_259 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_631 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_498 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_181 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_928__61 VDD_uq6 VSS_uq7 _928_/D sg13g2_tiehi
+XFILLER_25_218 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_402 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_468 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_0_328 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_339 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_29_535 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_44 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_406 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_12_435 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_12_446 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_776_ _776_/A _782_/A _776_/C _777_/B VDD_uq6 VSS_uq7 sg13g2_nor3_1
+X_914_ fanout29/X VSS_uq7 VDD_uq6 _914_/D _914_/Q _938_/CLK sg13g2_dfrbpq_1
+X_845_ VSS_uq7 VDD_uq6 _847_/C _847_/D _846_/B _911_/Q sg13g2_a21oi_1
+XFILLER_15_273 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_15_251 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_461 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_24_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XIO_BOND_sg13g2_IOPadIn_reset_n reset_n_PAD bondpad_70x70_novias
+XFILLER_26_516 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_221 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_0_91 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_615 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_630_ _519_/A VDD_uq6 _631_/B VSS_uq7 _873_/Q _628_/A sg13g2_o21ai_1
+XFILLER_1_659 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_332 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_21 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_0_147 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_492_ _929_/Q _893_/Q _930_/Q _930_/D _494_/D VDD_uq6 VSS_uq7 sg13g2_nor4_1
+X_561_ _819_/B _561_/B _563_/B _970_/D VDD_uq6 VSS_uq7 sg13g2_nor3_1
+XFILLER_8_214 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_475 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_4_431 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_14 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_759_ _761_/C _792_/A _759_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+X_828_ _827_/Y VDD_uq6 _906_/D VSS_uq7 _906_/Q _841_/A sg13g2_o21ai_1
+Xsg13g2_IOPadOut_adc_done _944_/D IOVDD IOVSS adc_done_PAD VDD_uq6 VSS_uq7 sg13g2_IOPadOut16mA
+XFILLER_23_508 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_7_291 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_519 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_22_585 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_14_67 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_445 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_613_ VDD_uq6 _868_/D _613_/A VSS_uq7 sg13g2_inv_1
+XFILLER_9_512 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_544_ _963_/Q _544_/B _547_/C VDD_uq6 VSS_uq7 sg13g2_and2_1
+X_475_ _911_/Q _912_/Q _839_/C _475_/D _475_/X VDD_uq6 VSS_uq7 sg13g2_and4_1
+XFILLER_17_379 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_633 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_121 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_165 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_88 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_77 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_349 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_599 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_286 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_1_242 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_655 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_527_ _958_/D _958_/Q _527_/B VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+XFILLER_17_154 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_458_ _913_/Q _920_/Q _921_/Q _922_/Q _923_/Q _914_/Q _458_/X VDD_uq6 VSS_uq7 sg13g2_mux4_1
+XFILLER_9_364 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_625 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_614 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_23_124 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_57 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_603 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_113 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_14_102 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_330 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_389 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_28_7 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_127 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_24_411 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_24_499 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_11_116 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_930_ fanout36/X VSS_uq7 VDD_uq6 _930_/D _930_/Q _931_/CLK sg13g2_dfrbpq_1
+XFILLER_22_56 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_315 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_792_ _792_/Y _792_/A _935_/Q VDD_uq6 VSS_uq7 sg13g2_nand2_1
+X_861_ _919_/Q _881_/Q _865_/S _919_/D VDD_uq6 VSS_uq7 sg13g2_mux2_1
+XFILLER_27_260 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_15_400 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_477 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_665 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_7_621 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_6_142 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_153 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_8_25 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_8_14 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_160 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_392 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_4 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_21_458 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_29_514 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_307 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_241 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_12_414 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_657 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_189 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_913_ fanout33/X VSS_uq7 VDD_uq6 _913_/D _913_/Q _938_/CLK sg13g2_dfrbpq_1
+X_775_ _775_/A _780_/A _775_/C _776_/C VDD_uq6 VSS_uq7 sg13g2_nor3_1
+X_844_ VSS_uq7 VDD_uq6 _847_/C _843_/Y _846_/A _829_/B sg13g2_a21oi_1
+XFILLER_15_296 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_285 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_11_480 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_70 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_0 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_21_200 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_211 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_0_126 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_388 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_300 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_560_ _970_/Q _560_/B _563_/B VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_25_561 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_25_550 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_491_ _494_/C _491_/C _886_/Q _946_/D VDD_uq6 VSS_uq7 _804_/B sg13g2_nand4_1
+XFILLER_12_244 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_4_410 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_266 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_0_660 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_758_ _768_/A _873_/Q _872_/Q _759_/B VDD_uq6 VSS_uq7 sg13g2_nor3_1
+XFILLER_16_550 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_689_ _692_/A _688_/X _643_/B _655_/B _705_/B VDD_uq6 VSS_uq7 sg13g2_a22oi_1
+X_827_ _827_/Y _906_/Q _829_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XFILLER_10_7 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_270 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_369 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_612_ _613_/A _611_/X _605_/X _606_/Y _775_/A VDD_uq6 VSS_uq7 sg13g2_a22oi_1
+XFILLER_29_185 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_543_ _963_/Q _544_/B _545_/B VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_17_358 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_553 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_568 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_9_557 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_380 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_474_ _909_/Q _910_/Q _475_/D VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_4_262 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_27_612 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_144 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_56 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_328 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_578 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_516 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_634 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_526_ _955_/Q _956_/Q _957_/Q _958_/Q _529_/B VDD_uq6 VSS_uq7 sg13g2_and4_1
+XFILLER_17_133 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_309 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_457_ _913_/Q _916_/Q _917_/Q _918_/Q _919_/Q _914_/Q _457_/X VDD_uq6 VSS_uq7 sg13g2_mux4_1
+XFILLER_5_593 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_103 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_25 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_11_14 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_36 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_659 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_191 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_313 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_14_158 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_2_563 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_6_368 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_596 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_442 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_509_ _509_/A _509_/B _512_/B VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_20_106 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_92 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_489 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_22_35 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_791_ _790_/Y VDD_uq6 _890_/D VSS_uq7 _935_/Q _712_/B sg13g2_o21ai_1
+X_860_ _918_/Q _880_/Q _865_/S _918_/D VDD_uq6 VSS_uq7 sg13g2_mux2_1
+XFILLER_19_217 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_456 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_640 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_7_600 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_59 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_371 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_187 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_437 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_16_209 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_419 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_168 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_843_ _843_/Y _911_/Q _847_/D VDD_uq6 VSS_uq7 sg13g2_nand2_1
+X_912_ fanout22/X VSS_uq7 VDD_uq6 _912_/D _912_/Q _912_/CLK sg13g2_dfrbpq_1
+X_774_ VSS_uq7 VDD_uq6 _463_/C _764_/Y _777_/A _773_/Y sg13g2_a21oi_1
+XIO_BOND_sg13g2_IOPadOut_adc_done adc_done_PAD bondpad_70x70_novias
+XFILLER_7_485 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_21_256 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_0_105 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_529 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_367 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_278 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_490_ _804_/B _807_/A _490_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XFILLER_8_249 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_826_ _825_/B _924_/Q _825_/A _829_/B VDD_uq6 VSS_uq7 sg13g2_a21o_1
+XFILLER_16_573 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_540 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_757_ _757_/A _780_/A _776_/A VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_688_ _792_/A _688_/B _688_/X VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_16_595 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_326 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_22_554 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_14 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_598 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_611_ _775_/C _775_/A _611_/X VDD_uq6 VSS_uq7 sg13g2_xor2_1
+XFILLER_29_164 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_131 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_542_ _962_/D _962_/Q _542_/B VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+X_473_ _839_/C _906_/Q _907_/Q _908_/Q VDD_uq6 VSS_uq7 sg13g2_and3_1
+XFILLER_17_337 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_491 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_0_480 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_809_ _809_/A _809_/B _809_/C _809_/D _813_/B VDD_uq6 VSS_uq7 sg13g2_nor4_1
+XFILLER_16_381 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_10_557 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_524 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_395 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_502 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_18_613 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_277 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_112 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_101 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_525_ _527_/B _525_/B _957_/D VDD_uq6 VSS_uq7 sg13g2_and2_1
+X_456_ _913_/Q _914_/Q _852_/B VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_24_605 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_23_159 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_509 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_638 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_487 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_14_137 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xsg13g2_IOPadAnalog_vbg IOVDD IOVSS vbg_PAD sg13g2_IOPadAnalog_vbg/padres VDD_uq6
++ VSS_uq7 sg13g2_IOPadAnalog
+XFILLER_22_170 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_347 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_542 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_531 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_487 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_619 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_508_ _508_/A _508_/B _798_/A _894_/Q _509_/B VDD_uq6 VSS_uq7 sg13g2_nor4_1
+X_439_ VDD_uq6 _439_/Y _886_/Q VSS_uq7 sg13g2_inv_1
+XFILLER_9_163 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_24_424 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_24_402 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_14 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_7 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_790_ _786_/Y VDD_uq6 _790_/Y VSS_uq7 _763_/Y _785_/Y sg13g2_o21ai_1
+XFILLER_27_284 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_273 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_15_435 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_645 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_7_656 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_166 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_195 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_350 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_262 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_416 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_29_549 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_243 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_17_58 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_615 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_493 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_3_147 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_842_ _829_/B _910_/Q _841_/Y _910_/D VDD_uq6 VSS_uq7 sg13g2_a21o_1
+X_911_ fanout22/X VSS_uq7 VDD_uq6 _911_/D _911_/Q _912_/CLK sg13g2_dfrbpq_1
+X_773_ _781_/A VDD_uq6 _773_/Y VSS_uq7 _463_/C _759_/B sg13g2_o21ai_1
+XFILLER_15_265 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_7_497 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_2_180 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_2 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_19_582 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_629 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_29_346 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_57 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_596 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_246 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_756_ _757_/A _756_/B _779_/B VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_825_ VSS_uq7 VDD_uq6 _841_/A _825_/B _825_/A sg13g2_or2_1
+XFILLER_28_390 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_687_ VSS_uq7 VDD_uq6 _740_/A _700_/B _700_/A sg13g2_or2_1
+XFILLER_22_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_533 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_110 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_610_ VDD_uq6 _867_/D _610_/A VSS_uq7 sg13g2_inv_1
+XFILLER_13_522 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_541_ _960_/Q _962_/Q _961_/Q _541_/D _544_/B VDD_uq6 VSS_uq7 sg13g2_and4_1
+X_472_ _924_/Q _857_/B _825_/A VDD_uq6 VSS_uq7 sg13g2_nor2b_1
+XFILLER_9_537 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_9_526 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_286 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_739_ _742_/A _882_/Q _739_/Y VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_808_ _808_/A _942_/Q _808_/C _809_/D VDD_uq6 VSS_uq7 sg13g2_nor3_1
+XFILLER_27_647 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_179 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_135 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_26_102 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_14 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_374 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_524_ _956_/Q _955_/Q _957_/Q _525_/B VDD_uq6 VSS_uq7 sg13g2_a21o_1
+X_455_ _913_/Q _914_/Q _852_/A VDD_uq6 VSS_uq7 sg13g2_nor2_1
+XFILLER_9_323 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_17_168 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_378 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_639 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_138 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_444 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_27_422 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_400 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_617 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_499 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_455 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_326 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_344 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_388 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_576 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_2_510 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_466 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_499 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_438_ VDD_uq6 _438_/Y _893_/Q VSS_uq7 sg13g2_inv_1
+X_507_ _925_/D _507_/B _849_/B VDD_uq6 VSS_uq7 sg13g2_nand2b_1
+XFILLER_9_175 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_182 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_219 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_50 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_329 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_414 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_631 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_480 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_174 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_241 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_528 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_17_37 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_299 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_450 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_428 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_772_ _463_/C VDD_uq6 _772_/Y VSS_uq7 _781_/D _767_/B sg13g2_o21ai_1
+X_841_ _841_/A _847_/D _841_/C _841_/Y VDD_uq6 VSS_uq7 sg13g2_nor3_1
+X_910_ fanout22/X VSS_uq7 VDD_uq6 _910_/D _910_/Q _912_/CLK sg13g2_dfrbpq_1
+XFILLER_15_244 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_80 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_7_432 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_494 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_3_660 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_26_509 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_572 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_0_84 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_608 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_325 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_14 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_207 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_468 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_479 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_4_424 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_755_ _755_/Y _755_/B _935_/Q VDD_uq6 VSS_uq7 sg13g2_nand2b_1
+X_824_ _927_/Q _926_/Q _925_/Q _825_/B VDD_uq6 VSS_uq7 sg13g2_nor3_1
+XFILLER_16_531 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_686_ VDD_uq6 VSS_uq7 _733_/B _675_/Y _733_/A _736_/A _700_/B _736_/B sg13g2_a221oi_1
+XFILLER_7_240 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_284 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_490 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_15_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_380 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_512 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout1 _475_/X _835_/A VDD_uq6 VSS_uq7 sg13g2_buf_1
+X_540_ _542_/B _540_/B _961_/D VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_13_567 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_29_199 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_394 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_372 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_9_505 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_471_ _857_/B _939_/Q _938_/Q VDD_uq6 VSS_uq7 sg13g2_nand2b_1
+XFILLER_4_210 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_669_ _704_/B _688_/B _668_/X _690_/D VDD_uq6 VSS_uq7 sg13g2_a21o_1
+X_738_ VSS_uq7 VDD_uq6 _726_/X _737_/Y _881_/D _735_/Y sg13g2_a21oi_1
+X_807_ _807_/A _808_/A _899_/Q _807_/D _809_/C VDD_uq6 VSS_uq7 sg13g2_nor4_1
+XFILLER_27_626 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xsg13g2_IOPadIOVSS_io_dummy IOVDD IOVSS VDD_uq6 VSS_uq7 sg13g2_IOPadIOVss
+XFILLER_26_158 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_331 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_1_213 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_18_648 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_523_ _956_/Q _957_/Q _955_/Q _527_/B VDD_uq6 VSS_uq7 sg13g2_nand3_1
+XFILLER_17_147 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_454_ _820_/A _924_/Q _927_/Q VDD_uq6 VSS_uq7 sg13g2_nand2b_1
+XFILLER_9_302 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_353 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_81 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_15_70 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_552 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_117 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_323 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_305 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_18_401 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_506_ _507_/B _925_/Q _475_/X VDD_uq6 VSS_uq7 sg13g2_nand2b_1
+X_437_ VDD_uq6 _781_/C _710_/A VSS_uq7 sg13g2_inv_1
+XFILLER_13_161 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_393 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_610 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_448 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_11_109 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_665 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_22_49 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_308 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_253 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_264 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_27_275 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_11_665 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_7_625 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_7_614 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_102 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_10_153 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_93 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_2_385 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_986_ fanout25/X VSS_uq7 VDD_uq6 _986_/D _986_/Q _986_/CLK sg13g2_dfrbpq_1
+XFILLER_18_220 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_7 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_507 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_551 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_771_ _771_/A _782_/A _771_/C _771_/Y VDD_uq6 VSS_uq7 sg13g2_nor3_1
+X_840_ VSS_uq7 VDD_uq6 _909_/Q _839_/C _841_/C _910_/Q sg13g2_a21oi_1
+XFILLER_15_212 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_267 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_15_289 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_15_278 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_411 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_473 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_540 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_19_551 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_969_ fanout31/X VSS_uq7 VDD_uq6 _969_/D _969_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_0_63 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_50 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_119 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_554 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_532 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_270 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_4_403 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_237 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_259 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_664 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_0_642 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_653 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_823_ VDD_uq6 _905_/D _823_/A VSS_uq7 sg13g2_inv_1
+X_754_ _625_/D _605_/B _754_/S _887_/D VDD_uq6 VSS_uq7 sg13g2_mux2_1
+X_685_ VSS_uq7 VDD_uq6 _733_/A _733_/B _737_/A _675_/Y sg13g2_a21oi_1
+XFILLER_7_263 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_22_568 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_14_28 VDD_uq6 VSS_uq7 sg13g2_fill_1
+Xfanout2 _933_/Q _742_/A VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_29_178 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_145 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_351 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_470_ _932_/D _637_/B _625_/D VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XFILLER_4_255 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_266 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_4_222 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_806_ _805_/Y VDD_uq6 _807_/D VSS_uq7 _442_/Y _951_/Q sg13g2_o21ai_1
+XFILLER_20_71 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_93 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_668_ _668_/X _712_/B _668_/B _668_/C VDD_uq6 VSS_uq7 sg13g2_and3_1
+X_737_ _737_/Y _737_/A _737_/B VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+X_599_ _601_/B _984_/Q _599_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XFILLER_8_572 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_62 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_27_605 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_49 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_310 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_509 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_203 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_18_627 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_453_ VDD_uq6 _453_/Y _937_/Q VSS_uq7 sg13g2_inv_1
+X_522_ _956_/Q _955_/Q _956_/D VDD_uq6 VSS_uq7 sg13g2_xor2_1
+XFILLER_17_126 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_332 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_586 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_531 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_181 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_479 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_22_184 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_556 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_435 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_436_ VDD_uq6 _781_/B _715_/A VSS_uq7 sg13g2_inv_1
+XFILLER_14_630 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_26_81 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_505_ _854_/B VDD_uq6 _849_/B VSS_uq7 _500_/C _852_/C sg13g2_o21ai_1
+XFILLER_9_133 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_144 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XIO_BOND_sg13g2_IOPadAnalog_vbg vbg_PAD bondpad_70x70_novias
+XFILLER_5_372 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_85 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_28 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_298 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_449 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_110 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_12_72 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_364 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_985_ fanout22/X VSS_uq7 VDD_uq6 _985_/D _985_/Q _819_/A sg13g2_dfrbpq_1
+XFILLER_18_276 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_14_482 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_18_298 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_629 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_3_106 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_770_ VSS_uq7 VDD_uq6 _867_/Q _756_/B _771_/C _736_/A sg13g2_a21oi_1
+XFILLER_7_478 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_452 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_968_ fanout31/X VSS_uq7 VDD_uq6 _968_/D _968_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_2_194 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_42 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_899_ fanout31/X VSS_uq7 VDD_uq6 _899_/D _899_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_21_249 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_511 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_293 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_621 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_822_ _823_/A _821_/S _943_/D _835_/A _927_/Q VDD_uq6 VSS_uq7 sg13g2_a22oi_1
+XFILLER_16_566 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_511 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_753_ _519_/A VDD_uq6 _886_/D VSS_uq7 _439_/Y _637_/B sg13g2_o21ai_1
+X_684_ _733_/B _775_/A _684_/B VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+XFILLER_18_82 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_319 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_547 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout3 _890_/Q _688_/B VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_29_124 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_330 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_536 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_50 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_70 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_805_ _805_/Y _953_/Q _952_/Q VDD_uq6 VSS_uq7 sg13g2_nand2b_1
+XFILLER_0_473 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_736_ _737_/B _736_/A _736_/B VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+X_667_ _662_/S _756_/B _780_/A _757_/A _699_/A _656_/S _668_/C VDD_uq6 VSS_uq7 sg13g2_mux4_1
+X_598_ VSS_uq7 VDD_uq6 _600_/B _599_/B _984_/Q sg13g2_or2_1
+XFILLER_16_374 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_591 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_551 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_41 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_0 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_10_517 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_28 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_22_388 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_606 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_661 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_25_193 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_13_322 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_521_ _807_/A _521_/B _947_/D VDD_uq6 VSS_uq7 sg13g2_and2_1
+X_452_ VDD_uq6 _637_/B _932_/Q VSS_uq7 sg13g2_inv_1
+XFILLER_5_510 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_719_ _751_/A _719_/A _719_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XFILLER_17_661 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_8_392 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_469 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_414 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_27_436 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_14_119 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_163 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_303 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_10_358 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_2_524 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_435_ VDD_uq6 _771_/A _694_/A VSS_uq7 sg13g2_inv_1
+XFILLER_26_60 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_504_ _854_/B _926_/Q _835_/A VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XFILLER_9_112 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_196 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XIO_BOND_sg13g2_IOPadIOVss_io IOVSS bondpad_70x70_novias
+XFILLER_3_64 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_24_439 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_24_417 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_428 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_17_480 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_428 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_638 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_494 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_188 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_343 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_984_ fanout22/X VSS_uq7 VDD_uq6 _984_/D _984_/Q _819_/A sg13g2_dfrbpq_1
+XFILLER_18_255 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_409 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_461 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_203 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_20_497 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_20_486 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_431 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_258 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_446 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_967_ fanout32/X VSS_uq7 VDD_uq6 _967_/D _967_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_24_7 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_173 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_898_ fanout31/X VSS_uq7 VDD_uq6 _898_/D _898_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_0_21 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_98 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_291 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_339 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_589 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_283 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_4_438 VDD_uq6 VSS_uq7 sg13g2_fill_2
+X_752_ VSS_uq7 VDD_uq6 _726_/X _751_/Y _885_/D _749_/Y sg13g2_a21oi_1
+XFILLER_0_600 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_821_ _924_/D _904_/Q _821_/S _904_/D VDD_uq6 VSS_uq7 sg13g2_mux2_1
+X_683_ _682_/A VDD_uq6 _733_/A VSS_uq7 _730_/A _680_/Y sg13g2_o21ai_1
+XFILLER_7_221 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_298 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_526 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_394 VDD_uq6 VSS_uq7 sg13g2_fill_2
+Xfanout4 _889_/Q _662_/S VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_29_103 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_515 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_519 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_82 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_452 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_735_ _742_/A _881_/Q _735_/Y VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_804_ _945_/Q _804_/B _809_/B VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_666_ _653_/X _665_/Y _666_/S _704_/B VDD_uq6 VSS_uq7 sg13g2_mux2_1
+XFILLER_28_180 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_191 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_597_ _597_/A _597_/B _599_/B _983_/D VDD_uq6 VSS_uq7 sg13g2_nor3_1
+XFILLER_12_570 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_31 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_6_64 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_26_128 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_367 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_249 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_520_ _519_/B VDD_uq6 _934_/D VSS_uq7 _519_/A _515_/B sg13g2_o21ai_1
+X_451_ VDD_uq6 _930_/D _928_/Q VSS_uq7 sg13g2_inv_1
+XFILLER_25_172 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_316 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_566 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_17_640 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_649_ _757_/A _694_/A _656_/S _650_/B VDD_uq6 VSS_uq7 sg13g2_mux2_1
+X_718_ _718_/B _718_/C _781_/B _719_/B VDD_uq6 VSS_uq7 sg13g2_nand3_1
+XFILLER_0_293 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_161 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_371 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XIO_BOND_sg13g2_IOPadOut_tx tx_PAD bondpad_70x70_novias
+XFILLER_23_665 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_23_621 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_23_610 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_27_448 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_142 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_109 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_6_319 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_337 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_569 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_503 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_503_ _502_/Y VDD_uq6 _926_/D VSS_uq7 _924_/Q _857_/B sg13g2_o21ai_1
+XFILLER_14_665 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_26_481 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_434_ VDD_uq6 _434_/Y _877_/Q VSS_uq7 sg13g2_inv_1
+XFILLER_9_146 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_13_175 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_330 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_9_168 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_1_580 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_946__58 VDD_uq6 VSS_uq7 _946__58/L_HI sg13g2_tiehi
+XFILLER_3_43 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_3_21 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_15_407 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_624 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_322 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_149 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_10_167 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_399 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_983_ fanout21/X VSS_uq7 VDD_uq6 _983_/D _983_/Q _819_/A sg13g2_dfrbpq_1
+XFILLER_14_440 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_18_234 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_484 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_5_160 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_182 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_226 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_20_443 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_565 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_15_237 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_15_226 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_23_62 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_40 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_7_425 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_410 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_487 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_653 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_664 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_2_152 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_897_ fanout39/X VSS_uq7 VDD_uq6 _897_/D _897_/Q _487_/X sg13g2_dfrbpq_1
+XFILLER_19_565 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_966_ fanout31/X VSS_uq7 VDD_uq6 _966_/D _966_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_21_207 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_0_77 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_14_270 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_480 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_64 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_29_307 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_318 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_546 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_4_417 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_751_ _751_/Y _751_/A _751_/B VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+X_820_ _821_/S _820_/A _820_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+X_682_ _730_/B _682_/A _682_/B VDD_uq6 VSS_uq7 sg13g2_nand2_1
+XFILLER_16_524 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_502 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_200 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_233 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_277 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_483 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_949_ _818_/S VSS_uq7 VDD_uq6 _954_/Q _949_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_19_373 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_505 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xfanout5 _889_/Q _666_/S VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_25_387 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_376 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_25_365 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_582 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_21_560 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_4_203 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_4_236 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_431 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_665_ _755_/B _792_/A _665_/Y VDD_uq6 VSS_uq7 sg13g2_nor2b_1
+XFILLER_0_497 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_734_ VSS_uq7 VDD_uq6 _726_/X _733_/Y _880_/D _732_/Y sg13g2_a21oi_1
+X_803_ _809_/A _808_/A _904_/Q _815_/B VDD_uq6 VSS_uq7 sg13g2_and3_1
+XFILLER_16_332 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_596_ _983_/Q _596_/B _599_/B VDD_uq6 VSS_uq7 sg13g2_and2_1
+XFILLER_3_280 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_619 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_324 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_335 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_25_151 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_346 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_63 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_450_ VDD_uq6 _450_/Y _975_/D VSS_uq7 sg13g2_inv_1
+XFILLER_5_545 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_272 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_648_ _699_/A _710_/A _656_/S _648_/X VDD_uq6 VSS_uq7 sg13g2_mux2_1
+X_717_ _718_/C _718_/B _781_/B _719_/A VDD_uq6 VSS_uq7 sg13g2_a21o_1
+XFILLER_16_140 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_579_ _984_/Q _982_/Q _581_/C VDD_uq6 VSS_uq7 sg13g2_nor2b_1
+XFILLER_8_350 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_16_195 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_121 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_10_316 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_198 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_433_ VDD_uq6 _796_/A _894_/Q VSS_uq7 sg13g2_inv_1
+XFILLER_26_460 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_502_ _502_/Y _926_/Q _835_/A VDD_uq6 VSS_uq7 sg13g2_nand2b_1
+XFILLER_26_95 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_13_154 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_386 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_3_99 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_603 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_191 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_8_180 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_27_202 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_658 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_603 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_7_607 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_452 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_106 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_10_146 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_301 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_31 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_12_53 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_12_86 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_378 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_982_ fanout21/X VSS_uq7 VDD_uq6 _982_/D _982_/Q _819_/A sg13g2_dfrbpq_1
+XFILLER_18_213 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_651 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_24_205 VDD_uq6 VSS_uq7 sg13g2_fill_1
+XFILLER_20_422 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_28_544 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_23_293 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_23_96 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_7_404 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_466 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_965_ fanout31/X VSS_uq7 VDD_uq6 _965_/D _965_/Q _487_/A sg13g2_dfrbpq_1
+XFILLER_3_0 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_2_131 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_896_ fanout39/X VSS_uq7 VDD_uq6 _896_/D _896_/Q _487_/X sg13g2_dfrbpq_1
+XFILLER_19_522 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_56 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_9_43 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_9_76 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_25_525 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_20_252 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_635 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_750_ _709_/Y VDD_uq6 _751_/B VSS_uq7 _747_/A _747_/B sg13g2_o21ai_1
+X_681_ _678_/C _678_/B _761_/A _682_/B VDD_uq6 VSS_uq7 sg13g2_a21o_1
+XFILLER_11_230 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_18_96 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_7_256 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_11_263 VDD_uq6 VSS_uq7 sg13g2_fill_1
+X_948_ _948_/D _487_/A _948__60/L_HI _948_/Q VDD_uq6 VSS_uq7 sg13g2_dllrq_1
+XFILLER_3_462 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_879_ fanout34/X VSS_uq7 VDD_uq6 _879_/D _879_/Q _882_/CLK sg13g2_dfrbpq_1
+XFILLER_19_352 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_19_396 VDD_uq6 VSS_uq7 sg13g2_fill_1
+Xfanout6 _888_/Q _656_/S VDD_uq6 VSS_uq7 sg13g2_buf_1
+XFILLER_29_138 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_344 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_248 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_4_215 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_802_ _897_/D _897_/Q _802_/B VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+XFILLER_0_410 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_0_487 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_20_86 VDD_uq6 VSS_uq7 sg13g2_fill_2
+XFILLER_20_64 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_29_661 VDD_uq6 VSS_uq7 sg13g2_decap_4
+X_664_ _662_/X _705_/B _661_/X _690_/C VDD_uq6 VSS_uq7 sg13g2_a21o_1
+X_595_ _983_/Q _596_/B _597_/B VDD_uq6 VSS_uq7 sg13g2_nor2_1
+X_733_ _733_/Y _733_/A _733_/B VDD_uq6 VSS_uq7 sg13g2_xnor2_1
+XFILLER_16_311 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_8_565 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_6_55 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_22_303 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_26_620 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_25_130 VDD_uq6 VSS_uq7 sg13g2_decap_4
+XFILLER_17_119 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_15_42 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_579 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_5_524 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_716_ VSS_uq7 VDD_uq6 _718_/B _718_/C _716_/Y _715_/A sg13g2_a21oi_1
+XFILLER_0_251 VDD_uq6 VSS_uq7 sg13g2_decap_8
+X_647_ _666_/S _647_/B _647_/C _647_/D _711_/B VDD_uq6 VSS_uq7 sg13g2_or4_1
+X_578_ _597_/A _578_/B _584_/B _978_/D VDD_uq6 VSS_uq7 sg13g2_nor3_1
+XFILLER_16_174 VDD_uq6 VSS_uq7 sg13g2_decap_8
+XFILLER_12_391 VDD_uq6 VSS_uq7 sg13g2_decap_8
+Xsg13g2_IOPadIOVss_io IOVDD IOVSS VDD_uq6 VSS_uq7 sg13g2_IOPadIOVss
+.ends
+

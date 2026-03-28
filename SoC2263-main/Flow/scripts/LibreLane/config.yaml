@@ -1,0 +1,194 @@
+meta:
+  version: 3
+  flow: Chip
+  substituting_steps:
+
+    # Magic reports some overlaps which can be ignored
+    Checker.IllegalOverlap: null
+    KLayout.Filler: null
+    # Disable KLayout DRC
+    KLayout.DRC: null
+    Checker.KLayoutDRC: null
+
+    # Disable magic DRC
+    Magic.DRC: null
+    Checker.MagicDRC: null
+
+    # Disable KLayout antenna check
+    KLayout.Antenna: null
+    Checker.KLayoutAntenna: null
+
+    # Disable KLayout density check
+    KLayout.Density: null
+    Checker.KLayoutDensity: null
+    
+    # Save time
+    OpenROAD.IRDropReport: null
+    KLayout.XOR: null
+    # Netgen.LVS: null
+    # Checker.LVS: null
+DESIGN_NAME: soc_system_top
+VERILOG_FILES:
+  - /mnt/d/XschemDesigns/designs/SoC-Temp-Sensor/digital_top_rtl/top_system_with_io.v
+  - /mnt/d/XschemDesigns/designs/SoC-Temp-Sensor/digital_top_rtl/full_system_top.v
+  - /mnt/d/XschemDesigns/designs/SoC-Temp-Sensor/digital_top_rtl/fsm.v
+  - /mnt/d/XschemDesigns/designs/SoC-Temp-Sensor/digital_top_rtl/adc_logic_calibrated.v
+  - /mnt/d/XschemDesigns/designs/SoC-Temp-Sensor/digital_top_rtl/uart_module.v
+  - /mnt/d/XschemDesigns/designs/SoC-Temp-Sensor/digital_top_rtl/timer_top.v
+  - /mnt/d/XschemDesigns/designs/SoC-Temp-Sensor/digital_top_rtl/prescaler.v
+  - /mnt/d/XschemDesigns/designs/SoC-Temp-Sensor/digital_top_rtl/counter_10bits.v
+  - /mnt/d/XschemDesigns/designs/SoC-Temp-Sensor/digital_top_rtl/cal_fsm_board.v
+  - /mnt/d/XschemDesigns/designs/SoC-Temp-Sensor/digital_top_rtl/cal_fsm_counter.v
+  - /mnt/d/XschemDesigns/designs/SoC-Temp-Sensor/digital_top_rtl/Clock_gating_Top_level.v
+  - /mnt/d/XschemDesigns/designs/SoC-Temp-Sensor/digital_top_rtl/clock_gating_ADC.v
+  - /mnt/d/XschemDesigns/designs/SoC-Temp-Sensor/digital_top_rtl/Clock_gating_UART.v
+  - /mnt/d/XschemDesigns/designs/SoC-Temp-Sensor/digital_top_rtl/clock_gating_Cond.v
+
+VERILOG_DEFINES: [FUNCTIONAL]
+
+# Enable plugin for better SystemVerilog support
+# USE_SLANG: True
+# SLANG_ARGUMENTS: ['--keep-hierarchy']
+
+# Slightly smaller file sizes
+PRIMARY_GDSII_STREAMOUT_TOOL: klayout
+
+# Specify the pad instances for the padring
+PAD_EAST: [
+    sg13g2_IOPadVss_core,
+    sg13g2_IOPadIn_trigger,
+    sg13g2_IOPadAnalog_sensor,
+    sg13g2_IOPadAnalog_sc_vout,
+    sg13g2_IOPadAnalog_vramp
+
+]
+
+PAD_WEST: [
+    sg13g2_IOPadIn_clk,
+    sg13g2_IOPadIn_reset_n,
+    sg13g2_IOPadIn_sc_enable,
+    sg13g2_IOPadAnalog_sc_vref,
+    sg13g2_IOPadAnalog_vbg
+]
+
+PAD_SOUTH: [
+    sg13g2_IOPadOut_state_out_0,
+    sg13g2_IOPadOut_state_out_1,
+    sg13g2_IOPadOut_state_out_2,
+    sg13g2_IOPadOut_adc_done,
+    sg13g2_IOPadOut_tx
+]
+
+PAD_NORTH: [
+    sg13g2_IOPadVdd_core,
+    sg13g2_IOPadIOVdd_io,
+    sg13g2_IOPadIOVSS_io_dummy,
+    sg13g2_IOPadIOVss_io,
+    sg13g2_IOPadAnalog_vdd1v5
+]
+
+# SDC files
+PNR_SDC_FILE: dir::chip_top.sdc
+SIGNOFF_SDC_FILE: dir::chip_top.sdc
+FALLBACK_SDC: dir::chip_top.sdc
+
+# Power / ground nets
+VDD_NETS:
+# - VDD_1v2
+- VDD
+GND_NETS:
+# - VSS
+- VSS
+
+# Clock
+CLOCK_PORT: clk_PAD
+CLOCK_NET: clk_PAD
+
+CLOCK_PERIOD: 20
+
+# Floorplanning
+FP_SIZING: absolute
+#FP_PDN_HORIZONTAL_LAYER: Metal5
+# 3880umx5070um including 26um
+# for the sealring on all sides
+DIE_AREA: [0, 0, 1040, 1040]
+CORE_AREA: [360, 360, 680, 480]
+# CORE_AREA: [740, 740, 300, 300] 470
+
+# Increase for more logic
+# on your die
+PL_TARGET_DENSITY_PCT: 20
+GRT_ALLOW_CONGESTION: true
+
+# PDN
+PDN_CORE_RING: true
+PDN_MULTILAYER: true
+
+# Override bondpad name
+PAD_BONDPAD_NAME: bondpad_70x70_novias
+
+# Bondpad is not yet included in the PDK
+EXTRA_GDS:
+- dir::../ip/bondpad_70x70/gds/bondpad_70x70.gds
+- dir::../ip/bondpad_70x70_novias/gds/bondpad_70x70_novias.gds
+
+EXTRA_LEFS:
+- dir::../ip/bondpad_70x70/lef/bondpad_70x70.lef
+- dir::../ip/bondpad_70x70_novias/lef/bondpad_70x70_novias.lef
+
+IGNORE_DISCONNECTED_MODULES:
+- bondpad_70x70
+- bondpad_70x70_novias
+
+# Maximum metal width without slotting: 30um
+PDN_CORE_RING_VWIDTH: 10
+PDN_CORE_RING_HWIDTH: 10
+# Ensure minimum spacing for long metals
+PDN_CORE_RING_VSPACING: 5
+PDN_CORE_RING_HSPACING: 5
+
+#PDN_VPITCH: 50
+
+PDN_CORE_RING_CONNECT_TO_PADS: true
+PDN_ENABLE_PINS: false
+
+PDN_EXTEND_TO: core_ring
+
+# PDN_CORE_VERTICAL_LAYER: TopMetal1
+# PDN_CORE_HORIZONTAL_LAYER: TopMetal2
+
+# Because we have multiple power pads for one power domain
+#MAGIC_EXT_UNIQUE: notopports
+
+
+MACROS:
+  SoC_Analog_Top:
+    gds:
+      - dir::../ip/SoC_Analog_Top/gds/SoC_Analog_Top.gds
+    lef:
+      - dir::../ip/SoC_Analog_Top/lef/SoC_Analog_Top.lef
+    vh:
+      - /mnt/d/XschemDesigns/designs/SoC-Temp-Sensor/digital_top_rtl/soc_analog_top_wrapper.v
+    spice:
+      - dir::../ip/SoC_Analog_Top/spice/SoC_Analog_Top.spice
+    instances:
+      # Make sure to specify the SRAMs in pdn_cfg.tcl
+      uut_soc_analog_top_wrapper:
+        location: [449,525]
+        orientation: N
+# ERROR_ON_SYNTH_CHECKS: false
+# MACRO_BLOCKAGE_LAYERS: Metal1 Metal2 Metal3
+# This is an alternative method compared to
+# specifying the power connections in the RTL
+FP_PDN_CHECK_NODES: false
+#"DESIGN_IS_CORE": true
+#FP_PDN_HORIZONTAL_LAYER: Metal3
+VERILOG_POWER_DEFINE: USE_POWER_PINS
+ERROR_ON_PDN_VIOLATIONS: true
+SYNTH_USE_PG_PINS_DEFINES: USE_POWER_PINS
+#RT_MAX_LAYER: Metal3
+# PDN_MACRO_CONNECTIONS:
+# - "pmu_0 IOVSS VDD_1v2 VSS VDD"
+
+# Custom PDN config to connect to SRAMs
+PDN_CFG: dir::pdn_3.tcl

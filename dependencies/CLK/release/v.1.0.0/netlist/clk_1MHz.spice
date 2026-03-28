@@ -1,0 +1,42 @@
+** sch_path: /foss/designs/xschemas/clk_1MHz.sch
+.subckt clk_1MHz VDD VSS VOUT I1u nbulk
+*.PININFO VDD:B VSS:B VOUT:O I1u:I
+XINV1 VDD Pbulk VOUT2 net1 Nbulk VSS ring_inv
+XINV3 net2 Pbulk net3 VOUT2 Nbulk cpy_n ring_inv
+XSCHMITT1 VSS VDD net1 net3 Nbulk VDD ring_schmitt
+M2 net2 I1u VDD Pbulk sg13_lv_pmos w=3u l=3u ng=6
+M3 cpy_n ref_n VSS Nbulk sg13_lv_nmos w=0.75u l=0.5u ng=1 m=3
+M4 ref_n I1u VDD Pbulk sg13_lv_pmos w=1u l=3u ng=2
+M5 ref_n ref_n VSS Nbulk sg13_lv_nmos w=0.75u l=0.5u ng=1
+XINV2 VDD Pbulk VOUT VOUT2 Nbulk VSS ring_inv
+C1 net3 VSS cap_cmim w=42e-6 l=42e-6
+R1 VSS Nbulk ptap1 A=16.9974e-12 P=106.74e-6
+R2 VDD Pbulk ntap1 A=17.115e-12 P=115.9e-6
+M1 ref_n VSS VSS Nbulk sg13_lv_nmos w=0.75u l=0.5u ng=1
+M6 VSS VSS cpy_n Nbulk sg13_lv_nmos w=0.75u l=0.5u ng=1
+M7 VDD VDD VDD Pbulk sg13_lv_pmos w=1.68u l=1u ng=1 m=2
+.ends
+
+* expanding   symbol:  /foss/designs/xschemas/ring_inv.sym # of pins=6
+** sym_path: /foss/designs/xschemas/ring_inv.sym
+** sch_path: /foss/designs/xschemas/ring_inv.sch
+.subckt ring_inv VDP Pbulk Y A Nbulk VSN
+*.PININFO A:I Y:O Pbulk:B Nbulk:B VDP:B VSN:B
+M1 Y A VSN Nbulk sg13_lv_nmos w=0.7u l=0.13u ng=1
+M2 Y A VDP Pbulk sg13_lv_pmos w=1.12u l=0.13u ng=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/xschemas/ring_schmitt.sym # of pins=4
+** sym_path: /foss/designs/xschemas/ring_schmitt.sym
+** sch_path: /foss/designs/xschemas/ring_schmitt.sch
+.subckt ring_schmitt VSS VDD Y A nbulk pbulk
+*.PININFO A:I Y:O VDD:B VSS:B
+M1 Y A VSPL nbulk sg13_lv_nmos w=10u l=0.13u ng=5
+M2 Y A net1 pbulk sg13_lv_pmos w=6.25u l=0.13u ng=5
+M3 VSPL A VSS nbulk sg13_lv_nmos w=0.155u l=0.5u ng=1
+M4 net1 A VDD pbulk sg13_lv_pmos w=0.5u l=0.5u ng=1
+M5 VSS Y net1 pbulk sg13_lv_pmos w=2.5u l=1u ng=1
+M6 VDD Y VSPL nbulk sg13_lv_nmos w=2.945u l=0.5u ng=19
+.ends
+

@@ -1,0 +1,75 @@
+
+Magic 8.3 revision 582 - Compiled on Sun Dec 21 08:00:31 PM CET 2025.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    fillfet sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pad seal thruvia 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading "output/ramp_generator__ramp_generator/magic_RC/ramp_generator_MAGIC_RC_Script.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "via_stack$12".
+Reading "pmos$3".
+Reading "via_stack$10".
+Reading "via_stack$9".
+Reading "via_stack$6".
+Reading "nmos$2".
+Reading "via_stack$7".
+Reading "via_stack$4".
+Reading "via_stack".
+Reading "guard_ring$2".
+Reading "nmos$1".
+Reading "nmos".
+Reading "via_stack$1".
+Reading "guard_ring$1".
+Reading "pmos$1".
+Reading "pmos".
+Reading "via_stack$17".
+Reading "ramp_generator_en_pmos".
+Reading "via_stack$14".
+Reading "via_stack$13".
+Reading "via_stack$8".
+Reading "cmim$1".
+Reading "ramp_generator_reset_nmos".
+Reading "ramp_generator_pmos_mirror".
+Reading "ramp_generator_nmos_mirror".
+CIF file read warning: CIF style sg13g2(): units rescaled by factor of 5 / 1
+Reading "ramp_generator".
+Extracting ramp_generator into /foss/designs/gds/Aymen/output/ramp_generator__ramp_generator/magic_RC/ramp_generator.ext:
+ramp_generator: 24 warnings
+Total of 24 warnings.
+exttosim finished.
+Port: name = VDD exists, forcing drivepoint
+Location is (-2291, 2589); drivepoint (-2292, 2589)
+Port: name = VSS exists, forcing drivepoint
+Location is (-3705, -4363); drivepoint (-3706, -4364)
+Port: name = VRAMP exists, forcing drivepoint
+Location is (7910, -869); drivepoint (7910, -870)
+Port: name = RAMP_EN exists, forcing drivepoint
+Location is (-8239, 2141); drivepoint (-8240, 2141)
+Port: name = RAMP_REF exists, forcing drivepoint
+Location is (-8239, -49); drivepoint (-8240, -50)
+Port: name = RAMP_RESET exists, forcing drivepoint
+Location is (-8239, -1113); drivepoint (-8240, -1114)
+Adding  RAMP_REF; Tnew = 0.03ns, Told = 0.00ns
+Adding  RAMP_EN; Tnew = 0.09ns, Told = 0.00ns
+Adding  VRAMP; Tnew = 0.02ns, Told = 0.00ns
+Adding  RAMP_RESET; Tnew = 0.04ns, Told = 0.00ns
+Adding  VDD; Tnew = 0.15ns, Told = 0.00ns
+Adding  ramp_generator_nmos_mirror_0.pmos_ref; Tnew = 0.13ns, Told = 0.00ns
+Total Nets: 37
+Nets extracted: 7 (0.189189)
+Nets output: 7 (0.189189)
+exttospice finished.

@@ -1,0 +1,145 @@
+| units: 0.5 tech: ihp-sg13g2 format: MIT
+x ramp_generator_nmos_mirror_0.pmos_ref VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=4020,268 d=4020,268 l=2000 w=30 x=120 y=1093 sg13_lv_pmos
+x RAMP_RESET VRAMP VSS VSS s=25080,736 d=25080,736 l=26 w=660 x=5379 y=-911 sg13_lv_nmos
+x a_4600_1241# VDD VDD VDD d=4020,268 l=1000 w=30 x=4600 y=1277 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=4020,268 d=4020,268 l=2000 w=30 x=120 y=1461 sg13_lv_pmos
+x RAMP_EN VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=7600,276 d=7600,276 l=26 w=200 x=-777 y=2227 sg13_lv_pmos
+x a_4600_505# VDD VDD VDD d=4020,268 l=1000 w=30 x=4600 y=541 sg13_lv_pmos
+x a_4600_1609# VDD VDD VDD d=4020,268 l=1000 w=30 x=4600 y=1645 sg13_lv_pmos
+x RAMP_EN VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=7600,276 d=7600,276 l=26 w=200 x=-1797 y=2227 sg13_lv_pmos
+x RAMP_RESET VSS VRAMP VSS s=25080,736 d=44880,1456 l=26 w=660 x=-4793 y=-911 sg13_lv_nmos
+x RAMP_EN ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=7600,276 d=7600,276 l=26 w=200 x=-1083 y=2227 sg13_lv_pmos
+x VSS VRAMP s=135795200,80572 l=8000 w=8000 x=120 y=-3999 cap_cmim
+x RAMP_RESET VRAMP VSS VSS s=44880,1456 d=25080,736 l=26 w=660 x=-5507 y=-911 sg13_lv_nmos
+x RAMP_RESET VRAMP VSS VSS s=25080,736 d=25080,736 l=26 w=660 x=-5099 y=-911 sg13_lv_nmos
+x ramp_generator_nmos_mirror_0.pmos_ref ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=4020,268 d=4020,268 l=2000 w=30 x=2360 y=1277 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=4020,268 d=4020,268 l=2000 w=30 x=2360 y=1645 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=4020,268 d=4020,268 l=2000 w=30 x=-4359 y=541 sg13_lv_pmos
+x a_n5600_1241# VDD VDD VDD d=4020,268 l=1000 w=30 x=-5599 y=1277 sg13_lv_pmos
+x a_n5600_1609# VDD VDD VDD d=4020,268 l=1000 w=30 x=-5599 y=1645 sg13_lv_pmos
+x RAMP_EN VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=7600,276 d=7600,276 l=26 w=200 x=1874 y=2227 sg13_lv_pmos
+x RAMP_RESET VSS VRAMP VSS s=25080,736 d=25080,736 l=26 w=660 x=4869 y=-911 sg13_lv_nmos
+x RAMP_EN ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=7600,276 d=7600,276 l=26 w=200 x=1568 y=2227 sg13_lv_pmos
+x RAMP_EN ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=7600,276 d=7600,276 l=26 w=200 x=1160 y=2227 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=4020,268 d=4020,268 l=2000 w=30 x=2360 y=357 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=4020,268 d=4020,268 l=2000 w=30 x=2360 y=725 sg13_lv_pmos
+x RAMP_EN VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=7600,276 d=7600,276 l=26 w=200 x=854 y=2227 sg13_lv_pmos
+x RAMP_EN ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=7600,276 d=7600,276 l=26 w=200 x=548 y=2227 sg13_lv_pmos
+x RAMP_EN ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=7600,276 d=7600,276 l=26 w=200 x=140 y=2227 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=4020,268 d=4020,268 l=2000 w=30 x=-2119 y=541 sg13_lv_pmos
+x RAMP_EN ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=7600,276 d=7600,276 l=26 w=200 x=-879 y=2227 sg13_lv_pmos
+x RAMP_RESET VSS VRAMP VSS s=25080,736 d=25080,736 l=26 w=660 x=5073 y=-911 sg13_lv_nmos
+x RAMP_EN ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=7600,276 d=7600,276 l=26 w=200 x=-471 y=2227 sg13_lv_pmos
+x RAMP_EN VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=7600,276 d=7600,276 l=26 w=200 x=-165 y=2227 sg13_lv_pmos
+x a_n5600_505# VDD VDD VDD d=4020,268 l=1000 w=30 x=-5599 y=541 sg13_lv_pmos
+x RAMP_EN ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=7600,276 d=7600,276 l=26 w=200 x=-1899 y=2227 sg13_lv_pmos
+x RAMP_REF VSS ramp_generator_nmos_mirror_0.pmos_ref VSS s=2280,136 d=4080,256 l=2000 w=60 x=38 y=-711 sg13_lv_nmos
+x VSS VSS VSS VSS d=4080,256 l=2000 w=60 x=2300 y=-711 sg13_lv_nmos
+x RAMP_RESET VRAMP VSS VSS s=25080,736 d=25080,736 l=26 w=660 x=-4895 y=-911 sg13_lv_nmos
+x RAMP_EN ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=7600,276 d=7600,276 l=26 w=200 x=-1491 y=2227 sg13_lv_pmos
+x RAMP_EN VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=7600,276 d=7600,276 l=26 w=200 x=-1185 y=2227 sg13_lv_pmos
+x RAMP_REF RAMP_REF VSS VSS s=4080,256 d=2280,136 l=2000 w=60 x=-2037 y=-711 sg13_lv_nmos
+x ramp_generator_nmos_mirror_0.pmos_ref VDD VRAMP VDD s=4020,268 d=4020,268 l=2000 w=30 x=120 y=909 sg13_lv_pmos
+x VSS VSS VSS VSS d=4080,256 l=2000 w=60 x=-4299 y=-711 sg13_lv_nmos
+x ramp_generator_nmos_mirror_0.pmos_ref VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=4020,268 d=4020,268 l=2000 w=30 x=120 y=1277 sg13_lv_pmos
+x a_4600_321# VDD VDD VDD d=4020,268 l=1000 w=30 x=4600 y=357 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=4020,268 d=4020,268 l=2000 w=30 x=120 y=1645 sg13_lv_pmos
+x a_4600_689# VDD VDD VDD d=4020,268 l=1000 w=30 x=4600 y=725 sg13_lv_pmos
+x RAMP_RESET VSS VRAMP VSS s=25080,736 d=25080,736 l=26 w=660 x=-5201 y=-911 sg13_lv_nmos
+x RAMP_EN VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=7600,276 d=7600,276 l=26 w=200 x=38 y=2227 sg13_lv_pmos
+x RAMP_EN ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=7600,276 d=13600,536 l=26 w=200 x=1976 y=2227 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref VRAMP VDD VDD s=4020,268 d=4020,268 l=2000 w=30 x=-2119 y=1093 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=4020,268 d=4020,268 l=2000 w=30 x=-2119 y=1461 sg13_lv_pmos
+x RAMP_EN VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=7600,276 d=7600,276 l=26 w=200 x=1262 y=2227 sg13_lv_pmos
+x RAMP_EN ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=7600,276 d=7600,276 l=26 w=200 x=956 y=2227 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=4020,268 d=4020,268 l=2000 w=30 x=-4359 y=357 sg13_lv_pmos
+x RAMP_EN VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=7600,276 d=7600,276 l=26 w=200 x=242 y=2227 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=4020,268 d=4020,268 l=2000 w=30 x=-4359 y=725 sg13_lv_pmos
+x RAMP_RESET VSS VRAMP VSS s=25080,736 d=44880,1456 l=26 w=660 x=5481 y=-911 sg13_lv_nmos
+x RAMP_RESET VRAMP VSS VSS s=25080,736 d=25080,736 l=26 w=660 x=5175 y=-911 sg13_lv_nmos
+x RAMP_EN VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=7600,276 d=7600,276 l=26 w=200 x=-573 y=2227 sg13_lv_pmos
+x VSS VSS VSS VSS d=4080,256 l=2000 w=60 x=2300 y=-311 sg13_lv_nmos
+x RAMP_REF VSS RAMP_REF VSS s=2280,136 d=4080,256 l=2000 w=60 x=38 y=-311 sg13_lv_nmos
+x RAMP_EN ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=7600,276 d=7600,276 l=26 w=200 x=-267 y=2227 sg13_lv_pmos
+x RAMP_RESET VSS VRAMP VSS s=25080,736 d=25080,736 l=26 w=660 x=-4997 y=-911 sg13_lv_nmos
+x RAMP_EN VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=7600,276 d=7600,276 l=26 w=200 x=-1593 y=2227 sg13_lv_pmos
+x RAMP_EN ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=7600,276 d=7600,276 l=26 w=200 x=-1287 y=2227 sg13_lv_pmos
+x RAMP_REF RAMP_REF VSS VSS s=4080,256 d=2280,136 l=2000 w=60 x=-2037 y=-311 sg13_lv_nmos
+x VSS VRAMP s=135795200,80572 l=8000 w=8000 x=-8119 y=-3999 cap_cmim
+x ramp_generator_nmos_mirror_0.pmos_ref ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=4020,268 d=4020,268 l=2000 w=30 x=2360 y=909 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=4020,268 d=4020,268 l=2000 w=30 x=-4359 y=1093 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=4020,268 d=4020,268 l=2000 w=30 x=-4359 y=1461 sg13_lv_pmos
+x VSS VSS VSS VSS d=4080,256 l=2000 w=60 x=-4299 y=-311 sg13_lv_nmos
+x ramp_generator_nmos_mirror_0.pmos_ref ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=4020,268 d=4020,268 l=2000 w=30 x=-2119 y=357 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=4020,268 d=4020,268 l=2000 w=30 x=-2119 y=725 sg13_lv_pmos
+x RAMP_RESET VRAMP VSS VSS s=25080,736 d=25080,736 l=26 w=660 x=-5303 y=-911 sg13_lv_nmos
+x a_n5600_321# VDD VDD VDD d=4020,268 l=1000 w=30 x=-5599 y=357 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=4020,268 d=4020,268 l=2000 w=30 x=120 y=541 sg13_lv_pmos
+x a_n5600_689# VDD VDD VDD d=4020,268 l=1000 w=30 x=-5599 y=725 sg13_lv_pmos
+x a_4600_1057# VDD VDD VDD d=4020,268 l=1000 w=30 x=4600 y=1093 sg13_lv_pmos
+x a_4600_1425# VDD VDD VDD d=4020,268 l=1000 w=30 x=4600 y=1461 sg13_lv_pmos
+x RAMP_REF VSS RAMP_REF VSS s=2280,136 d=4080,256 l=2000 w=60 x=38 y=-911 sg13_lv_nmos
+x VSS VSS VSS VSS d=4080,256 l=2000 w=60 x=2300 y=-911 sg13_lv_nmos
+x RAMP_EN VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=7600,276 d=7600,276 l=26 w=200 x=1670 y=2227 sg13_lv_pmos
+x RAMP_RESET VRAMP VSS VSS s=25080,736 d=25080,736 l=26 w=660 x=4971 y=-911 sg13_lv_nmos
+x RAMP_EN ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=7600,276 d=7600,276 l=26 w=200 x=1364 y=2227 sg13_lv_pmos
+x RAMP_EN VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=7600,276 d=7600,276 l=26 w=200 x=1058 y=2227 sg13_lv_pmos
+x RAMP_REF RAMP_REF VSS VSS s=4080,256 d=2280,136 l=2000 w=60 x=-2037 y=-911 sg13_lv_nmos
+x a_4600_873# VDD VDD VDD d=4020,268 l=1000 w=30 x=4600 y=909 sg13_lv_pmos
+x VSS VSS VSS VSS d=4080,256 l=2000 w=60 x=-4299 y=-911 sg13_lv_nmos
+x RAMP_EN ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=7600,276 d=7600,276 l=26 w=200 x=344 y=2227 sg13_lv_pmos
+x RAMP_EN VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=7600,276 d=7600,276 l=26 w=200 x=650 y=2227 sg13_lv_pmos
+x RAMP_RESET VSS VRAMP VSS s=25080,736 d=25080,736 l=26 w=660 x=5277 y=-911 sg13_lv_nmos
+x RAMP_EN VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=7600,276 d=7600,276 l=26 w=200 x=-981 y=2227 sg13_lv_pmos
+x RAMP_EN ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=7600,276 d=7600,276 l=26 w=200 x=-675 y=2227 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=4020,268 d=4020,268 l=2000 w=30 x=2360 y=1093 sg13_lv_pmos
+x RAMP_EN VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=7600,276 d=7600,276 l=26 w=200 x=-369 y=2227 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=4020,268 d=4020,268 l=2000 w=30 x=2360 y=1461 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=4020,268 d=4020,268 l=2000 w=30 x=-2119 y=1277 sg13_lv_pmos
+x RAMP_EN ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=7600,276 d=7600,276 l=26 w=200 x=-1695 y=2227 sg13_lv_pmos
+x a_n5600_1057# VDD VDD VDD d=4020,268 l=1000 w=30 x=-5599 y=1093 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=4020,268 d=4020,268 l=2000 w=30 x=-2119 y=1645 sg13_lv_pmos
+x RAMP_EN VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=7600,276 d=7600,276 l=26 w=200 x=-1389 y=2227 sg13_lv_pmos
+x a_n5600_1425# VDD VDD VDD d=4020,268 l=1000 w=30 x=-5599 y=1461 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=4020,268 d=4020,268 l=2000 w=30 x=-4359 y=909 sg13_lv_pmos
+x RAMP_EN ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=7600,276 d=7600,276 l=26 w=200 x=-63 y=2227 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=4020,268 d=4020,268 l=2000 w=30 x=2360 y=541 sg13_lv_pmos
+x RAMP_RESET VSS VRAMP VSS s=25080,736 d=25080,736 l=26 w=660 x=-5405 y=-911 sg13_lv_nmos
+x RAMP_EN VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=13600,536 d=7600,276 l=26 w=200 x=-2001 y=2227 sg13_lv_pmos
+x VSS VSS VSS VSS d=4080,256 l=2000 w=60 x=2300 y=-511 sg13_lv_nmos
+x RAMP_REF VSS RAMP_REF VSS s=2280,136 d=4080,256 l=2000 w=60 x=38 y=-511 sg13_lv_nmos
+x ramp_generator_nmos_mirror_0.pmos_ref VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=4020,268 d=4020,268 l=2000 w=30 x=-4359 y=1277 sg13_lv_pmos
+x RAMP_EN ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=7600,276 d=7600,276 l=26 w=200 x=1772 y=2227 sg13_lv_pmos
+x RAMP_RESET VRAMP VSS VSS s=44880,1456 d=25080,736 l=26 w=660 x=4767 y=-911 sg13_lv_nmos
+x ramp_generator_nmos_mirror_0.pmos_ref VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=4020,268 d=4020,268 l=2000 w=30 x=-4359 y=1645 sg13_lv_pmos
+x RAMP_EN VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=7600,276 d=7600,276 l=26 w=200 x=1466 y=2227 sg13_lv_pmos
+x RAMP_REF ramp_generator_nmos_mirror_0.pmos_ref VSS VSS s=4080,256 d=2280,136 l=2000 w=60 x=-2037 y=-511 sg13_lv_nmos
+x ramp_generator_nmos_mirror_0.pmos_ref ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=4020,268 d=4020,268 l=2000 w=30 x=-2119 y=909 sg13_lv_pmos
+x VSS VSS VSS VSS d=4080,256 l=2000 w=60 x=-4299 y=-511 sg13_lv_nmos
+x ramp_generator_nmos_mirror_0.pmos_ref VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=4020,268 d=4020,268 l=2000 w=30 x=120 y=357 sg13_lv_pmos
+x ramp_generator_nmos_mirror_0.pmos_ref VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=4020,268 d=4020,268 l=2000 w=30 x=120 y=725 sg13_lv_pmos
+x RAMP_EN ramp_generator_nmos_mirror_0.pmos_ref VDD VDD s=7600,276 d=7600,276 l=26 w=200 x=752 y=2227 sg13_lv_pmos
+x RAMP_EN VDD ramp_generator_nmos_mirror_0.pmos_ref VDD s=7600,276 d=7600,276 l=26 w=200 x=446 y=2227 sg13_lv_pmos
+x a_n5600_873# VDD VDD VDD d=4020,268 l=1000 w=30 x=-5599 y=909 sg13_lv_pmos
+C VDD RAMP_EN 4.5
+C VDD ramp_generator_nmos_mirror_0.pmos_ref 47.1
+C VRAMP VDD 4.0
+C VRAMP RAMP_RESET 2.3
+C RAMP_REF ramp_generator_nmos_mirror_0.pmos_ref 3.2
+C RAMP_REF VRAMP 2.2
+C VRAMP ramp_generator_nmos_mirror_0.pmos_ref 5.7
+C RAMP_REF0 15.2
+R RAMP_REF 59
+= RAMP_REF ramp_generator_nmos_mirror_0.ramp_ref
+C RAMP_RESET0 13.8
+R RAMP_RESET 17
+C VRAMP0 190.9
+R VRAMP 33
+C RAMP_EN0 5.6
+R RAMP_EN 14
+C VDD0 4.6
+R VDD 17
+R VSS 25
+= VSS ramp_generator_nmos_mirror_0.vss
+C ramp_generator_nmos_mirror_0.pmos_ref0 7.6
+R ramp_generator_nmos_mirror_0.pmos_ref 224

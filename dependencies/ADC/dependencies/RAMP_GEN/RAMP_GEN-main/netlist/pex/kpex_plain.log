@@ -1,0 +1,2196 @@
+GDS input file passed, running in LVS mode
+No explicit top cell specified, using top cell 'ramp_generator'
+LVS input schematic not specified (argument --schematic), using dummy schematic
+Calling MAGIC
+magic -dnull -noconsole -rcfile /foss/pdks/ihp-sg13g2/libs.tech/magic/ihp-sg13g2.magicrc output/ramp_generator__ramp_generator/magic_RC/ramp_generator_MAGIC_RC_Script.tcl, output file: output/ramp_generator__ramp_generator/magic_RC/ramp_generator_MAGIC_RC_Output.txt
+
+Magic 8.3 revision 582 - Compiled on Sun Dec 21 08:00:31 PM CET 2025.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    fillfet sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pad seal thruvia 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading "output/ramp_generator__ramp_generator/magic_RC/ramp_generator_MAGIC_RC_Script.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "via_stack$12".
+Reading "pmos$3".
+Reading "via_stack$10".
+Reading "via_stack$9".
+Reading "via_stack$6".
+Reading "nmos$2".
+Reading "via_stack$7".
+Reading "via_stack$4".
+Reading "via_stack".
+Reading "guard_ring$2".
+Reading "nmos$1".
+Reading "nmos".
+Reading "via_stack$1".
+Reading "guard_ring$1".
+Reading "pmos$1".
+Reading "pmos".
+Reading "via_stack$17".
+Reading "ramp_generator_en_pmos".
+Reading "via_stack$14".
+Reading "via_stack$13".
+Reading "via_stack$8".
+Reading "cmim$1".
+Reading "ramp_generator_reset_nmos".
+Reading "ramp_generator_pmos_mirror".
+Reading "ramp_generator_nmos_mirror".
+CIF file read warning: CIF style sg13g2(): units rescaled by factor of 5 / 1
+Reading "ramp_generator".
+Extracting ramp_generator into /foss/designs/gds/Aymen/output/ramp_generator__ramp_generator/magic_RC/ramp_generator.ext:
+ramp_generator: 24 warnings
+Total of 24 warnings.
+exttosim finished.
+Port: name = VDD exists, forcing drivepoint
+Location is (-2291, 2589); drivepoint (-2292, 2589)
+Port: name = VSS exists, forcing drivepoint
+Location is (-3705, -4363); drivepoint (-3706, -4364)
+Port: name = VRAMP exists, forcing drivepoint
+Location is (7910, -869); drivepoint (7910, -870)
+Port: name = RAMP_EN exists, forcing drivepoint
+Location is (-8239, 2141); drivepoint (-8240, 2141)
+Port: name = RAMP_REF exists, forcing drivepoint
+Location is (-8239, -49); drivepoint (-8240, -50)
+Port: name = RAMP_RESET exists, forcing drivepoint
+Location is (-8239, -1113); drivepoint (-8240, -1114)
+Adding  RAMP_REF; Tnew = 0.03ns, Told = 0.00ns
+Adding  RAMP_EN; Tnew = 0.09ns, Told = 0.00ns
+Adding  VRAMP; Tnew = 0.02ns, Told = 0.00ns
+Adding  RAMP_RESET; Tnew = 0.04ns, Told = 0.00ns
+Adding  VDD; Tnew = 0.15ns, Told = 0.00ns
+Adding  ramp_generator_nmos_mirror_0.pmos_ref; Tnew = 0.13ns, Told = 0.00ns
+Total Nets: 37
+Nets extracted: 7 (0.189189)
+Nets output: 7 (0.189189)
+exttospice finished.
+MAGIC succeeded after 0.7011s
+Report DB saved at: output/ramp_generator__ramp_generator/magic_RC/ramp_generator_MAGIC_report.rdb.gz
+SPICE netlist saved at: output/ramp_generator__ramp_generator/magic_RC/ramp_generator.pex.spice
+Copied expanded SPICE netlist to: /foss/designs/gdsspices/ramp_generator.spice
+* NGSPICE file created from ramp_generator.ext - technology: ihp-sg13g2
+
+.subckt ramp_generator VDD VSS VRAMP RAMP_EN RAMP_REF RAMP_RESET
+X0 ramp_generator_nmos_mirror_0.pmos_ref.t37 ramp_generator_nmos_mirror_0.pmos_ref.t20 VDD.t102 VDD.t30 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X1 VSS.t14 RAMP_RESET.t0 VRAMP.t6 VSS.t23 sg13_lv_nmos ad=0.627p pd=3.68u as=0.627p ps=3.68u w=3.3u l=0.13u
+X2 VDD.t68 a_4600_1241# VDD.t67 VDD.t0 sg13_lv_pmos ad=0.1005p pd=1.34u as=0 ps=0 w=0.15u l=5u
+X3 ramp_generator_nmos_mirror_0.pmos_ref.t23 ramp_generator_nmos_mirror_0.pmos_ref.t20 VDD.t101 VDD.t30 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X4 ramp_generator_nmos_mirror_0.pmos_ref.t14 RAMP_EN.t0 VDD.t52 VDD.t61 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X5 VDD.t112 a_4600_505# VDD.t111 VDD.t0 sg13_lv_pmos ad=0.1005p pd=1.34u as=0 ps=0 w=0.15u l=5u
+X6 VDD.t106 a_4600_1609# VDD.t105 VDD.t0 sg13_lv_pmos ad=0.1005p pd=1.34u as=0 ps=0 w=0.15u l=5u
+X7 ramp_generator_nmos_mirror_0.pmos_ref.t0 RAMP_EN.t0 VDD.t49 VDD.t19 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X8 VRAMP.t7 RAMP_RESET.t1 VSS.t17 VSS.t22 sg13_lv_nmos ad=1.122p pd=7.28u as=0.627p ps=3.68u w=3.3u l=0.13u
+X9 VDD.t26 RAMP_EN.t0 ramp_generator_nmos_mirror_0.pmos_ref.t17 VDD.t59 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X10 VSS.t59 VRAMP.t12 cap_cmim l=40u w=40u
+X11 VSS.t3 RAMP_RESET.t1 VRAMP.t9 VSS.t21 sg13_lv_nmos ad=0.627p pd=3.68u as=1.122p ps=7.28u w=3.3u l=0.13u
+X12 VSS.t11 RAMP_RESET.t1 VRAMP.t3 VSS.t20 sg13_lv_nmos ad=0.627p pd=3.68u as=0.627p ps=3.68u w=3.3u l=0.13u
+X13 VDD.t100 ramp_generator_nmos_mirror_0.pmos_ref.t20 ramp_generator_nmos_mirror_0.pmos_ref.t36 VDD.t0 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X14 VDD.t99 ramp_generator_nmos_mirror_0.pmos_ref.t20 ramp_generator_nmos_mirror_0.pmos_ref.t41 VDD.t0 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X15 ramp_generator_nmos_mirror_0.pmos_ref.t22 ramp_generator_nmos_mirror_0.pmos_ref.t20 VDD.t98 VDD.t62 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X16 VDD.t120 a_n5600_1241# VDD.t119 VDD.t62 sg13_lv_pmos ad=0.1005p pd=1.34u as=0 ps=0 w=0.15u l=5u
+X17 VDD.t66 a_n5600_1609# VDD.t65 VDD.t62 sg13_lv_pmos ad=0.1005p pd=1.34u as=0 ps=0 w=0.15u l=5u
+X18 ramp_generator_nmos_mirror_0.pmos_ref.t8 RAMP_EN.t0 VDD.t12 VDD.t58 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X19 VRAMP.t0 RAMP_RESET.t0 VSS.t1 VSS.t19 sg13_lv_nmos ad=0.627p pd=3.68u as=0.627p ps=3.68u w=3.3u l=0.13u
+X20 VDD.t33 RAMP_EN.t0 ramp_generator_nmos_mirror_0.pmos_ref.t18 VDD.t57 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X21 VDD.t42 RAMP_EN.t0 ramp_generator_nmos_mirror_0.pmos_ref.t12 VDD.t30 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X22 VDD.t97 ramp_generator_nmos_mirror_0.pmos_ref.t20 ramp_generator_nmos_mirror_0.pmos_ref.t24 VDD.t0 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X23 VDD.t96 ramp_generator_nmos_mirror_0.pmos_ref.t20 ramp_generator_nmos_mirror_0.pmos_ref.t50 VDD.t0 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X24 ramp_generator_nmos_mirror_0.pmos_ref.t13 RAMP_EN.t0 VDD.t8 VDD.t41 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X25 VDD.t28 RAMP_EN.t0 ramp_generator_nmos_mirror_0.pmos_ref.t4 VDD.t5 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X26 VDD.t40 RAMP_EN.t0 ramp_generator_nmos_mirror_0.pmos_ref.t11 VDD.t45 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X27 VDD.t95 ramp_generator_nmos_mirror_0.pmos_ref.t20 ramp_generator_nmos_mirror_0.pmos_ref.t39 VDD.t46 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X28 VDD.t52 RAMP_EN.t0 ramp_generator_nmos_mirror_0.pmos_ref.t15 VDD.t25 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X29 VRAMP.t1 RAMP_RESET.t0 VSS.t7 VSS.t18 sg13_lv_nmos ad=0.627p pd=3.68u as=0.627p ps=3.68u w=3.3u l=0.13u
+X30 VDD.t22 RAMP_EN.t0 ramp_generator_nmos_mirror_0.pmos_ref.t6 VDD.t38 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X31 ramp_generator_nmos_mirror_0.pmos_ref.t10 RAMP_EN.t0 VDD.t37 VDD.t15 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X32 VDD.t108 a_n5600_505# VDD.t107 VDD.t62 sg13_lv_pmos ad=0.1005p pd=1.34u as=0 ps=0 w=0.15u l=5u
+X33 VDD.t49 RAMP_EN.t0 ramp_generator_nmos_mirror_0.pmos_ref.t9 VDD.t48 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X34 ramp_generator_nmos_mirror_0.pmos_ref.t52 RAMP_REF.t0 VSS.t54 VSS.t55 sg13_lv_nmos ad=0.102p pd=1.28u as=57f ps=0.68u w=0.3u l=10u
+X35 VSS.t49 VSS.t28 VSS.t48 VSS.t29 sg13_lv_nmos ad=0.102p pd=1.28u as=0 ps=0 w=0.3u l=10u
+X36 VSS.t17 RAMP_RESET.t1 VRAMP.t4 VSS.t16 sg13_lv_nmos ad=0.627p pd=3.68u as=0.627p ps=3.68u w=3.3u l=0.13u
+X37 VDD.t18 RAMP_EN.t0 ramp_generator_nmos_mirror_0.pmos_ref.t1 VDD.t47 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X38 ramp_generator_nmos_mirror_0.pmos_ref.t17 RAMP_EN.t0 VDD.t34 VDD.t46 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X39 VSS.t54 RAMP_REF.t2 RAMP_REF.t7 VSS.t50 sg13_lv_nmos ad=57f pd=0.68u as=0.102p ps=1.28u w=0.3u l=10u
+X40 VRAMP.t11 ramp_generator_nmos_mirror_0.pmos_ref.t20 VDD.t94 VDD.t30 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X41 VSS.t46 VSS.t24 VSS.t45 VSS.t25 sg13_lv_nmos ad=0.102p pd=1.28u as=0 ps=0 w=0.3u l=10u
+X42 ramp_generator_nmos_mirror_0.pmos_ref.t33 ramp_generator_nmos_mirror_0.pmos_ref.t20 VDD.t93 VDD.t30 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X43 VDD.t2 a_4600_321# VDD.t1 VDD.t0 sg13_lv_pmos ad=0.1005p pd=1.34u as=0 ps=0 w=0.15u l=5u
+X44 ramp_generator_nmos_mirror_0.pmos_ref.t32 ramp_generator_nmos_mirror_0.pmos_ref.t20 VDD.t92 VDD.t30 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X45 VDD.t122 a_4600_689# VDD.t121 VDD.t0 sg13_lv_pmos ad=0.1005p pd=1.34u as=0 ps=0 w=0.15u l=5u
+X46 VRAMP.t3 RAMP_RESET.t1 VSS.t9 VSS.t15 sg13_lv_nmos ad=0.627p pd=3.68u as=0.627p ps=3.68u w=3.3u l=0.13u
+X47 ramp_generator_nmos_mirror_0.pmos_ref.t11 RAMP_EN.t0 VDD.t16 VDD.t45 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X48 VDD.t44 RAMP_EN.t0 ramp_generator_nmos_mirror_0.pmos_ref.t8 VDD.t43 sg13_lv_pmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X49 VDD.t91 ramp_generator_nmos_mirror_0.pmos_ref.t20 VRAMP.t10 VDD.t46 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X50 VDD.t90 ramp_generator_nmos_mirror_0.pmos_ref.t20 ramp_generator_nmos_mirror_0.pmos_ref.t35 VDD.t46 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X51 ramp_generator_nmos_mirror_0.pmos_ref.t19 RAMP_EN.t0 VDD.t42 VDD.t32 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X52 VDD.t31 RAMP_EN.t0 ramp_generator_nmos_mirror_0.pmos_ref.t13 VDD.t41 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X53 ramp_generator_nmos_mirror_0.pmos_ref.t44 ramp_generator_nmos_mirror_0.pmos_ref.t20 VDD.t89 VDD.t62 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X54 ramp_generator_nmos_mirror_0.pmos_ref.t16 RAMP_EN.t0 VDD.t40 VDD.t39 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X55 ramp_generator_nmos_mirror_0.pmos_ref.t27 ramp_generator_nmos_mirror_0.pmos_ref.t20 VDD.t88 VDD.t62 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X56 VRAMP.t5 RAMP_RESET.t0 VSS.t14 VSS.t13 sg13_lv_nmos ad=1.122p pd=7.28u as=0.627p ps=3.68u w=3.3u l=0.13u
+X57 VSS.t5 RAMP_RESET.t0 VRAMP.t1 VSS.t12 sg13_lv_nmos ad=0.627p pd=3.68u as=0.627p ps=3.68u w=3.3u l=0.13u
+X58 ramp_generator_nmos_mirror_0.pmos_ref.t6 RAMP_EN.t0 VDD.t24 VDD.t38 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X59 VSS.t43 VSS.t28 VSS.t42 VSS.t29 sg13_lv_nmos ad=0.102p pd=1.28u as=0 ps=0 w=0.3u l=10u
+X60 RAMP_REF.t6 RAMP_REF.t0 VSS.t53 VSS.t55 sg13_lv_nmos ad=0.102p pd=1.28u as=57f ps=0.68u w=0.3u l=10u
+X61 VDD.t37 RAMP_EN.t0 ramp_generator_nmos_mirror_0.pmos_ref.t5 VDD.t36 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X62 VRAMP.t4 RAMP_RESET.t1 VSS.t11 VSS.t10 sg13_lv_nmos ad=0.627p pd=3.68u as=0.627p ps=3.68u w=3.3u l=0.13u
+X63 ramp_generator_nmos_mirror_0.pmos_ref.t1 RAMP_EN.t0 VDD.t20 VDD.t35 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X64 VDD.t34 RAMP_EN.t0 ramp_generator_nmos_mirror_0.pmos_ref.t2 VDD.t17 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X65 VSS.t53 RAMP_REF.t2 RAMP_REF.t5 VSS.t50 sg13_lv_nmos ad=57f pd=0.68u as=0.102p ps=1.28u w=0.3u l=10u
+X66 VSS.t60 VRAMP.t13 cap_cmim l=40u w=40u
+X67 VDD.t87 ramp_generator_nmos_mirror_0.pmos_ref.t20 ramp_generator_nmos_mirror_0.pmos_ref.t42 VDD.t0 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X68 ramp_generator_nmos_mirror_0.pmos_ref.t45 ramp_generator_nmos_mirror_0.pmos_ref.t20 VDD.t86 VDD.t62 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X69 ramp_generator_nmos_mirror_0.pmos_ref.t48 ramp_generator_nmos_mirror_0.pmos_ref.t20 VDD.t85 VDD.t62 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X70 VSS.t40 VSS.t24 VSS.t39 VSS.t25 sg13_lv_nmos ad=0.102p pd=1.28u as=0 ps=0 w=0.3u l=10u
+X71 VDD.t84 ramp_generator_nmos_mirror_0.pmos_ref.t20 ramp_generator_nmos_mirror_0.pmos_ref.t31 VDD.t46 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X72 VDD.t83 ramp_generator_nmos_mirror_0.pmos_ref.t20 ramp_generator_nmos_mirror_0.pmos_ref.t38 VDD.t46 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X73 VSS.t9 RAMP_RESET.t1 VRAMP.t2 VSS.t8 sg13_lv_nmos ad=0.627p pd=3.68u as=0.627p ps=3.68u w=3.3u l=0.13u
+X74 VDD.t70 a_n5600_321# VDD.t69 VDD.t62 sg13_lv_pmos ad=0.1005p pd=1.34u as=0 ps=0 w=0.15u l=5u
+X75 ramp_generator_nmos_mirror_0.pmos_ref.t43 ramp_generator_nmos_mirror_0.pmos_ref.t20 VDD.t82 VDD.t30 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X76 VDD.t64 a_n5600_689# VDD.t63 VDD.t62 sg13_lv_pmos ad=0.1005p pd=1.34u as=0 ps=0 w=0.15u l=5u
+X77 VDD.t4 a_4600_1057# VDD.t3 VDD.t0 sg13_lv_pmos ad=0.1005p pd=1.34u as=0 ps=0 w=0.15u l=5u
+X78 VDD.t114 a_4600_1425# VDD.t113 VDD.t0 sg13_lv_pmos ad=0.1005p pd=1.34u as=0 ps=0 w=0.15u l=5u
+X79 RAMP_REF.t4 RAMP_REF.t0 VSS.t52 VSS.t55 sg13_lv_nmos ad=0.102p pd=1.28u as=57f ps=0.68u w=0.3u l=10u
+X80 VSS.t37 VSS.t28 VSS.t36 VSS.t29 sg13_lv_nmos ad=0.102p pd=1.28u as=0 ps=0 w=0.3u l=10u
+X81 ramp_generator_nmos_mirror_0.pmos_ref.t7 RAMP_EN.t0 VDD.t33 VDD.t11 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X82 VSS.t7 RAMP_RESET.t0 VRAMP.t0 VSS.t6 sg13_lv_nmos ad=0.627p pd=3.68u as=0.627p ps=3.68u w=3.3u l=0.13u
+X83 VDD.t10 RAMP_EN.t0 ramp_generator_nmos_mirror_0.pmos_ref.t19 VDD.t32 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X84 ramp_generator_nmos_mirror_0.pmos_ref.t12 RAMP_EN.t0 VDD.t31 VDD.t30 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X85 VSS.t52 RAMP_REF.t2 RAMP_REF.t3 VSS.t50 sg13_lv_nmos ad=57f pd=0.68u as=0.102p ps=1.28u w=0.3u l=10u
+X86 VDD.t104 a_4600_873# VDD.t103 VDD.t0 sg13_lv_pmos ad=0.1005p pd=1.34u as=0 ps=0 w=0.15u l=5u
+X87 VSS.t34 VSS.t24 VSS.t33 VSS.t25 sg13_lv_nmos ad=0.102p pd=1.28u as=0 ps=0 w=0.3u l=10u
+X88 VDD.t6 RAMP_EN.t0 ramp_generator_nmos_mirror_0.pmos_ref.t16 VDD.t29 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X89 ramp_generator_nmos_mirror_0.pmos_ref.t3 RAMP_EN.t0 VDD.t28 VDD.t27 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X90 VRAMP.t6 RAMP_RESET.t0 VSS.t5 VSS.t4 sg13_lv_nmos ad=0.627p pd=3.68u as=0.627p ps=3.68u w=3.3u l=0.13u
+X91 ramp_generator_nmos_mirror_0.pmos_ref.t15 RAMP_EN.t0 VDD.t26 VDD.t25 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X92 VDD.t24 RAMP_EN.t0 ramp_generator_nmos_mirror_0.pmos_ref.t14 VDD.t23 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X93 VDD.t81 ramp_generator_nmos_mirror_0.pmos_ref.t20 ramp_generator_nmos_mirror_0.pmos_ref.t46 VDD.t0 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X94 ramp_generator_nmos_mirror_0.pmos_ref.t5 RAMP_EN.t0 VDD.t22 VDD.t21 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X95 VDD.t80 ramp_generator_nmos_mirror_0.pmos_ref.t20 ramp_generator_nmos_mirror_0.pmos_ref.t40 VDD.t0 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X96 VDD.t79 ramp_generator_nmos_mirror_0.pmos_ref.t20 ramp_generator_nmos_mirror_0.pmos_ref.t49 VDD.t46 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X97 VDD.t20 RAMP_EN.t0 ramp_generator_nmos_mirror_0.pmos_ref.t0 VDD.t19 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X98 VDD.t110 a_n5600_1057# VDD.t109 VDD.t62 sg13_lv_pmos ad=0.1005p pd=1.34u as=0 ps=0 w=0.15u l=5u
+X99 VDD.t78 ramp_generator_nmos_mirror_0.pmos_ref.t20 ramp_generator_nmos_mirror_0.pmos_ref.t34 VDD.t46 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X100 ramp_generator_nmos_mirror_0.pmos_ref.t2 RAMP_EN.t0 VDD.t18 VDD.t17 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X101 VDD.t116 a_n5600_1425# VDD.t115 VDD.t62 sg13_lv_pmos ad=0.1005p pd=1.34u as=0 ps=0 w=0.15u l=5u
+X102 ramp_generator_nmos_mirror_0.pmos_ref.t28 ramp_generator_nmos_mirror_0.pmos_ref.t20 VDD.t77 VDD.t62 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X103 VDD.t16 RAMP_EN.t0 ramp_generator_nmos_mirror_0.pmos_ref.t10 VDD.t15 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X104 VDD.t76 ramp_generator_nmos_mirror_0.pmos_ref.t20 ramp_generator_nmos_mirror_0.pmos_ref.t47 VDD.t0 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X105 VRAMP.t2 RAMP_RESET.t1 VSS.t3 VSS.t2 sg13_lv_nmos ad=0.627p pd=3.68u as=0.627p ps=3.68u w=3.3u l=0.13u
+X106 ramp_generator_nmos_mirror_0.pmos_ref.t9 RAMP_EN.t0 VDD.t14 VDD.t13 sg13_lv_pmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X107 VSS.t31 VSS.t28 VSS.t30 VSS.t29 sg13_lv_nmos ad=0.102p pd=1.28u as=0 ps=0 w=0.3u l=10u
+X108 RAMP_REF.t1 RAMP_REF.t0 VSS.t51 VSS.t55 sg13_lv_nmos ad=0.102p pd=1.28u as=57f ps=0.68u w=0.3u l=10u
+X109 ramp_generator_nmos_mirror_0.pmos_ref.t21 ramp_generator_nmos_mirror_0.pmos_ref.t20 VDD.t75 VDD.t62 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X110 VDD.t12 RAMP_EN.t0 ramp_generator_nmos_mirror_0.pmos_ref.t7 VDD.t11 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X111 VSS.t1 RAMP_RESET.t0 VRAMP.t8 VSS.t0 sg13_lv_nmos ad=0.627p pd=3.68u as=1.122p ps=7.28u w=3.3u l=0.13u
+X112 ramp_generator_nmos_mirror_0.pmos_ref.t29 ramp_generator_nmos_mirror_0.pmos_ref.t20 VDD.t74 VDD.t62 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X113 ramp_generator_nmos_mirror_0.pmos_ref.t18 RAMP_EN.t0 VDD.t10 VDD.t9 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X114 VSS.t51 RAMP_REF.t2 ramp_generator_nmos_mirror_0.pmos_ref.t51 VSS.t50 sg13_lv_nmos ad=57f pd=0.68u as=0.102p ps=1.28u w=0.3u l=10u
+X115 VDD.t73 ramp_generator_nmos_mirror_0.pmos_ref.t20 ramp_generator_nmos_mirror_0.pmos_ref.t30 VDD.t46 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X116 VSS.t27 VSS.t24 VSS.t26 VSS.t25 sg13_lv_nmos ad=0.102p pd=1.28u as=0 ps=0 w=0.3u l=10u
+X117 ramp_generator_nmos_mirror_0.pmos_ref.t26 ramp_generator_nmos_mirror_0.pmos_ref.t20 VDD.t72 VDD.t30 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X118 ramp_generator_nmos_mirror_0.pmos_ref.t25 ramp_generator_nmos_mirror_0.pmos_ref.t20 VDD.t71 VDD.t30 sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=10u
+X119 VDD.t8 RAMP_EN.t0 ramp_generator_nmos_mirror_0.pmos_ref.t3 VDD.t7 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X120 ramp_generator_nmos_mirror_0.pmos_ref.t4 RAMP_EN.t0 VDD.t6 VDD.t5 sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X121 VDD.t118 a_n5600_873# VDD.t117 VDD.t62 sg13_lv_pmos ad=0.1005p pd=1.34u as=0 ps=0 w=0.15u l=5u
+C0 a_4600_505# a_4600_321# 0.15028f
+C1 a_4600_1609# a_4600_1425# 0.15028f
+C2 a_n5600_321# RAMP_RESET 0.01076f
+C3 a_n5600_505# a_n5600_321# 0.15028f
+C4 a_n5600_1425# a_n5600_1241# 0.15028f
+C5 a_n5600_1609# a_n5600_1425# 0.15028f
+C6 a_n5600_321# VDD 0.83068f
+C7 VDD a_4600_1241# 0.7207f
+C8 a_4600_873# a_4600_1057# 0.15028f
+C9 a_4600_1609# VRAMP 0.01064f
+C10 a_4600_689# a_4600_505# 0.15028f
+C11 a_4600_1609# VDD 0.83068f
+C12 VDD a_4600_1057# 0.7207f
+C13 a_n5600_873# a_n5600_689# 0.15028f
+C14 VDD a_4600_1425# 0.7207f
+C15 a_n5600_873# VDD 0.7207f
+C16 a_n5600_505# a_n5600_689# 0.15028f
+C17 VRAMP RAMP_RESET 2.25996f
+C18 RAMP_EN VRAMP 0.96449f
+C19 a_n5600_689# VDD 0.7207f
+C20 a_4600_873# VDD 0.7207f
+C21 VDD RAMP_RESET 0.04118f
+C22 a_n5600_505# VDD 0.7207f
+C23 RAMP_RESET RAMP_REF 0.7942f
+C24 VDD VRAMP 4.03765f
+C25 a_4600_321# RAMP_RESET 0.01076f
+C26 VRAMP RAMP_REF 2.19864f
+C27 VDD RAMP_EN 4.45271f
+C28 a_n5600_873# a_n5600_1057# 0.15028f
+C29 VDD RAMP_REF 0.89081f
+C30 a_4600_321# VDD 0.83068f
+C31 VDD a_n5600_1057# 0.7207f
+C32 VDD a_n5600_1241# 0.7207f
+C33 a_n5600_1609# VRAMP 0.01026f
+C34 ramp_generator_nmos_mirror_0.pmos_ref RAMP_RESET 0.31259f
+C35 a_4600_689# a_4600_873# 0.15028f
+C36 ramp_generator_nmos_mirror_0.pmos_ref VRAMP 5.68823f
+C37 ramp_generator_nmos_mirror_0.pmos_ref RAMP_EN 1.27125f
+C38 a_n5600_1609# VDD 0.83068f
+C39 ramp_generator_nmos_mirror_0.pmos_ref VDD 47.0594f
+C40 a_4600_689# VDD 0.7207f
+C41 ramp_generator_nmos_mirror_0.pmos_ref RAMP_REF 3.2109f
+C42 a_4600_1241# a_4600_1057# 0.15028f
+C43 VDD a_n5600_1425# 0.7207f
+C44 a_n5600_1057# a_n5600_1241# 0.15028f
+C45 a_4600_505# VDD 0.7207f
+C46 a_4600_1241# a_4600_1425# 0.15028f
+R0 ramp_generator_nmos_mirror_0.pmos_ref.n0 ramp_generator_nmos_mirror_0.pmos_ref.t51 27.8189
+R1 ramp_generator_nmos_mirror_0.pmos_ref.n0 ramp_generator_nmos_mirror_0.pmos_ref.t52 18.2334
+R2 ramp_generator_nmos_mirror_0.pmos_ref.n10 ramp_generator_nmos_mirror_0.pmos_ref.t45 17.0005
+R3 ramp_generator_nmos_mirror_0.pmos_ref.n51 ramp_generator_nmos_mirror_0.pmos_ref.t31 17.0005
+R4 ramp_generator_nmos_mirror_0.pmos_ref.n51 ramp_generator_nmos_mirror_0.pmos_ref.t44 17.0005
+R5 ramp_generator_nmos_mirror_0.pmos_ref.n49 ramp_generator_nmos_mirror_0.pmos_ref.t39 17.0005
+R6 ramp_generator_nmos_mirror_0.pmos_ref.n49 ramp_generator_nmos_mirror_0.pmos_ref.t22 17.0005
+R7 ramp_generator_nmos_mirror_0.pmos_ref.n47 ramp_generator_nmos_mirror_0.pmos_ref.t38 17.0005
+R8 ramp_generator_nmos_mirror_0.pmos_ref.n47 ramp_generator_nmos_mirror_0.pmos_ref.t27 17.0005
+R9 ramp_generator_nmos_mirror_0.pmos_ref.n45 ramp_generator_nmos_mirror_0.pmos_ref.t30 17.0005
+R10 ramp_generator_nmos_mirror_0.pmos_ref.n45 ramp_generator_nmos_mirror_0.pmos_ref.t28 17.0005
+R11 ramp_generator_nmos_mirror_0.pmos_ref.n52 ramp_generator_nmos_mirror_0.pmos_ref.t24 17.0005
+R12 ramp_generator_nmos_mirror_0.pmos_ref.n52 ramp_generator_nmos_mirror_0.pmos_ref.t26 17.0005
+R13 ramp_generator_nmos_mirror_0.pmos_ref.n1 ramp_generator_nmos_mirror_0.pmos_ref.t47 17.0005
+R14 ramp_generator_nmos_mirror_0.pmos_ref.n1 ramp_generator_nmos_mirror_0.pmos_ref.t43 17.0005
+R15 ramp_generator_nmos_mirror_0.pmos_ref.n12 ramp_generator_nmos_mirror_0.pmos_ref.t50 17.0005
+R16 ramp_generator_nmos_mirror_0.pmos_ref.n12 ramp_generator_nmos_mirror_0.pmos_ref.t25 17.0005
+R17 ramp_generator_nmos_mirror_0.pmos_ref.n14 ramp_generator_nmos_mirror_0.pmos_ref.t42 17.0005
+R18 ramp_generator_nmos_mirror_0.pmos_ref.n8 ramp_generator_nmos_mirror_0.pmos_ref.t49 17.0005
+R19 ramp_generator_nmos_mirror_0.pmos_ref.n8 ramp_generator_nmos_mirror_0.pmos_ref.t21 17.0005
+R20 ramp_generator_nmos_mirror_0.pmos_ref.n6 ramp_generator_nmos_mirror_0.pmos_ref.t35 17.0005
+R21 ramp_generator_nmos_mirror_0.pmos_ref.n6 ramp_generator_nmos_mirror_0.pmos_ref.t48 17.0005
+R22 ramp_generator_nmos_mirror_0.pmos_ref.n4 ramp_generator_nmos_mirror_0.pmos_ref.t34 17.0005
+R23 ramp_generator_nmos_mirror_0.pmos_ref.n4 ramp_generator_nmos_mirror_0.pmos_ref.t29 17.0005
+R24 ramp_generator_nmos_mirror_0.pmos_ref.n41 ramp_generator_nmos_mirror_0.pmos_ref.t46 17.0005
+R25 ramp_generator_nmos_mirror_0.pmos_ref.n41 ramp_generator_nmos_mirror_0.pmos_ref.t37 17.0005
+R26 ramp_generator_nmos_mirror_0.pmos_ref.n39 ramp_generator_nmos_mirror_0.pmos_ref.t36 17.0005
+R27 ramp_generator_nmos_mirror_0.pmos_ref.n39 ramp_generator_nmos_mirror_0.pmos_ref.t33 17.0005
+R28 ramp_generator_nmos_mirror_0.pmos_ref.n17 ramp_generator_nmos_mirror_0.pmos_ref.t40 17.0005
+R29 ramp_generator_nmos_mirror_0.pmos_ref.n17 ramp_generator_nmos_mirror_0.pmos_ref.t23 17.0005
+R30 ramp_generator_nmos_mirror_0.pmos_ref.n15 ramp_generator_nmos_mirror_0.pmos_ref.t41 17.0005
+R31 ramp_generator_nmos_mirror_0.pmos_ref.n15 ramp_generator_nmos_mirror_0.pmos_ref.t32 17.0005
+R32 ramp_generator_nmos_mirror_0.pmos_ref.n52 ramp_generator_nmos_mirror_0.pmos_ref.n51 9.57126
+R33 ramp_generator_nmos_mirror_0.pmos_ref.n27 ramp_generator_nmos_mirror_0.pmos_ref.t9 6.46275
+R34 ramp_generator_nmos_mirror_0.pmos_ref.n18 ramp_generator_nmos_mirror_0.pmos_ref.t8 6.46232
+R35 ramp_generator_nmos_mirror_0.pmos_ref.n18 ramp_generator_nmos_mirror_0.pmos_ref.t7 6.08198
+R36 ramp_generator_nmos_mirror_0.pmos_ref.n19 ramp_generator_nmos_mirror_0.pmos_ref.t18 6.08198
+R37 ramp_generator_nmos_mirror_0.pmos_ref.n20 ramp_generator_nmos_mirror_0.pmos_ref.t19 6.08198
+R38 ramp_generator_nmos_mirror_0.pmos_ref.n21 ramp_generator_nmos_mirror_0.pmos_ref.t12 6.08198
+R39 ramp_generator_nmos_mirror_0.pmos_ref.n22 ramp_generator_nmos_mirror_0.pmos_ref.t13 6.08198
+R40 ramp_generator_nmos_mirror_0.pmos_ref.n23 ramp_generator_nmos_mirror_0.pmos_ref.t3 6.08198
+R41 ramp_generator_nmos_mirror_0.pmos_ref.n24 ramp_generator_nmos_mirror_0.pmos_ref.t4 6.08198
+R42 ramp_generator_nmos_mirror_0.pmos_ref.n25 ramp_generator_nmos_mirror_0.pmos_ref.t16 6.08198
+R43 ramp_generator_nmos_mirror_0.pmos_ref.n26 ramp_generator_nmos_mirror_0.pmos_ref.t11 6.08198
+R44 ramp_generator_nmos_mirror_0.pmos_ref.n35 ramp_generator_nmos_mirror_0.pmos_ref.t10 6.08198
+R45 ramp_generator_nmos_mirror_0.pmos_ref.n34 ramp_generator_nmos_mirror_0.pmos_ref.t5 6.08198
+R46 ramp_generator_nmos_mirror_0.pmos_ref.n33 ramp_generator_nmos_mirror_0.pmos_ref.t6 6.08198
+R47 ramp_generator_nmos_mirror_0.pmos_ref.n32 ramp_generator_nmos_mirror_0.pmos_ref.t14 6.08198
+R48 ramp_generator_nmos_mirror_0.pmos_ref.n31 ramp_generator_nmos_mirror_0.pmos_ref.t15 6.08198
+R49 ramp_generator_nmos_mirror_0.pmos_ref.n30 ramp_generator_nmos_mirror_0.pmos_ref.t17 6.08198
+R50 ramp_generator_nmos_mirror_0.pmos_ref.n29 ramp_generator_nmos_mirror_0.pmos_ref.t2 6.08198
+R51 ramp_generator_nmos_mirror_0.pmos_ref.n27 ramp_generator_nmos_mirror_0.pmos_ref.t0 6.08198
+R52 ramp_generator_nmos_mirror_0.pmos_ref.n28 ramp_generator_nmos_mirror_0.pmos_ref.t1 6.08098
+R53 ramp_generator_nmos_mirror_0.pmos_ref.n37 ramp_generator_nmos_mirror_0.pmos_ref.n36 3.67358
+R54 ramp_generator_nmos_mirror_0.pmos_ref.n55 ramp_generator_nmos_mirror_0.pmos_ref.n54 1.28773
+R55 ramp_generator_nmos_mirror_0.pmos_ref.n44 ramp_generator_nmos_mirror_0.pmos_ref.n43 1.2146
+R56 ramp_generator_nmos_mirror_0.pmos_ref.n9 ramp_generator_nmos_mirror_0.pmos_ref.t20 1.19911
+R57 ramp_generator_nmos_mirror_0.pmos_ref.n13 ramp_generator_nmos_mirror_0.pmos_ref.n3 1.19316
+R58 ramp_generator_nmos_mirror_0.pmos_ref.n43 ramp_generator_nmos_mirror_0.pmos_ref.n42 1.18317
+R59 ramp_generator_nmos_mirror_0.pmos_ref.n7 ramp_generator_nmos_mirror_0.pmos_ref.t20 1.08411
+R60 ramp_generator_nmos_mirror_0.pmos_ref.n5 ramp_generator_nmos_mirror_0.pmos_ref.t20 1.07312
+R61 ramp_generator_nmos_mirror_0.pmos_ref.n50 ramp_generator_nmos_mirror_0.pmos_ref.t20 1.07182
+R62 ramp_generator_nmos_mirror_0.pmos_ref.n48 ramp_generator_nmos_mirror_0.pmos_ref.n2 1.07152
+R63 ramp_generator_nmos_mirror_0.pmos_ref.n46 ramp_generator_nmos_mirror_0.pmos_ref.n3 1.06915
+R64 ramp_generator_nmos_mirror_0.pmos_ref.n11 ramp_generator_nmos_mirror_0.pmos_ref.n2 1.05896
+R65 ramp_generator_nmos_mirror_0.pmos_ref.n40 ramp_generator_nmos_mirror_0.pmos_ref.t20 1.05886
+R66 ramp_generator_nmos_mirror_0.pmos_ref.n16 ramp_generator_nmos_mirror_0.pmos_ref.t20 1.05886
+R67 ramp_generator_nmos_mirror_0.pmos_ref.n38 ramp_generator_nmos_mirror_0.pmos_ref.t20 1.05607
+R68 ramp_generator_nmos_mirror_0.pmos_ref.n53 ramp_generator_nmos_mirror_0.pmos_ref.t20 1.04639
+R69 ramp_generator_nmos_mirror_0.pmos_ref ramp_generator_nmos_mirror_0.pmos_ref.n0 0.7111
+R70 ramp_generator_nmos_mirror_0.pmos_ref.n19 ramp_generator_nmos_mirror_0.pmos_ref.n18 0.380839
+R71 ramp_generator_nmos_mirror_0.pmos_ref.n20 ramp_generator_nmos_mirror_0.pmos_ref.n19 0.380839
+R72 ramp_generator_nmos_mirror_0.pmos_ref.n21 ramp_generator_nmos_mirror_0.pmos_ref.n20 0.380839
+R73 ramp_generator_nmos_mirror_0.pmos_ref.n22 ramp_generator_nmos_mirror_0.pmos_ref.n21 0.380839
+R74 ramp_generator_nmos_mirror_0.pmos_ref.n23 ramp_generator_nmos_mirror_0.pmos_ref.n22 0.380839
+R75 ramp_generator_nmos_mirror_0.pmos_ref.n24 ramp_generator_nmos_mirror_0.pmos_ref.n23 0.380839
+R76 ramp_generator_nmos_mirror_0.pmos_ref.n25 ramp_generator_nmos_mirror_0.pmos_ref.n24 0.380839
+R77 ramp_generator_nmos_mirror_0.pmos_ref.n26 ramp_generator_nmos_mirror_0.pmos_ref.n25 0.380839
+R78 ramp_generator_nmos_mirror_0.pmos_ref.n35 ramp_generator_nmos_mirror_0.pmos_ref.n34 0.380839
+R79 ramp_generator_nmos_mirror_0.pmos_ref.n34 ramp_generator_nmos_mirror_0.pmos_ref.n33 0.380839
+R80 ramp_generator_nmos_mirror_0.pmos_ref.n33 ramp_generator_nmos_mirror_0.pmos_ref.n32 0.380839
+R81 ramp_generator_nmos_mirror_0.pmos_ref.n32 ramp_generator_nmos_mirror_0.pmos_ref.n31 0.380839
+R82 ramp_generator_nmos_mirror_0.pmos_ref.n31 ramp_generator_nmos_mirror_0.pmos_ref.n30 0.380839
+R83 ramp_generator_nmos_mirror_0.pmos_ref.n30 ramp_generator_nmos_mirror_0.pmos_ref.n29 0.380839
+R84 ramp_generator_nmos_mirror_0.pmos_ref.n29 ramp_generator_nmos_mirror_0.pmos_ref.n28 0.380839
+R85 ramp_generator_nmos_mirror_0.pmos_ref.n28 ramp_generator_nmos_mirror_0.pmos_ref.n27 0.380839
+R86 ramp_generator_nmos_mirror_0.pmos_ref.n55 ramp_generator_nmos_mirror_0.pmos_ref 0.3547
+R87 ramp_generator_nmos_mirror_0.pmos_ref.n44 ramp_generator_nmos_mirror_0.pmos_ref.n10 0.26175
+R88 ramp_generator_nmos_mirror_0.pmos_ref.n42 ramp_generator_nmos_mirror_0.pmos_ref.n14 0.26175
+R89 ramp_generator_nmos_mirror_0.pmos_ref.n10 ramp_generator_nmos_mirror_0.pmos_ref.n9 0.258312
+R90 ramp_generator_nmos_mirror_0.pmos_ref.n14 ramp_generator_nmos_mirror_0.pmos_ref.n13 0.248
+R91 ramp_generator_nmos_mirror_0.pmos_ref.n13 ramp_generator_nmos_mirror_0.pmos_ref.n12 0.201668
+R92 ramp_generator_nmos_mirror_0.pmos_ref.n36 ramp_generator_nmos_mirror_0.pmos_ref.n26 0.190669
+R93 ramp_generator_nmos_mirror_0.pmos_ref.n36 ramp_generator_nmos_mirror_0.pmos_ref.n35 0.190669
+R94 ramp_generator_nmos_mirror_0.pmos_ref.n45 ramp_generator_nmos_mirror_0.pmos_ref.n44 0.187918
+R95 ramp_generator_nmos_mirror_0.pmos_ref.n9 ramp_generator_nmos_mirror_0.pmos_ref.n8 0.187918
+R96 ramp_generator_nmos_mirror_0.pmos_ref.n42 ramp_generator_nmos_mirror_0.pmos_ref.n41 0.184481
+R97 ramp_generator_nmos_mirror_0.pmos_ref ramp_generator_nmos_mirror_0.pmos_ref.n55 0.0949533
+R98 ramp_generator_nmos_mirror_0.pmos_ref.n47 ramp_generator_nmos_mirror_0.pmos_ref.n46 0.0578913
+R99 ramp_generator_nmos_mirror_0.pmos_ref.n8 ramp_generator_nmos_mirror_0.pmos_ref.n7 0.0572935
+R100 ramp_generator_nmos_mirror_0.pmos_ref.n39 ramp_generator_nmos_mirror_0.pmos_ref.n38 0.0572935
+R101 ramp_generator_nmos_mirror_0.pmos_ref.n49 ramp_generator_nmos_mirror_0.pmos_ref.n48 0.0566957
+R102 ramp_generator_nmos_mirror_0.pmos_ref.n11 ramp_generator_nmos_mirror_0.pmos_ref.n1 0.0566957
+R103 ramp_generator_nmos_mirror_0.pmos_ref.n6 ramp_generator_nmos_mirror_0.pmos_ref.n5 0.0566957
+R104 ramp_generator_nmos_mirror_0.pmos_ref.n17 ramp_generator_nmos_mirror_0.pmos_ref.n16 0.0566957
+R105 ramp_generator_nmos_mirror_0.pmos_ref.n51 ramp_generator_nmos_mirror_0.pmos_ref.n50 0.0560978
+R106 ramp_generator_nmos_mirror_0.pmos_ref.n53 ramp_generator_nmos_mirror_0.pmos_ref.n52 0.0555
+R107 ramp_generator_nmos_mirror_0.pmos_ref.n40 ramp_generator_nmos_mirror_0.pmos_ref.n39 0.0555
+R108 ramp_generator_nmos_mirror_0.pmos_ref.n41 ramp_generator_nmos_mirror_0.pmos_ref.n40 0.0555
+R109 ramp_generator_nmos_mirror_0.pmos_ref.n50 ramp_generator_nmos_mirror_0.pmos_ref.n49 0.0549022
+R110 ramp_generator_nmos_mirror_0.pmos_ref.n48 ramp_generator_nmos_mirror_0.pmos_ref.n47 0.0543043
+R111 ramp_generator_nmos_mirror_0.pmos_ref.n12 ramp_generator_nmos_mirror_0.pmos_ref.n11 0.0543043
+R112 ramp_generator_nmos_mirror_0.pmos_ref.n5 ramp_generator_nmos_mirror_0.pmos_ref.n4 0.0543043
+R113 ramp_generator_nmos_mirror_0.pmos_ref.n16 ramp_generator_nmos_mirror_0.pmos_ref.n15 0.0543043
+R114 ramp_generator_nmos_mirror_0.pmos_ref.n7 ramp_generator_nmos_mirror_0.pmos_ref.n6 0.0537065
+R115 ramp_generator_nmos_mirror_0.pmos_ref.n46 ramp_generator_nmos_mirror_0.pmos_ref.n45 0.0531087
+R116 ramp_generator_nmos_mirror_0.pmos_ref.n38 ramp_generator_nmos_mirror_0.pmos_ref.n37 0.0471304
+R117 ramp_generator_nmos_mirror_0.pmos_ref.n54 ramp_generator_nmos_mirror_0.pmos_ref.n1 0.038163
+R118 ramp_generator_nmos_mirror_0.pmos_ref.n54 ramp_generator_nmos_mirror_0.pmos_ref.n53 0.017837
+R119 ramp_generator_nmos_mirror_0.pmos_ref.n37 ramp_generator_nmos_mirror_0.pmos_ref.n17 0.00707609
+R120 ramp_generator_nmos_mirror_0.pmos_ref.n3 ramp_generator_nmos_mirror_0.pmos_ref.t20 0.00137126
+R121 ramp_generator_nmos_mirror_0.pmos_ref.n2 ramp_generator_nmos_mirror_0.pmos_ref.t20 0.00135368
+R122 ramp_generator_nmos_mirror_0.pmos_ref.n43 ramp_generator_nmos_mirror_0.pmos_ref.t20 0.00132932
+R123 VDD.n177 VDD.t89 17.0005
+R124 VDD.n177 VDD.t69 17.0005
+R125 VDD.n177 VDD.t70 17.0005
+R126 VDD.n179 VDD.t98 17.0005
+R127 VDD.n179 VDD.t107 17.0005
+R128 VDD.n179 VDD.t108 17.0005
+R129 VDD.n181 VDD.t88 17.0005
+R130 VDD.n181 VDD.t63 17.0005
+R131 VDD.n181 VDD.t64 17.0005
+R132 VDD.n183 VDD.t77 17.0005
+R133 VDD.n183 VDD.t117 17.0005
+R134 VDD.n183 VDD.t118 17.0005
+R135 VDD.n185 VDD.t86 17.0005
+R136 VDD.n185 VDD.t109 17.0005
+R137 VDD.n185 VDD.t110 17.0005
+R138 VDD.n187 VDD.t75 17.0005
+R139 VDD.n187 VDD.t119 17.0005
+R140 VDD.n187 VDD.t120 17.0005
+R141 VDD.n189 VDD.t85 17.0005
+R142 VDD.n189 VDD.t115 17.0005
+R143 VDD.n189 VDD.t116 17.0005
+R144 VDD.n191 VDD.t74 17.0005
+R145 VDD.n191 VDD.t65 17.0005
+R146 VDD.n191 VDD.t66 17.0005
+R147 VDD.n143 VDD.t1 17.0005
+R148 VDD.n143 VDD.t2 17.0005
+R149 VDD.n143 VDD.t97 17.0005
+R150 VDD.n141 VDD.t111 17.0005
+R151 VDD.n141 VDD.t112 17.0005
+R152 VDD.n141 VDD.t76 17.0005
+R153 VDD.n139 VDD.t121 17.0005
+R154 VDD.n139 VDD.t122 17.0005
+R155 VDD.n139 VDD.t96 17.0005
+R156 VDD.n137 VDD.t103 17.0005
+R157 VDD.n137 VDD.t104 17.0005
+R158 VDD.n137 VDD.t87 17.0005
+R159 VDD.n135 VDD.t3 17.0005
+R160 VDD.n135 VDD.t4 17.0005
+R161 VDD.n135 VDD.t81 17.0005
+R162 VDD.n133 VDD.t67 17.0005
+R163 VDD.n133 VDD.t68 17.0005
+R164 VDD.n133 VDD.t100 17.0005
+R165 VDD.n131 VDD.t113 17.0005
+R166 VDD.n131 VDD.t114 17.0005
+R167 VDD.n131 VDD.t80 17.0005
+R168 VDD.n129 VDD.t105 17.0005
+R169 VDD.n129 VDD.t106 17.0005
+R170 VDD.n129 VDD.t99 17.0005
+R171 VDD.n117 VDD.t72 17.0005
+R172 VDD.n117 VDD.t84 17.0005
+R173 VDD.n118 VDD.t82 17.0005
+R174 VDD.n118 VDD.t95 17.0005
+R175 VDD.n119 VDD.t71 17.0005
+R176 VDD.n119 VDD.t83 17.0005
+R177 VDD.n120 VDD.t94 17.0005
+R178 VDD.n120 VDD.t73 17.0005
+R179 VDD.n121 VDD.t102 17.0005
+R180 VDD.n121 VDD.t91 17.0005
+R181 VDD.n122 VDD.t93 17.0005
+R182 VDD.n122 VDD.t79 17.0005
+R183 VDD.n123 VDD.t101 17.0005
+R184 VDD.n123 VDD.t90 17.0005
+R185 VDD.n124 VDD.t92 17.0005
+R186 VDD.n124 VDD.t78 17.0005
+R187 VDD.n214 VDD.n113 17.0005
+R188 VDD.n214 VDD.n126 17.0005
+R189 VDD.n214 VDD.n97 17.0005
+R190 VDD.n217 VDD.n47 17.0005
+R191 VDD.n213 VDD.n212 8.501
+R192 VDD.n212 VDD.n211 8.501
+R193 VDD.n212 VDD.n209 8.501
+R194 VDD.n212 VDD.n207 8.501
+R195 VDD.n212 VDD.n205 8.501
+R196 VDD.n212 VDD.n203 8.501
+R197 VDD.n212 VDD.n201 8.501
+R198 VDD.n212 VDD.n199 8.501
+R199 VDD.n212 VDD.n197 8.501
+R200 VDD.n212 VDD.n195 8.501
+R201 VDD.n212 VDD.n114 8.501
+R202 VDD.n193 VDD.t62 8.5005
+R203 VDD.n210 VDD.t62 8.5005
+R204 VDD.n208 VDD.t62 8.5005
+R205 VDD.n206 VDD.t62 8.5005
+R206 VDD.n204 VDD.t62 8.5005
+R207 VDD.n202 VDD.t62 8.5005
+R208 VDD.n200 VDD.t62 8.5005
+R209 VDD.n198 VDD.t62 8.5005
+R210 VDD.n196 VDD.t62 8.5005
+R211 VDD.n194 VDD.t62 8.5005
+R212 VDD.n214 VDD.n178 8.49976
+R213 VDD.n214 VDD.n190 8.49976
+R214 VDD.n214 VDD.n130 8.49976
+R215 VDD.n214 VDD.n142 8.49976
+R216 VDD.n214 VDD.n184 8.49918
+R217 VDD.n214 VDD.n136 8.49918
+R218 VDD.n214 VDD.n112 8.49223
+R219 VDD.n214 VDD.n111 8.49223
+R220 VDD.n214 VDD.n110 8.49223
+R221 VDD.n214 VDD.n109 8.49223
+R222 VDD.n214 VDD.n108 8.49223
+R223 VDD.n214 VDD.n107 8.49223
+R224 VDD.n214 VDD.n106 8.49223
+R225 VDD.n214 VDD.n105 8.49223
+R226 VDD.n214 VDD.n104 8.49223
+R227 VDD.n214 VDD.n103 8.49223
+R228 VDD.n214 VDD.n102 8.49223
+R229 VDD.n214 VDD.n101 8.49223
+R230 VDD.n214 VDD.n100 8.49223
+R231 VDD.n214 VDD.n99 8.49223
+R232 VDD.n214 VDD.n98 8.49223
+R233 VDD.n214 VDD.n96 8.49223
+R234 VDD.n214 VDD.n95 8.49223
+R235 VDD.n214 VDD.n94 8.49223
+R236 VDD.n214 VDD.n93 8.49223
+R237 VDD.n214 VDD.n92 8.49223
+R238 VDD.n214 VDD.n91 8.49223
+R239 VDD.n214 VDD.n90 8.49223
+R240 VDD.n214 VDD.n89 8.49223
+R241 VDD.n214 VDD.n88 8.49223
+R242 VDD.n214 VDD.n87 8.49223
+R243 VDD.n214 VDD.n86 8.49223
+R244 VDD.n214 VDD.n85 8.49223
+R245 VDD.n214 VDD.n84 8.49223
+R246 VDD.n214 VDD.n83 8.49223
+R247 VDD.n214 VDD.n82 8.49223
+R248 VDD.n214 VDD.n81 8.49223
+R249 VDD.n217 VDD.n79 8.49223
+R250 VDD.n217 VDD.n78 8.49223
+R251 VDD.n217 VDD.n77 8.49223
+R252 VDD.n217 VDD.n76 8.49223
+R253 VDD.n217 VDD.n75 8.49223
+R254 VDD.n217 VDD.n74 8.49223
+R255 VDD.n217 VDD.n73 8.49223
+R256 VDD.n217 VDD.n72 8.49223
+R257 VDD.n217 VDD.n71 8.49223
+R258 VDD.n217 VDD.n70 8.49223
+R259 VDD.n217 VDD.n69 8.49223
+R260 VDD.n217 VDD.n68 8.49223
+R261 VDD.n217 VDD.n67 8.49223
+R262 VDD.n217 VDD.n66 8.49223
+R263 VDD.n217 VDD.n65 8.49223
+R264 VDD.n217 VDD.n64 8.49223
+R265 VDD.n217 VDD.n63 8.49223
+R266 VDD.n217 VDD.n62 8.49223
+R267 VDD.n217 VDD.n61 8.49223
+R268 VDD.n217 VDD.n60 8.49223
+R269 VDD.n217 VDD.n59 8.49223
+R270 VDD.n217 VDD.n58 8.49223
+R271 VDD.n217 VDD.n57 8.49223
+R272 VDD.n217 VDD.n56 8.49223
+R273 VDD.n217 VDD.n55 8.49223
+R274 VDD.n217 VDD.n54 8.49223
+R275 VDD.n217 VDD.n53 8.49223
+R276 VDD.n217 VDD.n52 8.49223
+R277 VDD.n217 VDD.n51 8.49223
+R278 VDD.n217 VDD.n50 8.49223
+R279 VDD.n217 VDD.n49 8.49223
+R280 VDD.n217 VDD.n48 8.49223
+R281 VDD.n217 VDD.n21 8.48982
+R282 VDD.n44 VDD 7.97183
+R283 VDD.n0 VDD.t14 6.09273
+R284 VDD.n4 VDD.t49 6.09273
+R285 VDD.n6 VDD.t20 6.09273
+R286 VDD.n8 VDD.t18 6.09273
+R287 VDD.n10 VDD.t34 6.09273
+R288 VDD.n12 VDD.t26 6.09273
+R289 VDD.n14 VDD.t52 6.09273
+R290 VDD.n16 VDD.t24 6.09273
+R291 VDD.n18 VDD.t22 6.09273
+R292 VDD.n20 VDD.t37 6.09273
+R293 VDD.n22 VDD.t16 6.09273
+R294 VDD.n24 VDD.t40 6.09273
+R295 VDD.n26 VDD.t6 6.09273
+R296 VDD.n28 VDD.t28 6.09273
+R297 VDD.n30 VDD.t8 6.09273
+R298 VDD.n33 VDD.t31 6.09273
+R299 VDD.n35 VDD.t42 6.09273
+R300 VDD.n37 VDD.t10 6.09273
+R301 VDD.n39 VDD.t33 6.09273
+R302 VDD.n41 VDD.t12 6.09273
+R303 VDD.n43 VDD.t44 6.09273
+R304 VDD.n214 VDD.n180 5.66557
+R305 VDD.n214 VDD.n182 5.66557
+R306 VDD.n214 VDD.n186 5.66557
+R307 VDD.n214 VDD.n188 5.66557
+R308 VDD.n214 VDD.n192 5.66557
+R309 VDD.n214 VDD.n132 5.66557
+R310 VDD.n214 VDD.n134 5.66557
+R311 VDD.n214 VDD.n138 5.66557
+R312 VDD.n214 VDD.n140 5.66557
+R313 VDD.n217 VDD.n42 5.64793
+R314 VDD.n217 VDD.n40 5.64793
+R315 VDD.n217 VDD.n38 5.64793
+R316 VDD.n217 VDD.n36 5.64793
+R317 VDD.n217 VDD.n34 5.64793
+R318 VDD.n217 VDD.n31 5.64793
+R319 VDD.n217 VDD.n29 5.64793
+R320 VDD.n217 VDD.n27 5.64793
+R321 VDD.n217 VDD.n25 5.64793
+R322 VDD.n217 VDD.n23 5.64793
+R323 VDD.n217 VDD.n19 5.64793
+R324 VDD.n217 VDD.n17 5.64793
+R325 VDD.n217 VDD.n15 5.64793
+R326 VDD.n217 VDD.n13 5.64793
+R327 VDD.n217 VDD.n11 5.64793
+R328 VDD.n217 VDD.n9 5.64793
+R329 VDD.n217 VDD.n7 5.64793
+R330 VDD.n217 VDD.n5 5.64793
+R331 VDD.n217 VDD.n3 5.64793
+R332 VDD.n215 VDD.n214 4.251
+R333 VDD.n214 VDD.n145 4.251
+R334 VDD.n214 VDD.n146 4.251
+R335 VDD.n214 VDD.n147 4.251
+R336 VDD.n214 VDD.n148 4.251
+R337 VDD.n214 VDD.n149 4.251
+R338 VDD.n214 VDD.n150 4.251
+R339 VDD.n214 VDD.n151 4.251
+R340 VDD.n214 VDD.n152 4.251
+R341 VDD.n214 VDD.n153 4.251
+R342 VDD.n214 VDD.n154 4.251
+R343 VDD.n214 VDD.n155 4.251
+R344 VDD.n214 VDD.n156 4.251
+R345 VDD.n214 VDD.n157 4.251
+R346 VDD.n214 VDD.n158 4.251
+R347 VDD.n214 VDD.n159 4.251
+R348 VDD.n214 VDD.n160 4.251
+R349 VDD.n214 VDD.n161 4.251
+R350 VDD.n214 VDD.n162 4.251
+R351 VDD.n214 VDD.n163 4.251
+R352 VDD.n214 VDD.n164 4.251
+R353 VDD.n214 VDD.n165 4.251
+R354 VDD.n214 VDD.n166 4.251
+R355 VDD.n214 VDD.n167 4.251
+R356 VDD.n214 VDD.n168 4.251
+R357 VDD.n214 VDD.n169 4.251
+R358 VDD.n214 VDD.n170 4.251
+R359 VDD.n214 VDD.n171 4.251
+R360 VDD.n214 VDD.n172 4.251
+R361 VDD.n214 VDD.n173 4.251
+R362 VDD.n214 VDD.n174 4.251
+R363 VDD.n214 VDD.n175 4.251
+R364 VDD.n217 VDD.n46 4.2505
+R365 VDD.n217 VDD.t43 4.2505
+R366 VDD.n217 VDD.t58 4.2505
+R367 VDD.n217 VDD.t11 4.2505
+R368 VDD.n217 VDD.t57 4.2505
+R369 VDD.n217 VDD.t9 4.2505
+R370 VDD.n217 VDD.t32 4.2505
+R371 VDD.n217 VDD.n32 4.2505
+R372 VDD.n217 VDD.t30 4.2505
+R373 VDD.n217 VDD.t41 4.2505
+R374 VDD.n217 VDD.t7 4.2505
+R375 VDD.n217 VDD.t27 4.2505
+R376 VDD.n217 VDD.t5 4.2505
+R377 VDD.n217 VDD.t29 4.2505
+R378 VDD.n217 VDD.t39 4.2505
+R379 VDD.n217 VDD.t45 4.2505
+R380 VDD.n217 VDD.t15 4.2505
+R381 VDD.n217 VDD.t36 4.2505
+R382 VDD.n217 VDD.t21 4.2505
+R383 VDD.n217 VDD.t38 4.2505
+R384 VDD.n217 VDD.t23 4.2505
+R385 VDD.n217 VDD.t61 4.2505
+R386 VDD.n217 VDD.t25 4.2505
+R387 VDD.n217 VDD.t59 4.2505
+R388 VDD.n217 VDD.t46 4.2505
+R389 VDD.n217 VDD.t17 4.2505
+R390 VDD.n217 VDD.t47 4.2505
+R391 VDD.n217 VDD.t35 4.2505
+R392 VDD.n217 VDD.t19 4.2505
+R393 VDD.n217 VDD.t48 4.2505
+R394 VDD.n217 VDD.t13 4.2505
+R395 VDD.n217 VDD.n2 4.2505
+R396 VDD.n218 VDD.n217 4.17429
+R397 VDD.n217 VDD.n80 1.96015
+R398 VDD.n217 VDD.t0 1.88939
+R399 VDD.n217 VDD.n216 1.54645
+R400 VDD.n128 VDD.n127 1.31102
+R401 VDD.n212 VDD.n116 1.27342
+R402 VDD.n217 VDD.n45 1.19763
+R403 VDD.n116 VDD.n115 1.18682
+R404 VDD.n45 VDD.n44 0.619897
+R405 VDD.n127 VDD.n45 0.610644
+R406 VDD.n80 VDD.n1 0.517104
+R407 VDD.n177 VDD.n144 0.486964
+R408 VDD.n144 VDD.n143 0.47957
+R409 VDD.n129 VDD.n128 0.422488
+R410 VDD.n115 VDD.n80 0.408733
+R411 VDD.n214 VDD.n116 0.194021
+R412 VDD.n219 VDD.n218 0.190262
+R413 VDD.n218 VDD.n1 0.186857
+R414 VDD VDD.n219 0.155949
+R415 VDD.n214 VDD.t62 0.152286
+R416 VDD.n214 VDD.n176 0.127866
+R417 VDD.n125 VDD.n124 0.115283
+R418 VDD.n124 VDD.n123 0.1105
+R419 VDD.n123 VDD.n122 0.1105
+R420 VDD.n122 VDD.n121 0.1105
+R421 VDD.n121 VDD.n120 0.1105
+R422 VDD.n120 VDD.n119 0.1105
+R423 VDD.n119 VDD.n118 0.1105
+R424 VDD.n118 VDD.n117 0.1105
+R425 VDD.n22 VDD.n21 0.0800125
+R426 VDD.n19 VDD.n18 0.0792734
+R427 VDD.n17 VDD.n16 0.0792734
+R428 VDD.n15 VDD.n14 0.0792734
+R429 VDD.n13 VDD.n12 0.0792734
+R430 VDD.n11 VDD.n10 0.0792734
+R431 VDD.n9 VDD.n8 0.0792734
+R432 VDD.n7 VDD.n6 0.0792734
+R433 VDD.n5 VDD.n4 0.0792734
+R434 VDD.n3 VDD.n0 0.0792734
+R435 VDD.n43 VDD.n42 0.0789377
+R436 VDD.n41 VDD.n40 0.0789377
+R437 VDD.n39 VDD.n38 0.0789377
+R438 VDD.n37 VDD.n36 0.0789377
+R439 VDD.n35 VDD.n34 0.0789377
+R440 VDD.n33 VDD.n31 0.0789377
+R441 VDD.n30 VDD.n29 0.0789377
+R442 VDD.n28 VDD.n27 0.0789377
+R443 VDD.n26 VDD.n25 0.0789377
+R444 VDD.n24 VDD.n23 0.0789377
+R445 VDD.n214 VDD.n128 0.0618645
+R446 VDD.n42 VDD.n41 0.0581955
+R447 VDD.n40 VDD.n39 0.0581955
+R448 VDD.n38 VDD.n37 0.0581955
+R449 VDD.n36 VDD.n35 0.0581955
+R450 VDD.n34 VDD.n33 0.0581955
+R451 VDD.n31 VDD.n30 0.0581955
+R452 VDD.n29 VDD.n28 0.0581955
+R453 VDD.n27 VDD.n26 0.0581955
+R454 VDD.n25 VDD.n24 0.0581955
+R455 VDD.n23 VDD.n22 0.0581955
+R456 VDD.n20 VDD.n19 0.0578599
+R457 VDD.n18 VDD.n17 0.0578599
+R458 VDD.n16 VDD.n15 0.0578599
+R459 VDD.n14 VDD.n13 0.0578599
+R460 VDD.n12 VDD.n11 0.0578599
+R461 VDD.n10 VDD.n9 0.0578599
+R462 VDD.n8 VDD.n7 0.0578599
+R463 VDD.n6 VDD.n5 0.0578599
+R464 VDD.n4 VDD.n3 0.0578599
+R465 VDD.n21 VDD.n20 0.0562999
+R466 VDD.n1 VDD 0.0555
+R467 VDD.n126 VDD.n125 0.0449131
+R468 VDD.n82 VDD.n48 0.0365811
+R469 VDD.n83 VDD.n49 0.0365811
+R470 VDD.n84 VDD.n50 0.0365811
+R471 VDD.n85 VDD.n51 0.0365811
+R472 VDD.n86 VDD.n52 0.0365811
+R473 VDD.n87 VDD.n53 0.0365811
+R474 VDD.n88 VDD.n54 0.0365811
+R475 VDD.n89 VDD.n55 0.0365811
+R476 VDD.n90 VDD.n56 0.0365811
+R477 VDD.n91 VDD.n57 0.0365811
+R478 VDD.n92 VDD.n58 0.0365811
+R479 VDD.n93 VDD.n59 0.0365811
+R480 VDD.n94 VDD.n60 0.0365811
+R481 VDD.n95 VDD.n61 0.0365811
+R482 VDD.n96 VDD.n62 0.0365811
+R483 VDD.n98 VDD.n64 0.0365811
+R484 VDD.n99 VDD.n65 0.0365811
+R485 VDD.n100 VDD.n66 0.0365811
+R486 VDD.n101 VDD.n67 0.0365811
+R487 VDD.n102 VDD.n68 0.0365811
+R488 VDD.n103 VDD.n69 0.0365811
+R489 VDD.n104 VDD.n70 0.0365811
+R490 VDD.n105 VDD.n71 0.0365811
+R491 VDD.n106 VDD.n72 0.0365811
+R492 VDD.n107 VDD.n73 0.0365811
+R493 VDD.n108 VDD.n74 0.0365811
+R494 VDD.n109 VDD.n75 0.0365811
+R495 VDD.n110 VDD.n76 0.0365811
+R496 VDD.n111 VDD.n77 0.0365811
+R497 VDD.n112 VDD.n78 0.0365811
+R498 VDD.n112 VDD.n79 0.0365811
+R499 VDD.n111 VDD.n78 0.0365811
+R500 VDD.n110 VDD.n77 0.0365811
+R501 VDD.n109 VDD.n76 0.0365811
+R502 VDD.n108 VDD.n75 0.0365811
+R503 VDD.n107 VDD.n74 0.0365811
+R504 VDD.n106 VDD.n73 0.0365811
+R505 VDD.n105 VDD.n72 0.0365811
+R506 VDD.n104 VDD.n71 0.0365811
+R507 VDD.n103 VDD.n70 0.0365811
+R508 VDD.n102 VDD.n69 0.0365811
+R509 VDD.n101 VDD.n68 0.0365811
+R510 VDD.n100 VDD.n67 0.0365811
+R511 VDD.n99 VDD.n66 0.0365811
+R512 VDD.n98 VDD.n65 0.0365811
+R513 VDD.n96 VDD.n63 0.0365811
+R514 VDD.n95 VDD.n62 0.0365811
+R515 VDD.n94 VDD.n61 0.0365811
+R516 VDD.n93 VDD.n60 0.0365811
+R517 VDD.n92 VDD.n59 0.0365811
+R518 VDD.n91 VDD.n58 0.0365811
+R519 VDD.n90 VDD.n57 0.0365811
+R520 VDD.n89 VDD.n56 0.0365811
+R521 VDD.n88 VDD.n55 0.0365811
+R522 VDD.n87 VDD.n54 0.0365811
+R523 VDD.n86 VDD.n53 0.0365811
+R524 VDD.n85 VDD.n52 0.0365811
+R525 VDD.n84 VDD.n51 0.0365811
+R526 VDD.n83 VDD.n50 0.0365811
+R527 VDD.n82 VDD.n49 0.0365811
+R528 VDD.n81 VDD.n48 0.0365811
+R529 VDD.n127 VDD.n47 0.0356174
+R530 VDD.n115 VDD.n113 0.0356174
+R531 VDD.n81 VDD.n47 0.0185406
+R532 VDD.n126 VDD.n64 0.0185406
+R533 VDD.n113 VDD.n79 0.0185406
+R534 VDD.n97 VDD.n63 0.0185406
+R535 VDD.n212 VDD.n192 0.0115856
+R536 VDD.n44 VDD.n43 0.0110389
+R537 VDD.n219 VDD.n0 0.0110389
+R538 VDD.n188 VDD.n187 0.00998086
+R539 VDD.n181 VDD.n180 0.00998086
+R540 VDD.n140 VDD.n139 0.00998086
+R541 VDD.n125 VDD.n97 0.00979577
+R542 VDD.n133 VDD.n132 0.00964725
+R543 VDD.n138 VDD.n137 0.00852197
+R544 VDD.n190 VDD.n189 0.00829407
+R545 VDD.n179 VDD.n178 0.00829407
+R546 VDD.n131 VDD.n130 0.00829407
+R547 VDD.n142 VDD.n141 0.00829407
+R548 VDD.n182 VDD.n181 0.00823019
+R549 VDD.n187 VDD.n186 0.00823019
+R550 VDD.n134 VDD.n133 0.00823019
+R551 VDD.n186 VDD.n185 0.00818836
+R552 VDD.n183 VDD.n182 0.00818836
+R553 VDD.n135 VDD.n134 0.00818836
+R554 VDD.n139 VDD.n138 0.00789658
+R555 VDD.n185 VDD.n184 0.00771009
+R556 VDD.n184 VDD.n183 0.00771009
+R557 VDD.n136 VDD.n135 0.00771009
+R558 VDD.n137 VDD.n136 0.00771009
+R559 VDD.n192 VDD.n191 0.00760481
+R560 VDD.n191 VDD.n190 0.00712696
+R561 VDD.n178 VDD.n177 0.00712696
+R562 VDD.n130 VDD.n129 0.00712696
+R563 VDD.n143 VDD.n142 0.00712696
+R564 VDD.n132 VDD.n131 0.00677131
+R565 VDD.n189 VDD.n188 0.0064377
+R566 VDD.n180 VDD.n179 0.0064377
+R567 VDD.n141 VDD.n140 0.0064377
+R568 VDD.n214 VDD.n144 0.00246699
+R569 VDD.n216 VDD.n215 0.0015
+R570 VDD.n176 VDD.n46 0.001
+R571 VDD.n175 VDD.t43 0.001
+R572 VDD.n174 VDD.t58 0.001
+R573 VDD.n173 VDD.t11 0.001
+R574 VDD.n172 VDD.t57 0.001
+R575 VDD.n171 VDD.t9 0.001
+R576 VDD.n170 VDD.t32 0.001
+R577 VDD.n169 VDD.n32 0.001
+R578 VDD.n168 VDD.t30 0.001
+R579 VDD.n167 VDD.t41 0.001
+R580 VDD.n166 VDD.t7 0.001
+R581 VDD.n165 VDD.t27 0.001
+R582 VDD.n164 VDD.t5 0.001
+R583 VDD.n163 VDD.t29 0.001
+R584 VDD.n162 VDD.t39 0.001
+R585 VDD.n161 VDD.t45 0.001
+R586 VDD.n160 VDD.t15 0.001
+R587 VDD.n159 VDD.t36 0.001
+R588 VDD.n158 VDD.t21 0.001
+R589 VDD.n157 VDD.t38 0.001
+R590 VDD.n156 VDD.t23 0.001
+R591 VDD.n155 VDD.t61 0.001
+R592 VDD.n154 VDD.t25 0.001
+R593 VDD.n153 VDD.t59 0.001
+R594 VDD.n152 VDD.t46 0.001
+R595 VDD.n151 VDD.t17 0.001
+R596 VDD.n150 VDD.t47 0.001
+R597 VDD.n149 VDD.t35 0.001
+R598 VDD.n148 VDD.t19 0.001
+R599 VDD.n147 VDD.t48 0.001
+R600 VDD.n146 VDD.t13 0.001
+R601 VDD.n145 VDD.n2 0.001
+R602 VDD.n216 VDD.t62 0.001
+R603 VDD.n215 VDD.n2 0.001
+R604 VDD.n145 VDD.t13 0.001
+R605 VDD.n146 VDD.t48 0.001
+R606 VDD.n147 VDD.t19 0.001
+R607 VDD.n148 VDD.t35 0.001
+R608 VDD.n149 VDD.t47 0.001
+R609 VDD.n150 VDD.t17 0.001
+R610 VDD.n151 VDD.t46 0.001
+R611 VDD.n152 VDD.t59 0.001
+R612 VDD.n153 VDD.t25 0.001
+R613 VDD.n154 VDD.t61 0.001
+R614 VDD.n155 VDD.t23 0.001
+R615 VDD.n156 VDD.t38 0.001
+R616 VDD.n157 VDD.t21 0.001
+R617 VDD.n158 VDD.t36 0.001
+R618 VDD.n159 VDD.t15 0.001
+R619 VDD.n160 VDD.t45 0.001
+R620 VDD.n161 VDD.t39 0.001
+R621 VDD.n162 VDD.t29 0.001
+R622 VDD.n163 VDD.t5 0.001
+R623 VDD.n164 VDD.t27 0.001
+R624 VDD.n165 VDD.t7 0.001
+R625 VDD.n166 VDD.t41 0.001
+R626 VDD.n167 VDD.t30 0.001
+R627 VDD.n168 VDD.n32 0.001
+R628 VDD.n169 VDD.t32 0.001
+R629 VDD.n170 VDD.t9 0.001
+R630 VDD.n171 VDD.t57 0.001
+R631 VDD.n172 VDD.t11 0.001
+R632 VDD.n173 VDD.t58 0.001
+R633 VDD.n174 VDD.t43 0.001
+R634 VDD.n175 VDD.n46 0.001
+R635 VDD.n214 VDD.n114 0.001
+R636 VDD.n195 VDD.n194 0.001
+R637 VDD.n197 VDD.n196 0.001
+R638 VDD.n199 VDD.n198 0.001
+R639 VDD.n201 VDD.n200 0.001
+R640 VDD.n203 VDD.n202 0.001
+R641 VDD.n205 VDD.n204 0.001
+R642 VDD.n207 VDD.n206 0.001
+R643 VDD.n209 VDD.n208 0.001
+R644 VDD.n211 VDD.n210 0.001
+R645 VDD.n213 VDD.n193 0.001
+R646 VDD.n214 VDD.n213 0.001
+R647 VDD.n211 VDD.n193 0.001
+R648 VDD.n210 VDD.n209 0.001
+R649 VDD.n208 VDD.n207 0.001
+R650 VDD.n206 VDD.n205 0.001
+R651 VDD.n204 VDD.n203 0.001
+R652 VDD.n202 VDD.n201 0.001
+R653 VDD.n200 VDD.n199 0.001
+R654 VDD.n198 VDD.n197 0.001
+R655 VDD.n196 VDD.n195 0.001
+R656 VDD.n194 VDD.n114 0.001
+R657 VDD.n176 VDD.t0 0.001
+R658 RAMP_RESET.n0 RAMP_RESET.t0 12.0858
+R659 RAMP_RESET.n2 RAMP_RESET.t1 12.045
+R660 RAMP_RESET.n1 RAMP_RESET.n0 11.3391
+R661 RAMP_RESET.n0 RAMP_RESET 7.50556
+R662 RAMP_RESET.n1 RAMP_RESET 4.40172
+R663 RAMP_RESET.n3 RAMP_RESET 4.23061
+R664 RAMP_RESET RAMP_RESET.n3 2.01751
+R665 RAMP_RESET.n2 RAMP_RESET.n1 0.0412947
+R666 RAMP_RESET.n3 RAMP_RESET.n2 0.0412947
+R667 VRAMP.n13 VRAMP.t11 25.633
+R668 VRAMP.n13 VRAMP.t10 25.4884
+R669 VRAMP.t13 VRAMP.n12 3.61137
+R670 VRAMP.n19 VRAMP.n18 3.6005
+R671 VRAMP.n17 VRAMP.t8 3.30788
+R672 VRAMP.n11 VRAMP.t9 3.3031
+R673 VRAMP.n10 VRAMP.t7 3.3031
+R674 VRAMP.n15 VRAMP.t5 3.2573
+R675 VRAMP.n12 VRAMP.t3 2.71416
+R676 VRAMP.n11 VRAMP.t2 2.71416
+R677 VRAMP.n10 VRAMP.t4 2.71416
+R678 VRAMP.n17 VRAMP.t0 2.71416
+R679 VRAMP.n16 VRAMP.t1 2.71416
+R680 VRAMP.n15 VRAMP.t6 2.71416
+R681 VRAMP.n14 VRAMP.n13 0.5405
+R682 VRAMP.n12 VRAMP.n10 0.534786
+R683 VRAMP.n12 VRAMP.n11 0.534786
+R684 VRAMP.n16 VRAMP.n15 0.534786
+R685 VRAMP.n18 VRAMP.n17 0.4955
+R686 VRAMP VRAMP.n24 0.4065
+R687 VRAMP.n8 VRAMP.n4 0.302727
+R688 VRAMP.n23 VRAMP.n22 0.302724
+R689 VRAMP.n4 VRAMP.n0 0.302724
+R690 VRAMP.n9 VRAMP.n3 0.3005
+R691 VRAMP.n21 VRAMP.n20 0.3005
+R692 VRAMP.n7 VRAMP.n6 0.3005
+R693 VRAMP.n3 VRAMP.n2 0.3005
+R694 VRAMP.n22 VRAMP.n21 0.3005
+R695 VRAMP.n6 VRAMP.n5 0.3005
+R696 VRAMP.n2 VRAMP.n1 0.3005
+R697 VRAMP.n9 VRAMP.n8 0.151419
+R698 VRAMP.n24 VRAMP.n23 0.150138
+R699 VRAMP.n24 VRAMP.n0 0.150138
+R700 VRAMP.t12 VRAMP.n14 0.0449165
+R701 VRAMP.n14 VRAMP.t13 0.0440835
+R702 VRAMP.n18 VRAMP.n16 0.0397857
+R703 VRAMP.n20 VRAMP.n19 0.0304884
+R704 VRAMP.n19 VRAMP.t12 0.011201
+R705 VRAMP.n7 VRAMP.n3 0.00396798
+R706 VRAMP.n21 VRAMP.n3 0.00396798
+R707 VRAMP.n6 VRAMP.n4 0.00396798
+R708 VRAMP.n6 VRAMP.n2 0.00396798
+R709 VRAMP.n22 VRAMP.n2 0.00396798
+R710 VRAMP.n5 VRAMP.n1 0.00396798
+R711 VRAMP.n5 VRAMP.n0 0.00272403
+R712 VRAMP.n23 VRAMP.n1 0.00272403
+R713 VRAMP.n8 VRAMP.n7 0.0027211
+R714 VRAMP.n20 VRAMP.n9 0.00152524
+R715 VSS.n255 VSS.n254 30006.9
+R716 VSS.t18 VSS.n258 49.8234
+R717 VSS.n250 VSS.t20 49.8234
+R718 VSS.n246 VSS.n245 48.9415
+R719 VSS.n280 VSS.n269 47.1661
+R720 VSS.n280 VSS.n72 45.1732
+R721 VSS.n364 VSS.n3 45.1732
+R722 VSS.n132 VSS.n67 45.1732
+R723 VSS.n256 VSS.t13 40.5231
+R724 VSS.n257 VSS.t4 40.5231
+R725 VSS.n259 VSS.t6 40.5231
+R726 VSS.n260 VSS.t0 40.5231
+R727 VSS.n247 VSS.t22 40.5231
+R728 VSS.n249 VSS.t10 40.5231
+R729 VSS.t8 VSS.n251 40.5231
+R730 VSS.t21 VSS.n253 40.5231
+R731 VSS.t55 VSS.n21 39.8588
+R732 VSS.n354 VSS.t50 39.8588
+R733 VSS.n69 VSS.t29 27.9013
+R734 VSS.n124 VSS.t25 27.9013
+R735 VSS.n256 VSS.t23 27.237
+R736 VSS.t12 VSS.n257 27.237
+R737 VSS.n259 VSS.t18 27.237
+R738 VSS.n260 VSS.t19 27.237
+R739 VSS.t16 VSS.n247 27.237
+R740 VSS.t20 VSS.n249 27.237
+R741 VSS.n251 VSS.t15 27.237
+R742 VSS.n253 VSS.t2 27.237
+R743 VSS.t23 VSS.n178 24.1139
+R744 VSS.n248 VSS.t16 24.1137
+R745 VSS.t19 VSS.n175 24.1133
+R746 VSS.t2 VSS.n252 24.1131
+R747 VSS.n116 VSS.n64 20.5678
+R748 VSS.n335 VSS.n29 20.4496
+R749 VSS.n346 VSS.n29 20.4496
+R750 VSS.n283 VSS.n74 19.4005
+R751 VSS.n285 VSS.n78 19.4005
+R752 VSS.n286 VSS.n81 19.4005
+R753 VSS.n287 VSS.n84 19.4005
+R754 VSS.n288 VSS.n87 19.4005
+R755 VSS.n365 VSS.n91 19.4005
+R756 VSS.n160 VSS.n4 19.4005
+R757 VSS.n157 VSS.n4 19.4005
+R758 VSS.n154 VSS.n6 19.4005
+R759 VSS.n151 VSS.n6 19.4005
+R760 VSS.n151 VSS.n7 19.4005
+R761 VSS.n148 VSS.n7 19.4005
+R762 VSS.n148 VSS.n8 19.4005
+R763 VSS.n145 VSS.n8 19.4005
+R764 VSS.n145 VSS.n9 19.4005
+R765 VSS.n142 VSS.n9 19.4005
+R766 VSS.n142 VSS.n10 19.4005
+R767 VSS.n139 VSS.n10 19.4005
+R768 VSS.n139 VSS.n11 19.4005
+R769 VSS.n137 VSS.n11 19.4005
+R770 VSS.n137 VSS.n12 19.4005
+R771 VSS.n134 VSS.n12 19.4005
+R772 VSS.n320 VSS.n14 19.4005
+R773 VSS.n321 VSS.n15 19.4005
+R774 VSS.n322 VSS.n16 19.4005
+R775 VSS.n323 VSS.n17 19.4005
+R776 VSS.n324 VSS.n18 19.4005
+R777 VSS.n325 VSS.n19 19.4005
+R778 VSS.n326 VSS.n20 19.4005
+R779 VSS.n328 VSS.n22 19.4005
+R780 VSS.n329 VSS.n23 19.4005
+R781 VSS.n330 VSS.n24 19.4005
+R782 VSS.n331 VSS.n25 19.4005
+R783 VSS.n332 VSS.n26 19.4005
+R784 VSS.n333 VSS.n27 19.4005
+R785 VSS.n334 VSS.n28 19.4005
+R786 VSS.n346 VSS.n30 19.4005
+R787 VSS.n347 VSS.n31 19.4005
+R788 VSS.n348 VSS.n32 19.4005
+R789 VSS.n349 VSS.n33 19.4005
+R790 VSS.n350 VSS.n34 19.4005
+R791 VSS.n351 VSS.n35 19.4005
+R792 VSS.n352 VSS.n36 19.4005
+R793 VSS.n355 VSS.n38 19.4005
+R794 VSS.n356 VSS.n39 19.4005
+R795 VSS.n357 VSS.n40 19.4005
+R796 VSS.n358 VSS.n41 19.4005
+R797 VSS.n359 VSS.n42 19.4005
+R798 VSS.n360 VSS.n43 19.4005
+R799 VSS.n361 VSS.n44 19.4005
+R800 VSS.n362 VSS.n45 19.4005
+R801 VSS.n92 VSS.n46 19.4005
+R802 VSS.n94 VSS.n47 19.4005
+R803 VSS.n96 VSS.n48 19.4005
+R804 VSS.n98 VSS.n49 19.4005
+R805 VSS.n100 VSS.n50 19.4005
+R806 VSS.n102 VSS.n51 19.4005
+R807 VSS.n104 VSS.n52 19.4005
+R808 VSS.n122 VSS.n54 19.4005
+R809 VSS.n122 VSS.n55 19.4005
+R810 VSS.n120 VSS.n55 19.4005
+R811 VSS.n120 VSS.n56 19.4005
+R812 VSS.n111 VSS.n56 19.4005
+R813 VSS.n111 VSS.n57 19.4005
+R814 VSS.n112 VSS.n57 19.4005
+R815 VSS.n112 VSS.n58 19.4005
+R816 VSS.n113 VSS.n58 19.4005
+R817 VSS.n113 VSS.n59 19.4005
+R818 VSS.n114 VSS.n59 19.4005
+R819 VSS.n114 VSS.n60 19.4005
+R820 VSS.n115 VSS.n60 19.4005
+R821 VSS.n115 VSS.n61 19.4005
+R822 VSS.n116 VSS.n61 19.4005
+R823 VSS.n91 VSS.n87 19.4005
+R824 VSS.n288 VSS.n84 19.4005
+R825 VSS.n287 VSS.n81 19.4005
+R826 VSS.n286 VSS.n78 19.4005
+R827 VSS.n285 VSS.n74 19.4005
+R828 VSS.n106 VSS.n52 19.4005
+R829 VSS.n104 VSS.n51 19.4005
+R830 VSS.n102 VSS.n50 19.4005
+R831 VSS.n100 VSS.n49 19.4005
+R832 VSS.n98 VSS.n48 19.4005
+R833 VSS.n96 VSS.n47 19.4005
+R834 VSS.n94 VSS.n46 19.4005
+R835 VSS.n92 VSS.n45 19.4005
+R836 VSS.n362 VSS.n44 19.4005
+R837 VSS.n361 VSS.n43 19.4005
+R838 VSS.n360 VSS.n42 19.4005
+R839 VSS.n359 VSS.n41 19.4005
+R840 VSS.n358 VSS.n40 19.4005
+R841 VSS.n357 VSS.n39 19.4005
+R842 VSS.n356 VSS.n38 19.4005
+R843 VSS.n355 VSS.n37 19.4005
+R844 VSS.n352 VSS.n35 19.4005
+R845 VSS.n351 VSS.n34 19.4005
+R846 VSS.n350 VSS.n33 19.4005
+R847 VSS.n349 VSS.n32 19.4005
+R848 VSS.n348 VSS.n31 19.4005
+R849 VSS.n347 VSS.n30 19.4005
+R850 VSS.n335 VSS.n28 19.4005
+R851 VSS.n334 VSS.n27 19.4005
+R852 VSS.n333 VSS.n26 19.4005
+R853 VSS.n332 VSS.n25 19.4005
+R854 VSS.n331 VSS.n24 19.4005
+R855 VSS.n330 VSS.n23 19.4005
+R856 VSS.n329 VSS.n22 19.4005
+R857 VSS.n327 VSS.n20 19.4005
+R858 VSS.n326 VSS.n19 19.4005
+R859 VSS.n325 VSS.n18 19.4005
+R860 VSS.n324 VSS.n17 19.4005
+R861 VSS.n323 VSS.n16 19.4005
+R862 VSS.n322 VSS.n15 19.4005
+R863 VSS.n321 VSS.n14 19.4005
+R864 VSS.n320 VSS.n13 19.4005
+R865 VSS.n258 VSS.t12 17.9367
+R866 VSS.t15 VSS.n250 17.9367
+R867 VSS.t29 VSS.n5 17.2724
+R868 VSS.t25 VSS.n53 17.2724
+R869 VSS.n197 VSS.t34 17.0005
+R870 VSS.n227 VSS.t46 17.0005
+R871 VSS.n223 VSS.t27 17.0005
+R872 VSS.n214 VSS.t40 17.0005
+R873 VSS.n199 VSS.n195 17.0005
+R874 VSS.n228 VSS.n195 17.0005
+R875 VSS.n226 VSS.n225 17.0005
+R876 VSS.n225 VSS.n224 17.0005
+R877 VSS.n222 VSS.n221 17.0005
+R878 VSS.n221 VSS.n220 17.0005
+R879 VSS.n218 VSS.n217 17.0005
+R880 VSS.n217 VSS.n216 17.0005
+R881 VSS.n222 VSS.n191 17.0005
+R882 VSS.n224 VSS.n191 17.0005
+R883 VSS.n226 VSS.n191 17.0005
+R884 VSS.n228 VSS.n191 17.0005
+R885 VSS.n199 VSS.n191 17.0005
+R886 VSS.n241 VSS.n191 17.0005
+R887 VSS.n198 VSS.n191 17.0005
+R888 VSS.n196 VSS.n191 17.0005
+R889 VSS.n191 VSS.n0 17.0005
+R890 VSS.n75 VSS.t36 17.0005
+R891 VSS.n75 VSS.t48 17.0005
+R892 VSS.n75 VSS.t30 17.0005
+R893 VSS.n75 VSS.t42 17.0005
+R894 VSS.n363 VSS.n89 17.0005
+R895 VSS.n363 VSS.n88 17.0005
+R896 VSS.n363 VSS.n86 17.0005
+R897 VSS.n363 VSS.n85 17.0005
+R898 VSS.n363 VSS.n83 17.0005
+R899 VSS.n363 VSS.n82 17.0005
+R900 VSS.n363 VSS.n80 17.0005
+R901 VSS.n363 VSS.n79 17.0005
+R902 VSS.n366 VSS.n89 17.0005
+R903 VSS.n366 VSS.n88 17.0005
+R904 VSS.n366 VSS.n86 17.0005
+R905 VSS.n366 VSS.n85 17.0005
+R906 VSS.n366 VSS.n83 17.0005
+R907 VSS.n366 VSS.n82 17.0005
+R908 VSS.n366 VSS.n80 17.0005
+R909 VSS.n366 VSS.n79 17.0005
+R910 VSS.n366 VSS.n77 17.0005
+R911 VSS.n366 VSS.n76 17.0005
+R912 VSS.n366 VSS.n73 17.0005
+R913 VSS.n366 VSS.n72 17.0005
+R914 VSS.n135 VSS.t37 17.0005
+R915 VSS.n135 VSS.t49 17.0005
+R916 VSS.n135 VSS.t31 17.0005
+R917 VSS.n135 VSS.t43 17.0005
+R918 VSS.n363 VSS.n138 17.0005
+R919 VSS.n363 VSS.n140 17.0005
+R920 VSS.n363 VSS.n141 17.0005
+R921 VSS.n363 VSS.n143 17.0005
+R922 VSS.n363 VSS.n144 17.0005
+R923 VSS.n363 VSS.n146 17.0005
+R924 VSS.n363 VSS.n147 17.0005
+R925 VSS.n363 VSS.n149 17.0005
+R926 VSS.n363 VSS.n150 17.0005
+R927 VSS.n363 VSS.n152 17.0005
+R928 VSS.n363 VSS.n153 17.0005
+R929 VSS.n363 VSS.n155 17.0005
+R930 VSS.n363 VSS.n156 17.0005
+R931 VSS.n363 VSS.n158 17.0005
+R932 VSS.n363 VSS.n159 17.0005
+R933 VSS.n363 VSS.n161 17.0005
+R934 VSS.n363 VSS.n162 17.0005
+R935 VSS.n363 VSS.n319 17.0005
+R936 VSS.n364 VSS.n363 17.0005
+R937 VSS.n339 VSS.t52 17.0005
+R938 VSS.n340 VSS.t54 17.0005
+R939 VSS.n341 VSS.t51 17.0005
+R940 VSS.n342 VSS.t53 17.0005
+R941 VSS.n363 VSS.n354 17.0005
+R942 VSS.n363 VSS.n353 17.0005
+R943 VSS.n363 VSS.n132 17.0005
+R944 VSS.n344 VSS.t33 17.0005
+R945 VSS.n344 VSS.t45 17.0005
+R946 VSS.n344 VSS.t26 17.0005
+R947 VSS.n344 VSS.t39 17.0005
+R948 VSS.n363 VSS.n110 17.0005
+R949 VSS.n363 VSS.n119 17.0005
+R950 VSS.n363 VSS.n109 17.0005
+R951 VSS.n363 VSS.n121 17.0005
+R952 VSS.n363 VSS.n108 17.0005
+R953 VSS.n363 VSS.n123 17.0005
+R954 VSS.n363 VSS.n124 17.0005
+R955 VSS.n363 VSS.n107 17.0005
+R956 VSS.n363 VSS.n125 17.0005
+R957 VSS.n363 VSS.n105 17.0005
+R958 VSS.n363 VSS.n126 17.0005
+R959 VSS.n363 VSS.n103 17.0005
+R960 VSS.n363 VSS.n127 17.0005
+R961 VSS.n363 VSS.n101 17.0005
+R962 VSS.n363 VSS.n128 17.0005
+R963 VSS.n363 VSS.n99 17.0005
+R964 VSS.n363 VSS.n129 17.0005
+R965 VSS.n363 VSS.n97 17.0005
+R966 VSS.n363 VSS.n130 17.0005
+R967 VSS.n363 VSS.n95 17.0005
+R968 VSS.n363 VSS.n131 17.0005
+R969 VSS.n363 VSS.n93 17.0005
+R970 VSS.n366 VSS.n53 17.0005
+R971 VSS.n366 VSS.n66 17.0005
+R972 VSS.n366 VSS.n21 17.0005
+R973 VSS.n366 VSS.n67 17.0005
+R974 VSS.n366 VSS.n5 17.0005
+R975 VSS.n366 VSS.n69 17.0005
+R976 VSS.n366 VSS.n3 17.0005
+R977 VSS.n305 VSS.n298 15.0005
+R978 VSS.n305 VSS.n297 15.0005
+R979 VSS.n305 VSS.n299 15.0005
+R980 VSS.n305 VSS.n296 15.0005
+R981 VSS.n305 VSS.n300 15.0005
+R982 VSS.n305 VSS.n295 15.0005
+R983 VSS.n305 VSS.n301 15.0005
+R984 VSS.n305 VSS.n294 15.0005
+R985 VSS.n305 VSS.n302 15.0005
+R986 VSS.n305 VSS.n293 15.0005
+R987 VSS.n305 VSS.n303 15.0005
+R988 VSS.n305 VSS.n292 15.0005
+R989 VSS.n305 VSS.n304 15.0005
+R990 VSS.n239 VSS.n202 15.0005
+R991 VSS.n239 VSS.n203 15.0005
+R992 VSS.n239 VSS.n201 15.0005
+R993 VSS.n239 VSS.n204 15.0005
+R994 VSS.n239 VSS.n200 15.0005
+R995 VSS.n269 VSS.n165 12.8043
+R996 VSS.n254 VSS.t21 11.9773
+R997 VSS.t13 VSS.n255 11.9646
+R998 VSS.t22 VSS.n246 11.9629
+R999 VSS.t0 VSS.n165 11.9278
+R1000 VSS.t6 VSS.n175 10.8279
+R1001 VSS.n252 VSS.t8 10.8277
+R1002 VSS.t4 VSS.n178 10.8272
+R1003 VSS.t10 VSS.n248 10.827
+R1004 VSS.n365 VSS.n364 9.7005
+R1005 VSS.n157 VSS.n69 9.7005
+R1006 VSS.n134 VSS.n67 9.7005
+R1007 VSS.n132 VSS.n13 9.7005
+R1008 VSS.n327 VSS.n21 9.7005
+R1009 VSS.n354 VSS.n37 9.7005
+R1010 VSS.n106 VSS.n53 9.7005
+R1011 VSS.n283 VSS.n72 9.7005
+R1012 VSS.n154 VSS.n5 9.7005
+R1013 VSS.n160 VSS.n3 9.7005
+R1014 VSS.n328 VSS.n66 9.7005
+R1015 VSS.n124 VSS.n54 9.7005
+R1016 VSS.n353 VSS.n36 9.7005
+R1017 VSS.n245 VSS.n62 8.501
+R1018 VSS.n245 VSS.n244 8.501
+R1019 VSS.n245 VSS.n194 8.501
+R1020 VSS.n245 VSS.n193 8.501
+R1021 VSS.n245 VSS.n192 8.501
+R1022 VSS.n269 VSS.n170 8.501
+R1023 VSS.n269 VSS.n169 8.501
+R1024 VSS.n269 VSS.n168 8.501
+R1025 VSS.n269 VSS.n167 8.501
+R1026 VSS.n269 VSS.n166 8.501
+R1027 VSS.n280 VSS.n270 8.501
+R1028 VSS.n280 VSS.n272 8.501
+R1029 VSS.n280 VSS.n274 8.501
+R1030 VSS.n280 VSS.n276 8.501
+R1031 VSS.n280 VSS.n279 8.501
+R1032 VSS.n280 VSS.n70 8.501
+R1033 VSS.n247 VSS.n191 8.5005
+R1034 VSS.n249 VSS.n191 8.5005
+R1035 VSS.n250 VSS.n191 8.5005
+R1036 VSS.n251 VSS.n191 8.5005
+R1037 VSS.n253 VSS.n191 8.5005
+R1038 VSS.n267 VSS.n260 8.5005
+R1039 VSS.n267 VSS.n259 8.5005
+R1040 VSS.n267 VSS.n258 8.5005
+R1041 VSS.n267 VSS.n257 8.5005
+R1042 VSS.n267 VSS.n256 8.5005
+R1043 VSS.n266 VSS.n262 8.5005
+R1044 VSS.n266 VSS.n263 8.5005
+R1045 VSS.n266 VSS.n264 8.5005
+R1046 VSS.n266 VSS.n265 8.5005
+R1047 VSS.n266 VSS.n171 8.5005
+R1048 VSS.n363 VSS.n163 8.5005
+R1049 VSS.n164 VSS.n163 8.5005
+R1050 VSS.n271 VSS.n163 8.5005
+R1051 VSS.n273 VSS.n163 8.5005
+R1052 VSS.n275 VSS.n163 8.5005
+R1053 VSS.n277 VSS.n163 8.5005
+R1054 VSS.n278 VSS.n163 8.5005
+R1055 VSS.n363 VSS.n284 8.49922
+R1056 VSS.n363 VSS.n282 8.49922
+R1057 VSS.n366 VSS.n71 8.49922
+R1058 VSS.n363 VSS.n136 8.49912
+R1059 VSS.n366 VSS.n63 8.49891
+R1060 VSS.n243 VSS.n242 8.49891
+R1061 VSS.n215 VSS.n191 8.49891
+R1062 VSS.n219 VSS.n191 8.49891
+R1063 VSS.t28 VSS.n298 7.5005
+R1064 VSS.t28 VSS.n297 7.5005
+R1065 VSS.t28 VSS.n299 7.5005
+R1066 VSS.t28 VSS.n296 7.5005
+R1067 VSS.t28 VSS.n300 7.5005
+R1068 VSS.t28 VSS.n295 7.5005
+R1069 VSS.t28 VSS.n301 7.5005
+R1070 VSS.t28 VSS.n294 7.5005
+R1071 VSS.t28 VSS.n302 7.5005
+R1072 VSS.t28 VSS.n293 7.5005
+R1073 VSS.t28 VSS.n303 7.5005
+R1074 VSS.t28 VSS.n292 7.5005
+R1075 VSS.t28 VSS.n304 7.5005
+R1076 VSS.t24 VSS.n202 7.5005
+R1077 VSS.t24 VSS.n203 7.5005
+R1078 VSS.t24 VSS.n201 7.5005
+R1079 VSS.t24 VSS.n204 7.5005
+R1080 VSS.t24 VSS.n200 7.5005
+R1081 VSS.n245 VSS.n117 5.66767
+R1082 VSS.n281 VSS.n280 5.66767
+R1083 VSS.n267 VSS.n174 5.6468
+R1084 VSS.n267 VSS.n180 5.6468
+R1085 VSS.n191 VSS.n188 5.6468
+R1086 VSS.n191 VSS.n184 5.6468
+R1087 VSS.n267 VSS.n177 5.63943
+R1088 VSS.n191 VSS.n186 5.63943
+R1089 VSS.n267 VSS.n172 5.61281
+R1090 VSS.n245 VSS.n64 5.43415
+R1091 VSS.n66 VSS.t55 5.31494
+R1092 VSS.t50 VSS.n353 5.31494
+R1093 VSS.n307 VSS.n306 5.001
+R1094 VSS.n238 VSS.n237 5.001
+R1095 VSS.t28 VSS.n317 5.0005
+R1096 VSS.t28 VSS.n316 5.0005
+R1097 VSS.t28 VSS.n315 5.0005
+R1098 VSS.t28 VSS.n314 5.0005
+R1099 VSS.t28 VSS.n313 5.0005
+R1100 VSS.t28 VSS.n312 5.0005
+R1101 VSS.t28 VSS.n311 5.0005
+R1102 VSS.t28 VSS.n310 5.0005
+R1103 VSS.t28 VSS.n308 5.0005
+R1104 VSS.t28 VSS.n291 5.0005
+R1105 VSS.t28 VSS.n309 5.0005
+R1106 VSS.n318 VSS.t28 5.0005
+R1107 VSS.t28 VSS.n290 5.0005
+R1108 VSS.t24 VSS.n211 5.0005
+R1109 VSS.t24 VSS.n230 5.0005
+R1110 VSS.t24 VSS.n210 5.0005
+R1111 VSS.t24 VSS.n231 5.0005
+R1112 VSS.t24 VSS.n209 5.0005
+R1113 VSS.t24 VSS.n232 5.0005
+R1114 VSS.t24 VSS.n208 5.0005
+R1115 VSS.t24 VSS.n233 5.0005
+R1116 VSS.t24 VSS.n207 5.0005
+R1117 VSS.t24 VSS.n234 5.0005
+R1118 VSS.t24 VSS.n206 5.0005
+R1119 VSS.t24 VSS.n235 5.0005
+R1120 VSS.t24 VSS.n205 5.0005
+R1121 VSS.t24 VSS.n236 5.0005
+R1122 VSS.n269 VSS.n268 4.25119
+R1123 VSS.n191 VSS.n1 4.18423
+R1124 VSS.n363 VSS.n116 3.65125
+R1125 VSS.n363 VSS.n115 3.65125
+R1126 VSS.n363 VSS.n114 3.65125
+R1127 VSS.n363 VSS.n113 3.65125
+R1128 VSS.n363 VSS.n112 3.65125
+R1129 VSS.n363 VSS.n111 3.65125
+R1130 VSS.n366 VSS.n61 3.65125
+R1131 VSS.n366 VSS.n60 3.65125
+R1132 VSS.n366 VSS.n59 3.65125
+R1133 VSS.n366 VSS.n58 3.65125
+R1134 VSS.n366 VSS.n57 3.65125
+R1135 VSS.n363 VSS.n91 3.65125
+R1136 VSS.n363 VSS.n288 3.65125
+R1137 VSS.n363 VSS.n287 3.65125
+R1138 VSS.n363 VSS.n286 3.65125
+R1139 VSS.n363 VSS.n285 3.65125
+R1140 VSS.n363 VSS.n283 3.65125
+R1141 VSS.n366 VSS.n87 3.65125
+R1142 VSS.n366 VSS.n84 3.65125
+R1143 VSS.n366 VSS.n81 3.65125
+R1144 VSS.n366 VSS.n78 3.65125
+R1145 VSS.n366 VSS.n74 3.65125
+R1146 VSS.n363 VSS.n134 3.65125
+R1147 VSS.n363 VSS.n137 3.65125
+R1148 VSS.n363 VSS.n139 3.65125
+R1149 VSS.n363 VSS.n142 3.65125
+R1150 VSS.n363 VSS.n145 3.65125
+R1151 VSS.n363 VSS.n148 3.65125
+R1152 VSS.n363 VSS.n151 3.65125
+R1153 VSS.n363 VSS.n154 3.65125
+R1154 VSS.n363 VSS.n157 3.65125
+R1155 VSS.n363 VSS.n160 3.65125
+R1156 VSS.n363 VSS.n362 3.65125
+R1157 VSS.n363 VSS.n361 3.65125
+R1158 VSS.n363 VSS.n360 3.65125
+R1159 VSS.n363 VSS.n359 3.65125
+R1160 VSS.n363 VSS.n358 3.65125
+R1161 VSS.n363 VSS.n357 3.65125
+R1162 VSS.n363 VSS.n356 3.65125
+R1163 VSS.n363 VSS.n355 3.65125
+R1164 VSS.n363 VSS.n352 3.65125
+R1165 VSS.n363 VSS.n351 3.65125
+R1166 VSS.n363 VSS.n350 3.65125
+R1167 VSS.n363 VSS.n349 3.65125
+R1168 VSS.n363 VSS.n348 3.65125
+R1169 VSS.n363 VSS.n347 3.65125
+R1170 VSS.n363 VSS.n346 3.65125
+R1171 VSS.n363 VSS.n335 3.65125
+R1172 VSS.n363 VSS.n334 3.65125
+R1173 VSS.n363 VSS.n333 3.65125
+R1174 VSS.n363 VSS.n332 3.65125
+R1175 VSS.n363 VSS.n331 3.65125
+R1176 VSS.n363 VSS.n330 3.65125
+R1177 VSS.n363 VSS.n329 3.65125
+R1178 VSS.n363 VSS.n328 3.65125
+R1179 VSS.n363 VSS.n327 3.65125
+R1180 VSS.n363 VSS.n326 3.65125
+R1181 VSS.n363 VSS.n325 3.65125
+R1182 VSS.n363 VSS.n324 3.65125
+R1183 VSS.n363 VSS.n323 3.65125
+R1184 VSS.n363 VSS.n322 3.65125
+R1185 VSS.n363 VSS.n321 3.65125
+R1186 VSS.n363 VSS.n320 3.65125
+R1187 VSS.n363 VSS.n120 3.65125
+R1188 VSS.n363 VSS.n122 3.65125
+R1189 VSS.n363 VSS.n106 3.65125
+R1190 VSS.n363 VSS.n104 3.65125
+R1191 VSS.n363 VSS.n102 3.65125
+R1192 VSS.n363 VSS.n100 3.65125
+R1193 VSS.n363 VSS.n98 3.65125
+R1194 VSS.n363 VSS.n96 3.65125
+R1195 VSS.n363 VSS.n94 3.65125
+R1196 VSS.n363 VSS.n92 3.65125
+R1197 VSS.n366 VSS.n56 3.65125
+R1198 VSS.n366 VSS.n55 3.65125
+R1199 VSS.n366 VSS.n54 3.65125
+R1200 VSS.n366 VSS.n52 3.65125
+R1201 VSS.n366 VSS.n51 3.65125
+R1202 VSS.n366 VSS.n50 3.65125
+R1203 VSS.n366 VSS.n49 3.65125
+R1204 VSS.n366 VSS.n48 3.65125
+R1205 VSS.n366 VSS.n47 3.65125
+R1206 VSS.n366 VSS.n46 3.65125
+R1207 VSS.n366 VSS.n45 3.65125
+R1208 VSS.n366 VSS.n44 3.65125
+R1209 VSS.n366 VSS.n43 3.65125
+R1210 VSS.n366 VSS.n42 3.65125
+R1211 VSS.n366 VSS.n41 3.65125
+R1212 VSS.n366 VSS.n40 3.65125
+R1213 VSS.n366 VSS.n39 3.65125
+R1214 VSS.n366 VSS.n38 3.65125
+R1215 VSS.n366 VSS.n37 3.65125
+R1216 VSS.n366 VSS.n36 3.65125
+R1217 VSS.n366 VSS.n35 3.65125
+R1218 VSS.n366 VSS.n34 3.65125
+R1219 VSS.n366 VSS.n33 3.65125
+R1220 VSS.n366 VSS.n32 3.65125
+R1221 VSS.n366 VSS.n31 3.65125
+R1222 VSS.n366 VSS.n30 3.65125
+R1223 VSS.n366 VSS.n28 3.65125
+R1224 VSS.n366 VSS.n27 3.65125
+R1225 VSS.n366 VSS.n26 3.65125
+R1226 VSS.n366 VSS.n25 3.65125
+R1227 VSS.n366 VSS.n24 3.65125
+R1228 VSS.n366 VSS.n23 3.65125
+R1229 VSS.n366 VSS.n22 3.65125
+R1230 VSS.n366 VSS.n20 3.65125
+R1231 VSS.n366 VSS.n19 3.65125
+R1232 VSS.n366 VSS.n18 3.65125
+R1233 VSS.n366 VSS.n17 3.65125
+R1234 VSS.n366 VSS.n16 3.65125
+R1235 VSS.n366 VSS.n15 3.65125
+R1236 VSS.n366 VSS.n14 3.65125
+R1237 VSS.n366 VSS.n13 3.65125
+R1238 VSS.n366 VSS.n12 3.65125
+R1239 VSS.n366 VSS.n11 3.65125
+R1240 VSS.n366 VSS.n10 3.65125
+R1241 VSS.n366 VSS.n9 3.65125
+R1242 VSS.n366 VSS.n8 3.65125
+R1243 VSS.n366 VSS.n7 3.65125
+R1244 VSS.n366 VSS.n6 3.65125
+R1245 VSS.n366 VSS.n4 3.65125
+R1246 VSS.n366 VSS.n365 3.65125
+R1247 VSS.n267 VSS.n266 3.4005
+R1248 VSS.n366 VSS.n29 3.12672
+R1249 VSS.n183 VSS.t17 2.71989
+R1250 VSS.n185 VSS.t11 2.71989
+R1251 VSS.n187 VSS.t9 2.71989
+R1252 VSS.n189 VSS.t3 2.71989
+R1253 VSS.n181 VSS.t14 2.71989
+R1254 VSS.n179 VSS.t5 2.71989
+R1255 VSS.n176 VSS.t7 2.71989
+R1256 VSS.n173 VSS.t1 2.71989
+R1257 VSS.n337 VSS.n336 2.4005
+R1258 VSS.t24 VSS.n212 2.14336
+R1259 VSS.t24 VSS.n229 2.14336
+R1260 VSS.n240 VSS.n239 2.14336
+R1261 VSS.n366 VSS.n64 2.04585
+R1262 VSS.n366 VSS.n90 1.69793
+R1263 VSS.n345 VSS.n343 1.37966
+R1264 VSS.n261 VSS.n182 1.33683
+R1265 VSS.n190 VSS.n189 1.32829
+R1266 VSS.n182 VSS.n181 1.31179
+R1267 VSS.n363 VSS.n118 1.30805
+R1268 VSS.n343 VSS.n133 1.27746
+R1269 VSS.n135 VSS.n133 1.23909
+R1270 VSS.n345 VSS.n344 1.23584
+R1271 VSS.n190 VSS.n118 1.22785
+R1272 VSS.n267 VSS.n175 1.16342
+R1273 VSS.n267 VSS.n178 1.16342
+R1274 VSS.n248 VSS.n191 1.16333
+R1275 VSS.n252 VSS.n191 1.16333
+R1276 VSS.n289 VSS 0.855614
+R1277 VSS.n367 VSS.n366 0.734628
+R1278 VSS.n342 VSS.n341 0.688
+R1279 VSS.n341 VSS.n340 0.688
+R1280 VSS.n340 VSS.n339 0.688
+R1281 VSS.n343 VSS.n342 0.571125
+R1282 VSS.n339 VSS.n338 0.571125
+R1283 VSS.n366 VSS.n65 0.384162
+R1284 VSS.n366 VSS.n68 0.374927
+R1285 VSS.n183 VSS.n1 0.261482
+R1286 VSS.n173 VSS.n172 0.213225
+R1287 VSS.n261 VSS.n172 0.195092
+R1288 VSS.n363 VSS.n345 0.17566
+R1289 VSS.n267 VSS.n182 0.171675
+R1290 VSS.n363 VSS.n133 0.160999
+R1291 VSS.n191 VSS.n190 0.159246
+R1292 VSS VSS.n1 0.146176
+R1293 VSS.n188 VSS.n187 0.0892566
+R1294 VSS.n180 VSS.n179 0.0892566
+R1295 VSS.n185 VSS.n184 0.0889207
+R1296 VSS.n176 VSS.n174 0.0889207
+R1297 VSS.n338 VSS.n68 0.0798431
+R1298 VSS.n65 VSS.n2 0.0791085
+R1299 VSS.n186 VSS.n185 0.077638
+R1300 VSS.n177 VSS.n176 0.077638
+R1301 VSS.n187 VSS.n186 0.0668916
+R1302 VSS.n179 VSS.n177 0.0668916
+R1303 VSS.n302 VSS.n68 0.0588967
+R1304 VSS.n337 VSS.n65 0.0588304
+R1305 VSS.n184 VSS.n183 0.0558388
+R1306 VSS.n174 VSS.n173 0.0558388
+R1307 VSS.n189 VSS.n188 0.055503
+R1308 VSS.n181 VSS.n180 0.055503
+R1309 VSS.n267 VSS.n165 0.0406612
+R1310 VSS.n367 VSS.n2 0.0262607
+R1311 VSS.n302 VSS.n90 0.0187275
+R1312 VSS.n289 VSS.n90 0.0145235
+R1313 VSS.n215 VSS.n118 0.0143249
+R1314 VSS.n229 VSS.n228 0.0114508
+R1315 VSS.n136 VSS.n135 0.0114226
+R1316 VSS VSS.n367 0.0107757
+R1317 VSS VSS.n0 0.00886689
+R1318 VSS.n282 VSS.n71 0.00860878
+R1319 VSS.n254 VSS.n191 0.00800218
+R1320 VSS.n266 VSS.n163 0.00792395
+R1321 VSS.n216 VSS.n214 0.00788255
+R1322 VSS.n197 VSS.n196 0.00788255
+R1323 VSS.n224 VSS.n213 0.00763647
+R1324 VSS.n223 VSS.n222 0.00739038
+R1325 VSS.n227 VSS.n199 0.00739038
+R1326 VSS.n344 VSS.n93 0.00715323
+R1327 VSS.n236 VSS.n93 0.00715323
+R1328 VSS.n205 VSS.n131 0.00715323
+R1329 VSS.n235 VSS.n95 0.00715323
+R1330 VSS.n206 VSS.n130 0.00715323
+R1331 VSS.n234 VSS.n97 0.00715323
+R1332 VSS.n207 VSS.n129 0.00715323
+R1333 VSS.n233 VSS.n99 0.00715323
+R1334 VSS.n208 VSS.n128 0.00715323
+R1335 VSS.n232 VSS.n101 0.00715323
+R1336 VSS.n231 VSS.n103 0.00715323
+R1337 VSS.n210 VSS.n126 0.00715323
+R1338 VSS.n230 VSS.n105 0.00715323
+R1339 VSS.n211 VSS.n125 0.00715323
+R1340 VSS.n237 VSS.n107 0.00715323
+R1341 VSS.n200 VSS.n123 0.00715323
+R1342 VSS.n204 VSS.n108 0.00715323
+R1343 VSS.n201 VSS.n121 0.00715323
+R1344 VSS.n203 VSS.n109 0.00715323
+R1345 VSS.n202 VSS.n119 0.00715323
+R1346 VSS.n319 VSS.n318 0.0064879
+R1347 VSS.n309 VSS.n162 0.0064879
+R1348 VSS.n291 VSS.n161 0.0064879
+R1349 VSS.n308 VSS.n159 0.0064879
+R1350 VSS.n306 VSS.n158 0.0064879
+R1351 VSS.n304 VSS.n156 0.0064879
+R1352 VSS.n292 VSS.n155 0.0064879
+R1353 VSS.n303 VSS.n153 0.0064879
+R1354 VSS.n293 VSS.n152 0.0064879
+R1355 VSS.n302 VSS.n150 0.0064879
+R1356 VSS.n294 VSS.n149 0.0064879
+R1357 VSS.n301 VSS.n147 0.0064879
+R1358 VSS.n295 VSS.n146 0.0064879
+R1359 VSS.n300 VSS.n144 0.0064879
+R1360 VSS.n296 VSS.n143 0.0064879
+R1361 VSS.n299 VSS.n141 0.0064879
+R1362 VSS.n297 VSS.n140 0.0064879
+R1363 VSS.n298 VSS.n138 0.0064879
+R1364 VSS.n298 VSS.n136 0.00632174
+R1365 VSS.n310 VSS.n77 0.00614639
+R1366 VSS.n311 VSS.n79 0.00614639
+R1367 VSS.n312 VSS.n80 0.00614639
+R1368 VSS.n313 VSS.n82 0.00614639
+R1369 VSS.n314 VSS.n83 0.00614639
+R1370 VSS.n315 VSS.n85 0.00614639
+R1371 VSS.n316 VSS.n86 0.00614639
+R1372 VSS.n317 VSS.n88 0.00614639
+R1373 VSS.n222 VSS.n212 0.00591387
+R1374 VSS.n240 VSS.n199 0.00591387
+R1375 VSS.n219 VSS.n218 0.00518242
+R1376 VSS.n242 VSS.n198 0.00518242
+R1377 VSS.n63 VSS.n0 0.00518242
+R1378 VSS.n196 VSS.n63 0.00518242
+R1379 VSS.n242 VSS.n241 0.00518242
+R1380 VSS.n216 VSS.n215 0.00518242
+R1381 VSS.n220 VSS.n219 0.00518242
+R1382 VSS.n127 VSS.n2 0.00515726
+R1383 VSS.n76 VSS.n75 0.00510076
+R1384 VSS.n246 VSS.n191 0.00483098
+R1385 VSS.n163 VSS.n71 0.00455439
+R1386 VSS.n282 VSS.n73 0.00455439
+R1387 VSS.n284 VSS.n77 0.00455439
+R1388 VSS.n284 VSS.n76 0.00455439
+R1389 VSS.n267 VSS.n255 0.00443952
+R1390 VSS.n289 VSS.n89 0.00384601
+R1391 VSS.n266 VSS.n261 0.00363688
+R1392 VSS.n220 VSS.n212 0.00345302
+R1393 VSS.n241 VSS.n240 0.00345302
+R1394 VSS.n213 VSS.n110 0.00316129
+R1395 VSS.n75 VSS.n73 0.00300951
+R1396 VSS.n290 VSS.n289 0.00293952
+R1397 VSS.n229 VSS.n226 0.00283781
+R1398 VSS.n209 VSS.n2 0.00249597
+R1399 VSS.n319 VSS.n290 0.00205242
+R1400 VSS.n318 VSS.n162 0.00205242
+R1401 VSS.n309 VSS.n161 0.00205242
+R1402 VSS.n291 VSS.n159 0.00205242
+R1403 VSS.n308 VSS.n158 0.00205242
+R1404 VSS.n306 VSS.n156 0.00205242
+R1405 VSS.n304 VSS.n155 0.00205242
+R1406 VSS.n292 VSS.n153 0.00205242
+R1407 VSS.n303 VSS.n152 0.00205242
+R1408 VSS.n293 VSS.n150 0.00205242
+R1409 VSS.n302 VSS.n149 0.00205242
+R1410 VSS.n294 VSS.n147 0.00205242
+R1411 VSS.n301 VSS.n146 0.00205242
+R1412 VSS.n295 VSS.n144 0.00205242
+R1413 VSS.n300 VSS.n143 0.00205242
+R1414 VSS.n296 VSS.n141 0.00205242
+R1415 VSS.n299 VSS.n140 0.00205242
+R1416 VSS.n297 VSS.n138 0.00205242
+R1417 VSS.n224 VSS.n223 0.00197651
+R1418 VSS.n228 VSS.n227 0.00197651
+R1419 VSS.n310 VSS.n79 0.00196388
+R1420 VSS.n311 VSS.n80 0.00196388
+R1421 VSS.n312 VSS.n82 0.00196388
+R1422 VSS.n313 VSS.n83 0.00196388
+R1423 VSS.n314 VSS.n85 0.00196388
+R1424 VSS.n315 VSS.n86 0.00196388
+R1425 VSS.n316 VSS.n88 0.00196388
+R1426 VSS.n317 VSS.n89 0.00196388
+R1427 VSS.n226 VSS.n213 0.00173042
+R1428 VSS.n268 VSS.n171 0.00162501
+R1429 VSS.n218 VSS.n214 0.00148434
+R1430 VSS.n198 VSS.n197 0.00148434
+R1431 VSS.n338 VSS.n337 0.00142883
+R1432 VSS.n236 VSS.n131 0.0013871
+R1433 VSS.n205 VSS.n95 0.0013871
+R1434 VSS.n235 VSS.n130 0.0013871
+R1435 VSS.n206 VSS.n97 0.0013871
+R1436 VSS.n234 VSS.n129 0.0013871
+R1437 VSS.n207 VSS.n99 0.0013871
+R1438 VSS.n233 VSS.n128 0.0013871
+R1439 VSS.n208 VSS.n101 0.0013871
+R1440 VSS.n232 VSS.n127 0.0013871
+R1441 VSS.n209 VSS.n103 0.0013871
+R1442 VSS.n231 VSS.n126 0.0013871
+R1443 VSS.n210 VSS.n105 0.0013871
+R1444 VSS.n230 VSS.n125 0.0013871
+R1445 VSS.n211 VSS.n107 0.0013871
+R1446 VSS.n237 VSS.n123 0.0013871
+R1447 VSS.n200 VSS.n108 0.0013871
+R1448 VSS.n204 VSS.n121 0.0013871
+R1449 VSS.n201 VSS.n109 0.0013871
+R1450 VSS.n203 VSS.n119 0.0013871
+R1451 VSS.n202 VSS.n110 0.0013871
+R1452 VSS.n268 VSS.n267 0.00137498
+R1453 VSS.n336 VSS.t59 0.00129121
+R1454 VSS.n336 VSS.t60 0.00117081
+R1455 VSS.n281 VSS.n164 0.001
+R1456 VSS.n270 VSS.n164 0.001
+R1457 VSS.n272 VSS.n271 0.001
+R1458 VSS.n274 VSS.n273 0.001
+R1459 VSS.n276 VSS.n275 0.001
+R1460 VSS.n279 VSS.n277 0.001
+R1461 VSS.n278 VSS.n70 0.001
+R1462 VSS.t28 VSS.n307 0.001
+R1463 VSS.n171 VSS.n166 0.001
+R1464 VSS.n265 VSS.n167 0.001
+R1465 VSS.n264 VSS.n168 0.001
+R1466 VSS.n263 VSS.n169 0.001
+R1467 VSS.n262 VSS.n170 0.001
+R1468 VSS.n217 VSS.n117 0.001
+R1469 VSS.n217 VSS.n192 0.001
+R1470 VSS.n221 VSS.n193 0.001
+R1471 VSS.n225 VSS.n194 0.001
+R1472 VSS.n244 VSS.n195 0.001
+R1473 VSS.n243 VSS.n62 0.001
+R1474 VSS.n238 VSS.t24 0.001
+R1475 VSS.n363 VSS.n117 0.001
+R1476 VSS.n366 VSS.n62 0.001
+R1477 VSS.n244 VSS.n243 0.001
+R1478 VSS.n195 VSS.n194 0.001
+R1479 VSS.n225 VSS.n193 0.001
+R1480 VSS.n221 VSS.n192 0.001
+R1481 VSS.n267 VSS.n170 0.001
+R1482 VSS.n262 VSS.n169 0.001
+R1483 VSS.n263 VSS.n168 0.001
+R1484 VSS.n264 VSS.n167 0.001
+R1485 VSS.n265 VSS.n166 0.001
+R1486 VSS.n363 VSS.n281 0.001
+R1487 VSS.n271 VSS.n270 0.001
+R1488 VSS.n273 VSS.n272 0.001
+R1489 VSS.n275 VSS.n274 0.001
+R1490 VSS.n277 VSS.n276 0.001
+R1491 VSS.n279 VSS.n278 0.001
+R1492 VSS.n366 VSS.n70 0.001
+R1493 VSS.n307 VSS.n305 0.001
+R1494 VSS.n239 VSS.n238 0.001
+R1495 RAMP_EN RAMP_EN.t0 25.5948
+R1496 RAMP_REF.n3 RAMP_REF.t4 19.3758
+R1497 RAMP_REF.n6 RAMP_REF.t3 17.2892
+R1498 RAMP_REF.n9 RAMP_REF.t6 17.2892
+R1499 RAMP_REF.n7 RAMP_REF.t7 17.0005
+R1500 RAMP_REF.n10 RAMP_REF.t1 17.0005
+R1501 RAMP_REF.n16 RAMP_REF.t5 17.0005
+R1502 RAMP_REF.n17 RAMP_REF 6.60147
+R1503 RAMP_REF.n4 RAMP_REF.n3 5.07459
+R1504 RAMP_REF.n14 RAMP_REF.n13 4.1831
+R1505 RAMP_REF.n17 RAMP_REF.n16 3.91781
+R1506 RAMP_REF.n4 RAMP_REF.n2 2.8965
+R1507 RAMP_REF.n14 RAMP_REF.n0 2.8965
+R1508 RAMP_REF.n13 RAMP_REF.n12 2.89236
+R1509 RAMP_REF.n8 RAMP_REF.n7 2.63923
+R1510 RAMP_REF.n11 RAMP_REF.n10 2.55533
+R1511 RAMP_REF.n16 RAMP_REF.n15 2.35825
+R1512 RAMP_REF.n6 RAMP_REF.n5 2.07013
+R1513 RAMP_REF.n9 RAMP_REF.n1 1.99987
+R1514 RAMP_REF.n13 RAMP_REF.n1 1.40355
+R1515 RAMP_REF.n15 RAMP_REF.n14 1.39417
+R1516 RAMP_REF.n5 RAMP_REF.n4 1.39372
+R1517 RAMP_REF.n7 RAMP_REF.n6 0.28925
+R1518 RAMP_REF.n10 RAMP_REF.n9 0.28925
+R1519 RAMP_REF.n5 RAMP_REF.t2 0.289018
+R1520 RAMP_REF.n15 RAMP_REF.t2 0.288706
+R1521 RAMP_REF.t0 RAMP_REF.n1 0.288556
+R1522 RAMP_REF.t0 RAMP_REF.n3 0.183493
+R1523 RAMP_REF RAMP_REF.n17 0.0360745
+R1524 RAMP_REF.n11 RAMP_REF.n8 0.0230019
+R1525 RAMP_REF.t0 RAMP_REF.n11 0.00448546
+R1526 RAMP_REF.n12 RAMP_REF.n0 0.00353423
+R1527 RAMP_REF.n12 RAMP_REF.t0 0.00196564
+R1528 RAMP_REF.t0 RAMP_REF.n2 0.001
+R1529 RAMP_REF.n2 RAMP_REF.t2 0.001
+R1530 RAMP_REF.n8 RAMP_REF.t2 0.001
+R1531 RAMP_REF.n0 RAMP_REF.t2 0.001
+C47 RAMP_REF VSS 15.75872f
+C48 RAMP_RESET VSS 11.74209f
+C49 VRAMP VSS 0.19094p
+C50 RAMP_EN VSS 6.72948f
+C51 VDD VSS 4.39059f
+C52 a_4528_n1108# VSS 0.01683f $ **FLOATING
+C53 a_n4540_n1108# VSS 0.01836f $ **FLOATING
+C54 a_4600_321# VSS 0.06265f $ **FLOATING
+C55 a_n5600_321# VSS 0.06265f $ **FLOATING
+C56 a_4600_505# VSS 0.01645f $ **FLOATING
+C57 a_n5600_505# VSS 0.01645f $ **FLOATING
+C58 a_4600_689# VSS 0.01645f $ **FLOATING
+C59 a_n5600_689# VSS 0.01645f $ **FLOATING
+C60 a_4600_873# VSS 0.01645f $ **FLOATING
+C61 a_n5600_873# VSS 0.01645f $ **FLOATING
+C62 a_4600_1057# VSS 0.01645f $ **FLOATING
+C63 a_n5600_1057# VSS 0.01645f $ **FLOATING
+C64 a_4600_1241# VSS 0.01645f $ **FLOATING
+C65 a_n5600_1241# VSS 0.01645f $ **FLOATING
+C66 a_4600_1425# VSS 0.01645f $ **FLOATING
+C67 a_n5600_1425# VSS 0.01645f $ **FLOATING
+C68 a_4600_1609# VSS 0.07307f $ **FLOATING
+C69 a_n5600_1609# VSS 0.07307f $ **FLOATING
+C70 ramp_generator_nmos_mirror_0.pmos_ref VSS 7.56802f $ **FLOATING
+C71 RAMP_REF.t2 VSS 1.57379f $ **FLOATING
+C72 RAMP_REF.n0 VSS 0.08288f $ **FLOATING
+C73 RAMP_REF.n1 VSS 0.03367f $ **FLOATING
+C74 RAMP_REF.n3 VSS 0.13694f $ **FLOATING
+C75 RAMP_REF.n4 VSS 0.1157f $ **FLOATING
+C76 RAMP_REF.n5 VSS 0.03419f $ **FLOATING
+C77 RAMP_REF.n6 VSS 0.02715f $ **FLOATING
+C78 RAMP_REF.n7 VSS 0.02927f $ **FLOATING
+C79 RAMP_REF.n8 VSS 0.17162f $ **FLOATING
+C80 RAMP_REF.n9 VSS 0.02687f $ **FLOATING
+C81 RAMP_REF.n10 VSS 0.02896f $ **FLOATING
+C82 RAMP_REF.n11 VSS 0.04475f $ **FLOATING
+C83 RAMP_REF.t0 VSS 1.67494f $ **FLOATING
+C84 RAMP_REF.n12 VSS 0.01776f $ **FLOATING
+C85 RAMP_REF.n13 VSS 0.09847f $ **FLOATING
+C86 RAMP_REF.n14 VSS 0.0984f $ **FLOATING
+C87 RAMP_REF.n15 VSS 0.03689f $ **FLOATING
+C88 RAMP_REF.n16 VSS 0.06815f $ **FLOATING
+C89 RAMP_REF.n17 VSS 0.5167f $ **FLOATING
+C90 RAMP_EN.t0 VSS 3.33731f $ **FLOATING
+C91 VRAMP.n0 VSS 0.01662f $ **FLOATING
+C92 VRAMP.n1 VSS 0.02363f $ **FLOATING
+C93 VRAMP.n2 VSS 0.02363f $ **FLOATING
+C94 VRAMP.n3 VSS 0.02363f $ **FLOATING
+C95 VRAMP.n4 VSS 0.01699f $ **FLOATING
+C96 VRAMP.n5 VSS 0.02363f $ **FLOATING
+C97 VRAMP.n6 VSS 0.02363f $ **FLOATING
+C98 VRAMP.n7 VSS 0.02363f $ **FLOATING
+C99 VRAMP.n8 VSS 0.01775f $ **FLOATING
+C100 VRAMP.n9 VSS 0.21702f $ **FLOATING
+C101 VRAMP.n12 VSS 0.01636f $ **FLOATING
+C102 VRAMP.t13 VSS 5.12545f $ **FLOATING
+C103 VRAMP.n13 VSS 0.03716f $ **FLOATING
+C104 VRAMP.n14 VSS 3.44709f $ **FLOATING
+C105 VRAMP.t12 VSS 2.14871f $ **FLOATING
+C106 VRAMP.n19 VSS 1.59107f $ **FLOATING
+C107 VRAMP.n20 VSS 1.20904f $ **FLOATING
+C108 VRAMP.n21 VSS 0.01674f $ **FLOATING
+C109 VRAMP.n22 VSS 0.01686f $ **FLOATING
+C110 VRAMP.n23 VSS 0.01662f $ **FLOATING
+C111 VRAMP.n24 VSS 0.06093f $ **FLOATING
+C112 RAMP_RESET.t0 VSS 0.32957f $ **FLOATING
+C113 RAMP_RESET.n0 VSS 2.2594f $ **FLOATING
+C114 RAMP_RESET.n1 VSS 0.79596f $ **FLOATING
+C115 RAMP_RESET.t1 VSS 0.32946f $ **FLOATING
+C116 RAMP_RESET.n2 VSS 0.02417f $ **FLOATING
+C117 RAMP_RESET.n3 VSS 0.66405f $ **FLOATING
+C118 VDD.t14 VSS 0.02073f $ **FLOATING
+C119 VDD.n0 VSS 0.03115f $ **FLOATING
+C120 VDD.n1 VSS 0.02528f $ **FLOATING
+C121 VDD.n2 VSS 0.53501f $ **FLOATING
+C122 VDD.t13 VSS 0.4701f $ **FLOATING
+C123 VDD.t48 VSS 0.46813f $ **FLOATING
+C124 VDD.n3 VSS 0.01728f $ **FLOATING
+C125 VDD.t19 VSS 0.66679f $ **FLOATING
+C126 VDD.t49 VSS 0.02309f $ **FLOATING
+C127 VDD.n4 VSS 0.04428f $ **FLOATING
+C128 VDD.n5 VSS 0.01728f $ **FLOATING
+C129 VDD.t35 VSS 0.4701f $ **FLOATING
+C130 VDD.t47 VSS 0.46813f $ **FLOATING
+C131 VDD.t20 VSS 0.02309f $ **FLOATING
+C132 VDD.n6 VSS 0.04428f $ **FLOATING
+C133 VDD.n7 VSS 0.01728f $ **FLOATING
+C134 VDD.t17 VSS 0.66679f $ **FLOATING
+C135 VDD.t18 VSS 0.02309f $ **FLOATING
+C136 VDD.n8 VSS 0.04428f $ **FLOATING
+C137 VDD.n9 VSS 0.01728f $ **FLOATING
+C138 VDD.t46 VSS 0.4701f $ **FLOATING
+C139 VDD.t59 VSS 0.46813f $ **FLOATING
+C140 VDD.t34 VSS 0.02309f $ **FLOATING
+C141 VDD.n10 VSS 0.04428f $ **FLOATING
+C142 VDD.n11 VSS 0.01728f $ **FLOATING
+C143 VDD.t25 VSS 0.66679f $ **FLOATING
+C144 VDD.t26 VSS 0.02309f $ **FLOATING
+C145 VDD.n12 VSS 0.04428f $ **FLOATING
+C146 VDD.n13 VSS 0.01728f $ **FLOATING
+C147 VDD.t61 VSS 0.4701f $ **FLOATING
+C148 VDD.t23 VSS 0.46813f $ **FLOATING
+C149 VDD.t52 VSS 0.02309f $ **FLOATING
+C150 VDD.n14 VSS 0.04428f $ **FLOATING
+C151 VDD.n15 VSS 0.01728f $ **FLOATING
+C152 VDD.t38 VSS 0.66679f $ **FLOATING
+C153 VDD.t24 VSS 0.02309f $ **FLOATING
+C154 VDD.n16 VSS 0.04428f $ **FLOATING
+C155 VDD.n17 VSS 0.01728f $ **FLOATING
+C156 VDD.t21 VSS 0.4701f $ **FLOATING
+C157 VDD.t36 VSS 0.46813f $ **FLOATING
+C158 VDD.t22 VSS 0.02309f $ **FLOATING
+C159 VDD.n18 VSS 0.04428f $ **FLOATING
+C160 VDD.n19 VSS 0.01728f $ **FLOATING
+C161 VDD.t37 VSS 0.02309f $ **FLOATING
+C162 VDD.n20 VSS 0.03854f $ **FLOATING
+C163 VDD.n21 VSS 0.02207f $ **FLOATING
+C164 VDD.t15 VSS 0.73957f $ **FLOATING
+C165 VDD.t45 VSS 0.60385f $ **FLOATING
+C166 VDD.t16 VSS 0.02309f $ **FLOATING
+C167 VDD.n22 VSS 0.04241f $ **FLOATING
+C168 VDD.n23 VSS 0.01732f $ **FLOATING
+C169 VDD.t39 VSS 0.53304f $ **FLOATING
+C170 VDD.t29 VSS 0.46813f $ **FLOATING
+C171 VDD.t40 VSS 0.02309f $ **FLOATING
+C172 VDD.n24 VSS 0.04424f $ **FLOATING
+C173 VDD.n25 VSS 0.01732f $ **FLOATING
+C174 VDD.t5 VSS 0.60385f $ **FLOATING
+C175 VDD.t6 VSS 0.02309f $ **FLOATING
+C176 VDD.n26 VSS 0.04424f $ **FLOATING
+C177 VDD.n27 VSS 0.01732f $ **FLOATING
+C178 VDD.t27 VSS 0.53304f $ **FLOATING
+C179 VDD.t7 VSS 0.46813f $ **FLOATING
+C180 VDD.t28 VSS 0.02309f $ **FLOATING
+C181 VDD.n28 VSS 0.04424f $ **FLOATING
+C182 VDD.n29 VSS 0.01732f $ **FLOATING
+C183 VDD.t41 VSS 0.60385f $ **FLOATING
+C184 VDD.t8 VSS 0.02309f $ **FLOATING
+C185 VDD.n30 VSS 0.04424f $ **FLOATING
+C186 VDD.n31 VSS 0.01732f $ **FLOATING
+C187 VDD.t30 VSS 0.66679f $ **FLOATING
+C188 VDD.n32 VSS 0.33438f $ **FLOATING
+C189 VDD.t31 VSS 0.02309f $ **FLOATING
+C190 VDD.n33 VSS 0.04424f $ **FLOATING
+C191 VDD.n34 VSS 0.01732f $ **FLOATING
+C192 VDD.t32 VSS 0.60385f $ **FLOATING
+C193 VDD.t42 VSS 0.02309f $ **FLOATING
+C194 VDD.n35 VSS 0.04424f $ **FLOATING
+C195 VDD.n36 VSS 0.01732f $ **FLOATING
+C196 VDD.t9 VSS 0.53304f $ **FLOATING
+C197 VDD.t57 VSS 0.46813f $ **FLOATING
+C198 VDD.t10 VSS 0.02309f $ **FLOATING
+C199 VDD.n37 VSS 0.04424f $ **FLOATING
+C200 VDD.n38 VSS 0.01732f $ **FLOATING
+C201 VDD.t11 VSS 0.60385f $ **FLOATING
+C202 VDD.t33 VSS 0.02309f $ **FLOATING
+C203 VDD.n39 VSS 0.04424f $ **FLOATING
+C204 VDD.n40 VSS 0.01732f $ **FLOATING
+C205 VDD.t58 VSS 0.53304f $ **FLOATING
+C206 VDD.t43 VSS 0.53698f $ **FLOATING
+C207 VDD.t12 VSS 0.02309f $ **FLOATING
+C208 VDD.n41 VSS 0.04424f $ **FLOATING
+C209 VDD.n42 VSS 0.01732f $ **FLOATING
+C210 VDD.t44 VSS 0.02073f $ **FLOATING
+C211 VDD.n43 VSS 0.03117f $ **FLOATING
+C212 VDD.n44 VSS 0.21777f $ **FLOATING
+C213 VDD.n45 VSS 0.02126f $ **FLOATING
+C214 VDD.n46 VSS 0.53501f $ **FLOATING
+C215 VDD.t0 VSS 10.79f $ **FLOATING
+C216 VDD.n47 VSS 0.02135f $ **FLOATING
+C217 VDD.n48 VSS 0.02135f $ **FLOATING
+C218 VDD.n49 VSS 0.02135f $ **FLOATING
+C219 VDD.n50 VSS 0.02135f $ **FLOATING
+C220 VDD.n51 VSS 0.02135f $ **FLOATING
+C221 VDD.n52 VSS 0.02135f $ **FLOATING
+C222 VDD.n53 VSS 0.02135f $ **FLOATING
+C223 VDD.n54 VSS 0.02135f $ **FLOATING
+C224 VDD.n55 VSS 0.02135f $ **FLOATING
+C225 VDD.n56 VSS 0.02135f $ **FLOATING
+C226 VDD.n57 VSS 0.02135f $ **FLOATING
+C227 VDD.n58 VSS 0.02135f $ **FLOATING
+C228 VDD.n59 VSS 0.02135f $ **FLOATING
+C229 VDD.n60 VSS 0.02135f $ **FLOATING
+C230 VDD.n61 VSS 0.02135f $ **FLOATING
+C231 VDD.n62 VSS 0.02135f $ **FLOATING
+C232 VDD.n63 VSS 0.01067f $ **FLOATING
+C233 VDD.n64 VSS 0.01067f $ **FLOATING
+C234 VDD.n65 VSS 0.02135f $ **FLOATING
+C235 VDD.n66 VSS 0.02135f $ **FLOATING
+C236 VDD.n67 VSS 0.02135f $ **FLOATING
+C237 VDD.n68 VSS 0.02135f $ **FLOATING
+C238 VDD.n69 VSS 0.02135f $ **FLOATING
+C239 VDD.n70 VSS 0.02135f $ **FLOATING
+C240 VDD.n71 VSS 0.02135f $ **FLOATING
+C241 VDD.n72 VSS 0.02135f $ **FLOATING
+C242 VDD.n73 VSS 0.02135f $ **FLOATING
+C243 VDD.n74 VSS 0.02135f $ **FLOATING
+C244 VDD.n75 VSS 0.02135f $ **FLOATING
+C245 VDD.n76 VSS 0.02135f $ **FLOATING
+C246 VDD.n77 VSS 0.02135f $ **FLOATING
+C247 VDD.n78 VSS 0.02135f $ **FLOATING
+C248 VDD.n79 VSS 0.01067f $ **FLOATING
+C249 VDD.n80 VSS 0.01397f $ **FLOATING
+C250 VDD.t62 VSS 10.79f $ **FLOATING
+C251 VDD.n81 VSS 0.01067f $ **FLOATING
+C252 VDD.n82 VSS 0.02135f $ **FLOATING
+C253 VDD.n83 VSS 0.02135f $ **FLOATING
+C254 VDD.n84 VSS 0.02135f $ **FLOATING
+C255 VDD.n85 VSS 0.02135f $ **FLOATING
+C256 VDD.n86 VSS 0.02135f $ **FLOATING
+C257 VDD.n87 VSS 0.02135f $ **FLOATING
+C258 VDD.n88 VSS 0.02135f $ **FLOATING
+C259 VDD.n89 VSS 0.02135f $ **FLOATING
+C260 VDD.n90 VSS 0.02135f $ **FLOATING
+C261 VDD.n91 VSS 0.02135f $ **FLOATING
+C262 VDD.n92 VSS 0.02135f $ **FLOATING
+C263 VDD.n93 VSS 0.02135f $ **FLOATING
+C264 VDD.n94 VSS 0.02135f $ **FLOATING
+C265 VDD.n95 VSS 0.02135f $ **FLOATING
+C266 VDD.n96 VSS 0.02135f $ **FLOATING
+C267 VDD.n97 VSS 0.0135f $ **FLOATING
+C268 VDD.n98 VSS 0.02135f $ **FLOATING
+C269 VDD.n99 VSS 0.02135f $ **FLOATING
+C270 VDD.n100 VSS 0.02135f $ **FLOATING
+C271 VDD.n101 VSS 0.02135f $ **FLOATING
+C272 VDD.n102 VSS 0.02135f $ **FLOATING
+C273 VDD.n103 VSS 0.02135f $ **FLOATING
+C274 VDD.n104 VSS 0.02135f $ **FLOATING
+C275 VDD.n105 VSS 0.02135f $ **FLOATING
+C276 VDD.n106 VSS 0.02135f $ **FLOATING
+C277 VDD.n107 VSS 0.02135f $ **FLOATING
+C278 VDD.n108 VSS 0.02135f $ **FLOATING
+C279 VDD.n109 VSS 0.02135f $ **FLOATING
+C280 VDD.n110 VSS 0.02135f $ **FLOATING
+C281 VDD.n111 VSS 0.02135f $ **FLOATING
+C282 VDD.n112 VSS 0.02135f $ **FLOATING
+C283 VDD.n113 VSS 0.02135f $ **FLOATING
+C284 VDD.n115 VSS 0.0855f $ **FLOATING
+C285 VDD.n116 VSS 0.08387f $ **FLOATING
+C286 VDD.n117 VSS 0.03309f $ **FLOATING
+C287 VDD.n118 VSS 0.0499f $ **FLOATING
+C288 VDD.n119 VSS 0.0499f $ **FLOATING
+C289 VDD.n120 VSS 0.0499f $ **FLOATING
+C290 VDD.n121 VSS 0.0499f $ **FLOATING
+C291 VDD.n122 VSS 0.0499f $ **FLOATING
+C292 VDD.n123 VSS 0.0499f $ **FLOATING
+C293 VDD.n124 VSS 0.05099f $ **FLOATING
+C294 VDD.n125 VSS 0.04236f $ **FLOATING
+C295 VDD.n126 VSS 0.02417f $ **FLOATING
+C296 VDD.n127 VSS 0.09975f $ **FLOATING
+C297 VDD.n128 VSS 0.09234f $ **FLOATING
+C298 VDD.n129 VSS 0.71043f $ **FLOATING
+C299 VDD.n130 VSS 0.16416f $ **FLOATING
+C300 VDD.n131 VSS 0.25585f $ **FLOATING
+C301 VDD.n132 VSS 0.11615f $ **FLOATING
+C302 VDD.n133 VSS 0.30939f $ **FLOATING
+C303 VDD.n134 VSS 0.11652f $ **FLOATING
+C304 VDD.n135 VSS 0.28775f $ **FLOATING
+C305 VDD.n136 VSS 0.13411f $ **FLOATING
+C306 VDD.n137 VSS 0.28312f $ **FLOATING
+C307 VDD.n138 VSS 0.1161f $ **FLOATING
+C308 VDD.n139 VSS 0.31149f $ **FLOATING
+C309 VDD.n140 VSS 0.11124f $ **FLOATING
+C310 VDD.n141 VSS 0.26372f $ **FLOATING
+C311 VDD.n142 VSS 0.16416f $ **FLOATING
+C312 VDD.n143 VSS 0.73326f $ **FLOATING
+C313 VDD.n144 VSS 0.64708f $ **FLOATING
+C314 VDD.n177 VSS 0.74508f $ **FLOATING
+C315 VDD.n178 VSS 0.16416f $ **FLOATING
+C316 VDD.n179 VSS 0.26372f $ **FLOATING
+C317 VDD.n180 VSS 0.11124f $ **FLOATING
+C318 VDD.n181 VSS 0.30643f $ **FLOATING
+C319 VDD.n182 VSS 0.11652f $ **FLOATING
+C320 VDD.n183 VSS 0.28775f $ **FLOATING
+C321 VDD.n184 VSS 0.13411f $ **FLOATING
+C322 VDD.n185 VSS 0.28775f $ **FLOATING
+C323 VDD.n186 VSS 0.11652f $ **FLOATING
+C324 VDD.n187 VSS 0.30643f $ **FLOATING
+C325 VDD.n188 VSS 0.11124f $ **FLOATING
+C326 VDD.n189 VSS 0.26372f $ **FLOATING
+C327 VDD.n190 VSS 0.16416f $ **FLOATING
+C328 VDD.n191 VSS 0.25869f $ **FLOATING
+C329 VDD.n192 VSS 0.1634f $ **FLOATING
+C330 VDD.n193 VSS 0.01203f $ **FLOATING
+C331 VDD.n194 VSS 0.01203f $ **FLOATING
+C332 VDD.n196 VSS 0.01203f $ **FLOATING
+C333 VDD.n198 VSS 0.01203f $ **FLOATING
+C334 VDD.n200 VSS 0.01203f $ **FLOATING
+C335 VDD.n202 VSS 0.01203f $ **FLOATING
+C336 VDD.n204 VSS 0.01203f $ **FLOATING
+C337 VDD.n206 VSS 0.01203f $ **FLOATING
+C338 VDD.n208 VSS 0.01203f $ **FLOATING
+C339 VDD.n210 VSS 0.01203f $ **FLOATING
+C340 VDD.n212 VSS 0.30407f $ **FLOATING
+C341 VDD.n214 VSS 2.26113f $ **FLOATING
+C342 VDD.n215 VSS 0.13375f $ **FLOATING
+C343 VDD.n216 VSS 0.13375f $ **FLOATING
+C344 VDD.n217 VSS 0.90346f $ **FLOATING
+C345 VDD.n219 VSS 0.03807f $ **FLOATING
+C346 ramp_generator_nmos_mirror_0.pmos_ref.t52 VSS 0.01912f $ **FLOATING
+C347 ramp_generator_nmos_mirror_0.pmos_ref.t51 VSS 0.11842f $ **FLOATING
+C348 ramp_generator_nmos_mirror_0.pmos_ref.n0 VSS 0.55688f $ **FLOATING
+C349 ramp_generator_nmos_mirror_0.pmos_ref.t47 VSS 0.01582f $ **FLOATING
+C350 ramp_generator_nmos_mirror_0.pmos_ref.t43 VSS 0.01582f $ **FLOATING
+C351 ramp_generator_nmos_mirror_0.pmos_ref.n1 VSS 0.05684f $ **FLOATING
+C352 ramp_generator_nmos_mirror_0.pmos_ref.t20 VSS 43.9889f $ **FLOATING
+C353 ramp_generator_nmos_mirror_0.pmos_ref.t24 VSS 0.01582f $ **FLOATING
+C354 ramp_generator_nmos_mirror_0.pmos_ref.n2 VSS 0.61213f $ **FLOATING
+C355 ramp_generator_nmos_mirror_0.pmos_ref.n3 VSS 0.67019f $ **FLOATING
+C356 ramp_generator_nmos_mirror_0.pmos_ref.t34 VSS 0.01582f $ **FLOATING
+C357 ramp_generator_nmos_mirror_0.pmos_ref.t29 VSS 0.01582f $ **FLOATING
+C358 ramp_generator_nmos_mirror_0.pmos_ref.n4 VSS 0.05141f $ **FLOATING
+C359 ramp_generator_nmos_mirror_0.pmos_ref.n5 VSS 0.20525f $ **FLOATING
+C360 ramp_generator_nmos_mirror_0.pmos_ref.t35 VSS 0.01582f $ **FLOATING
+C361 ramp_generator_nmos_mirror_0.pmos_ref.t48 VSS 0.01582f $ **FLOATING
+C362 ramp_generator_nmos_mirror_0.pmos_ref.n6 VSS 0.06625f $ **FLOATING
+C363 ramp_generator_nmos_mirror_0.pmos_ref.n7 VSS 0.20513f $ **FLOATING
+C364 ramp_generator_nmos_mirror_0.pmos_ref.t49 VSS 0.01582f $ **FLOATING
+C365 ramp_generator_nmos_mirror_0.pmos_ref.t21 VSS 0.01582f $ **FLOATING
+C366 ramp_generator_nmos_mirror_0.pmos_ref.n8 VSS 0.05533f $ **FLOATING
+C367 ramp_generator_nmos_mirror_0.pmos_ref.n9 VSS 0.1552f $ **FLOATING
+C368 ramp_generator_nmos_mirror_0.pmos_ref.t45 VSS 0.01582f $ **FLOATING
+C369 ramp_generator_nmos_mirror_0.pmos_ref.t50 VSS 0.01582f $ **FLOATING
+C370 ramp_generator_nmos_mirror_0.pmos_ref.n11 VSS 0.20533f $ **FLOATING
+C371 ramp_generator_nmos_mirror_0.pmos_ref.t25 VSS 0.01582f $ **FLOATING
+C372 ramp_generator_nmos_mirror_0.pmos_ref.n12 VSS 0.05382f $ **FLOATING
+C373 ramp_generator_nmos_mirror_0.pmos_ref.n13 VSS 0.15201f $ **FLOATING
+C374 ramp_generator_nmos_mirror_0.pmos_ref.t42 VSS 0.01582f $ **FLOATING
+C375 ramp_generator_nmos_mirror_0.pmos_ref.t41 VSS 0.01582f $ **FLOATING
+C376 ramp_generator_nmos_mirror_0.pmos_ref.t32 VSS 0.01582f $ **FLOATING
+C377 ramp_generator_nmos_mirror_0.pmos_ref.n15 VSS 0.05141f $ **FLOATING
+C378 ramp_generator_nmos_mirror_0.pmos_ref.n16 VSS 0.20494f $ **FLOATING
+C379 ramp_generator_nmos_mirror_0.pmos_ref.t40 VSS 0.01582f $ **FLOATING
+C380 ramp_generator_nmos_mirror_0.pmos_ref.t23 VSS 0.01582f $ **FLOATING
+C381 ramp_generator_nmos_mirror_0.pmos_ref.n17 VSS 0.03801f $ **FLOATING
+C382 ramp_generator_nmos_mirror_0.pmos_ref.t11 VSS 0.0616f $ **FLOATING
+C383 ramp_generator_nmos_mirror_0.pmos_ref.t16 VSS 0.0616f $ **FLOATING
+C384 ramp_generator_nmos_mirror_0.pmos_ref.t4 VSS 0.0616f $ **FLOATING
+C385 ramp_generator_nmos_mirror_0.pmos_ref.t3 VSS 0.0616f $ **FLOATING
+C386 ramp_generator_nmos_mirror_0.pmos_ref.t13 VSS 0.0616f $ **FLOATING
+C387 ramp_generator_nmos_mirror_0.pmos_ref.t12 VSS 0.0616f $ **FLOATING
+C388 ramp_generator_nmos_mirror_0.pmos_ref.t19 VSS 0.0616f $ **FLOATING
+C389 ramp_generator_nmos_mirror_0.pmos_ref.t18 VSS 0.0616f $ **FLOATING
+C390 ramp_generator_nmos_mirror_0.pmos_ref.t7 VSS 0.0616f $ **FLOATING
+C391 ramp_generator_nmos_mirror_0.pmos_ref.t8 VSS 0.06497f $ **FLOATING
+C392 ramp_generator_nmos_mirror_0.pmos_ref.n18 VSS 0.13129f $ **FLOATING
+C393 ramp_generator_nmos_mirror_0.pmos_ref.n19 VSS 0.07732f $ **FLOATING
+C394 ramp_generator_nmos_mirror_0.pmos_ref.n20 VSS 0.07732f $ **FLOATING
+C395 ramp_generator_nmos_mirror_0.pmos_ref.n21 VSS 0.07732f $ **FLOATING
+C396 ramp_generator_nmos_mirror_0.pmos_ref.n22 VSS 0.07732f $ **FLOATING
+C397 ramp_generator_nmos_mirror_0.pmos_ref.n23 VSS 0.07732f $ **FLOATING
+C398 ramp_generator_nmos_mirror_0.pmos_ref.n24 VSS 0.07732f $ **FLOATING
+C399 ramp_generator_nmos_mirror_0.pmos_ref.n25 VSS 0.07732f $ **FLOATING
+C400 ramp_generator_nmos_mirror_0.pmos_ref.n26 VSS 0.06548f $ **FLOATING
+C401 ramp_generator_nmos_mirror_0.pmos_ref.t10 VSS 0.0616f $ **FLOATING
+C402 ramp_generator_nmos_mirror_0.pmos_ref.t5 VSS 0.0616f $ **FLOATING
+C403 ramp_generator_nmos_mirror_0.pmos_ref.t6 VSS 0.0616f $ **FLOATING
+C404 ramp_generator_nmos_mirror_0.pmos_ref.t14 VSS 0.0616f $ **FLOATING
+C405 ramp_generator_nmos_mirror_0.pmos_ref.t15 VSS 0.0616f $ **FLOATING
+C406 ramp_generator_nmos_mirror_0.pmos_ref.t17 VSS 0.0616f $ **FLOATING
+C407 ramp_generator_nmos_mirror_0.pmos_ref.t2 VSS 0.0616f $ **FLOATING
+C408 ramp_generator_nmos_mirror_0.pmos_ref.t0 VSS 0.0616f $ **FLOATING
+C409 ramp_generator_nmos_mirror_0.pmos_ref.t9 VSS 0.06497f $ **FLOATING
+C410 ramp_generator_nmos_mirror_0.pmos_ref.n27 VSS 0.13129f $ **FLOATING
+C411 ramp_generator_nmos_mirror_0.pmos_ref.t1 VSS 0.0616f $ **FLOATING
+C412 ramp_generator_nmos_mirror_0.pmos_ref.n28 VSS 0.07732f $ **FLOATING
+C413 ramp_generator_nmos_mirror_0.pmos_ref.n29 VSS 0.07732f $ **FLOATING
+C414 ramp_generator_nmos_mirror_0.pmos_ref.n30 VSS 0.07732f $ **FLOATING
+C415 ramp_generator_nmos_mirror_0.pmos_ref.n31 VSS 0.07732f $ **FLOATING
+C416 ramp_generator_nmos_mirror_0.pmos_ref.n32 VSS 0.07732f $ **FLOATING
+C417 ramp_generator_nmos_mirror_0.pmos_ref.n33 VSS 0.07732f $ **FLOATING
+C418 ramp_generator_nmos_mirror_0.pmos_ref.n34 VSS 0.07732f $ **FLOATING
+C419 ramp_generator_nmos_mirror_0.pmos_ref.n35 VSS 0.06548f $ **FLOATING
+C420 ramp_generator_nmos_mirror_0.pmos_ref.n36 VSS 0.70937f $ **FLOATING
+C421 ramp_generator_nmos_mirror_0.pmos_ref.n37 VSS 0.58395f $ **FLOATING
+C422 ramp_generator_nmos_mirror_0.pmos_ref.n38 VSS 0.20061f $ **FLOATING
+C423 ramp_generator_nmos_mirror_0.pmos_ref.t36 VSS 0.01582f $ **FLOATING
+C424 ramp_generator_nmos_mirror_0.pmos_ref.t33 VSS 0.01582f $ **FLOATING
+C425 ramp_generator_nmos_mirror_0.pmos_ref.n39 VSS 0.0677f $ **FLOATING
+C426 ramp_generator_nmos_mirror_0.pmos_ref.n40 VSS 0.20494f $ **FLOATING
+C427 ramp_generator_nmos_mirror_0.pmos_ref.t46 VSS 0.01582f $ **FLOATING
+C428 ramp_generator_nmos_mirror_0.pmos_ref.t37 VSS 0.01582f $ **FLOATING
+C429 ramp_generator_nmos_mirror_0.pmos_ref.n41 VSS 0.05416f $ **FLOATING
+C430 ramp_generator_nmos_mirror_0.pmos_ref.n42 VSS 0.15445f $ **FLOATING
+C431 ramp_generator_nmos_mirror_0.pmos_ref.n43 VSS 0.64534f $ **FLOATING
+C432 ramp_generator_nmos_mirror_0.pmos_ref.n44 VSS 0.1522f $ **FLOATING
+C433 ramp_generator_nmos_mirror_0.pmos_ref.t30 VSS 0.01582f $ **FLOATING
+C434 ramp_generator_nmos_mirror_0.pmos_ref.t28 VSS 0.01582f $ **FLOATING
+C435 ramp_generator_nmos_mirror_0.pmos_ref.n45 VSS 0.05279f $ **FLOATING
+C436 ramp_generator_nmos_mirror_0.pmos_ref.n46 VSS 0.2052f $ **FLOATING
+C437 ramp_generator_nmos_mirror_0.pmos_ref.t38 VSS 0.01582f $ **FLOATING
+C438 ramp_generator_nmos_mirror_0.pmos_ref.t27 VSS 0.01582f $ **FLOATING
+C439 ramp_generator_nmos_mirror_0.pmos_ref.n47 VSS 0.06734f $ **FLOATING
+C440 ramp_generator_nmos_mirror_0.pmos_ref.n48 VSS 0.20542f $ **FLOATING
+C441 ramp_generator_nmos_mirror_0.pmos_ref.t39 VSS 0.01582f $ **FLOATING
+C442 ramp_generator_nmos_mirror_0.pmos_ref.t22 VSS 0.01582f $ **FLOATING
+C443 ramp_generator_nmos_mirror_0.pmos_ref.n49 VSS 0.06698f $ **FLOATING
+C444 ramp_generator_nmos_mirror_0.pmos_ref.n50 VSS 0.20502f $ **FLOATING
+C445 ramp_generator_nmos_mirror_0.pmos_ref.t31 VSS 0.01582f $ **FLOATING
+C446 ramp_generator_nmos_mirror_0.pmos_ref.t44 VSS 0.01582f $ **FLOATING
+C447 ramp_generator_nmos_mirror_0.pmos_ref.n51 VSS 0.54683f $ **FLOATING
+C448 ramp_generator_nmos_mirror_0.pmos_ref.t26 VSS 0.01582f $ **FLOATING
+C449 ramp_generator_nmos_mirror_0.pmos_ref.n52 VSS 0.54647f $ **FLOATING
+C450 ramp_generator_nmos_mirror_0.pmos_ref.n53 VSS 0.18545f $ **FLOATING
+C451 ramp_generator_nmos_mirror_0.pmos_ref.n54 VSS 0.10147f $ **FLOATING
+C452 ramp_generator_nmos_mirror_0.pmos_ref.n55 VSS 0.37899f $ **FLOATING
+.ends
+

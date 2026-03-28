@@ -1,0 +1,83 @@
+** sch_path: /foss/designs/xschemas/adc_top_analog.sch
+.subckt adc_top_analog VSS VDD VBIAS RAMP_EN RAMP_REF RAMP_RESET SEL_CAL VCAL SEL_MEAS VMEAS CMP_OUTPUT VRAMP nbulk
+*.PININFO CMP_OUTPUT:B VBIAS:B VDD:B VSS:B VRAMP:B RAMP_EN:B RAMP_REF:B RAMP_RESET:B VCAL:B VMEAS:B SEL_MEAS:B SEL_CAL:B
+x1 VDD RAMP_EN VRAMP RAMP_RESET VSS RAMP_REF VSS Pbulk ramp_generator
+XCOMP1 CMP_OUTPUT VSS VDD VBIAS VRAMP net1 RAMP_EN Nbulk ota_lv_gmid_comparator
+M1 net1 SEL_MEAS VMEAS VSS sg13_lv_nmos w=20u l=0.13u ng=20
+M2 VCAL SEL_CAL net1 VSS sg13_lv_nmos w=20u l=0.13u ng=20
+R1 VDD Pbulk ntap1 A=55.716e-12 P=371.44e-6
+R2 VSS VSS ptap1 A=59.4709e-12 P=318.23e-6
+.ends
+
+* expanding   symbol:  /foss/designs/xschemas/aymen/ramp_generator.sym # of pins=6
+** sym_path: /foss/designs/xschemas/aymen/ramp_generator.sym
+** sch_path: /foss/designs/xschemas/aymen/ramp_generator.sch
+.subckt ramp_generator vdd ramp_en vramp Reset VSS RAMP_REF nbulk pbulk
+*.PININFO ramp_en:I VSS:B vdd:B Reset:I vramp:O RAMP_REF:I
+M5 vramp Reset VSS VSS sg13_lv_nmos w=52.8u l=0.13u ng=10
+M6 vramp net1 vdd pbulk sg13_lv_pmos w=0.15u l=10u ng=1 m=2
+M1 net1 net1 vdd pbulk sg13_lv_pmos w=0.15u l=10u ng=1 m=30
+M2 net1 ramp_en vdd pbulk sg13_lv_pmos w=40u l=0.13u ng=1
+M3 VSS RAMP_REF net1 VSS sg13_lv_nmos w=0.3u l=10u ng=1 m=2
+M4 VSS RAMP_REF RAMP_REF VSS sg13_lv_nmos w=0.3u l=10u ng=1 m=6
+C2 VSS vramp cap_cmim w=40e-6 l=40e-6 m=2
+M7 vdd vdd vdd Pbulk sg13_lv_pmos w=0.15u l=5u ng=1 m=16
+M8 VSS VSS VSS VSS sg13_lv_nmos w=0.3u l=10u ng=1 m=8
+.ends
+
+
+* expanding   symbol:  /foss/designs/xschemas/ota_lv_gmid_comparator.sym # of pins=7
+** sym_path: /foss/designs/xschemas/ota_lv_gmid_comparator.sym
+** sch_path: /foss/designs/xschemas/ota_lv_gmid_comparator.sch
+.subckt ota_lv_gmid_comparator Vout VSS VDD Ibias VP VN EN_IN nbulk
+*.PININFO VDD:B VSS:B VP:I VN:I Ibias:I Vout:B EN_IN:I
+M1 net1 VP net2 Pbulk sg13_lv_pmos w=2.5u l=5u ng=1 m=2
+M2 vota VN net2 Pbulk sg13_lv_pmos w=2.5u l=5u ng=1 m=2
+M3 vota net1 VSS VSS sg13_lv_nmos w=0.5u l=10u ng=1 m=2
+M4 net1 net1 VSS VSS sg13_lv_nmos w=0.5u l=10u ng=1 m=2
+M5 net2 Ibias VDD Pbulk sg13_lv_pmos w=2u l=0.5u ng=1
+M6 net3 Ibias VDD Pbulk sg13_lv_pmos w=2u l=0.5u ng=1
+M7 net3 vota VSS VSS sg13_lv_nmos w=0.5u l=10u ng=1 m=4
+M14 net4 EN_IN VSS VSS sg13_lv_nmos w=2u l=0.13u ng=1
+M15 net4 EN_IN VDD Pbulk sg13_lv_pmos w=2u l=0.13u ng=1
+M8 Ibias EN VDD Pbulk sg13_lv_pmos w=1.425u l=0.13u ng=1 m=14
+XSCHMITT1 VSS VDD net5 net3 VSS Pbulk ring_schmitt
+M10 EN net4 VSS VSS sg13_lv_nmos w=2u l=0.13u ng=1
+M11 EN net4 VDD Pbulk sg13_lv_pmos w=2u l=0.13u ng=1
+M12 net6 net5 VSS VSS sg13_lv_nmos w=2u l=0.13u ng=1
+M13 net6 net5 VDD Pbulk sg13_lv_pmos w=2u l=0.13u ng=1
+M16 Vout net6 VSS VSS sg13_lv_nmos w=2u l=0.13u ng=1
+M17 Vout net6 VDD Pbulk sg13_lv_pmos w=2u l=0.13u ng=1
+R1 VDD Pbulk ntap1 A=60.213e-12 P=354.9e-6
+R2 VSS VSS ptap1 A=28.05e-12 P=188.2e-6
+M18 VDD VDD VDD VDD sg13_lv_pmos w=3u l=3u ng=1 m=2
+R3 VDD VDD rhigh w=0.5e-6 l=3e-6 m=4 b=0 ps=0
+R4 VDD VDD rhigh w=0.5e-6 l=2.5e-6 m=4 b=0 ps=0
+M19 VSS VSS VSS VSS sg13_lv_nmos w=0.5u l=2u ng=1 m=8
+M20 VDD Ibias VDD Pbulk sg13_lv_pmos w=2u l=0.5u ng=1
+M21 VDD VDD VDD Pbulk sg13_lv_pmos w=1u l=0.5u ng=1 m=6
+M22 VDD VDD VDD Pbulk sg13_lv_pmos w=2.5u l=2u ng=1 m=8
+M9 net3 EN VDD Pbulk sg13_lv_pmos w=1.425u l=0.13u ng=1 m=14
+**** begin user architecture code
+
+
+R0 net1 0 10G
+
+
+**** end user architecture code
+.ends
+
+
+* expanding   symbol:  /foss/designs/xschemas/ring_schmitt.sym # of pins=4
+** sym_path: /foss/designs/xschemas/ring_schmitt.sym
+** sch_path: /foss/designs/xschemas/ring_schmitt.sch
+.subckt ring_schmitt VSS VDD Y A nbulk pbulk
+*.PININFO A:I Y:O VDD:B VSS:B
+M1 Y A VSPL nbulk sg13_lv_nmos w=10u l=0.13u ng=5
+M2 Y A net1 pbulk sg13_lv_pmos w=6.25u l=0.13u ng=5
+M3 VSPL A VSS nbulk sg13_lv_nmos w=0.155u l=0.5u ng=1
+M4 net1 A VDD pbulk sg13_lv_pmos w=0.5u l=0.5u ng=1
+M5 VSS Y net1 pbulk sg13_lv_pmos w=2.5u l=1u ng=1
+M6 VDD Y VSPL nbulk sg13_lv_nmos w=2.945u l=0.5u ng=19
+.ends
+
