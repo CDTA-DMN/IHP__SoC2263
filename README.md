@@ -8,6 +8,18 @@ Single-technology IP library.
 
 ![Chip](doc/fig/SoC2263.jpg)
 
+<br>
+<br>
+<br>
+
+# Chip pin mapping
+
+![Chip](doc/fig/chip_mapping.svg)
+
+
+<br>
+<br>
+
 
 
 | | |
