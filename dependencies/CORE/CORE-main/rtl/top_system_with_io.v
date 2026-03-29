@@ -1,5 +1,5 @@
 `timescale 1ns/1ps
-module soc_digital_top_with_io (
+module soc_system_top (
      `ifdef USE_POWER_PINS
     inout wire IOVDD, // PAD IOVDD
     inout wire VSS, // PAD VSS
@@ -91,7 +91,7 @@ module soc_digital_top_with_io (
     wire sc_enable_digital;
     // ========== OR Gate Logic for Combined Signals ==========
     // Combine pad signals with analog block signals using OR logic
-    assign reset_n = reset_n_pad_sg | analog_reset_n_PIN;      // OR gate: pad reset OR analog reset
+    assign reset_n = reset_n_pad_sg & analog_reset_n_PIN;      // OR gate: pad reset OR analog reset
     assign singnal_conditionning_en_PIN = sc_enable_pad_sg | sc_enable_digital; // OR gate: pad sc_enable OR digital sc_enable
     
     // ========== Instantiate the I/O pads ==========
@@ -362,7 +362,7 @@ module soc_digital_top_with_io (
         .ADC_SEL_MEAS(adc_sel_meas_PIN),
         .SC_SEL_CAL(sc_select_cal_PIN),
         .SC_SEL_SENSOR(sc_select_sen_PIN),
-        .SC_EN(sc_enable_digital),
+        .SC_EN(singnal_conditionning_en_PIN),
         .SC_S0(sc_cal_ref_select[0]),
         .SC_S1(sc_cal_ref_select[1]),
         .SC_S2(sc_cal_ref_select[2]),
