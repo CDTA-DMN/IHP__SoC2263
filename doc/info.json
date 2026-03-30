@@ -8,7 +8,7 @@
   "sealring_x": 1040.0,
   "sealring_y": 1040.0,
   "repository": "",
-  "pdk_version": "",
+  "pdk_version": "bb7ba36c3a5aa190e640687766bac83bc345b654",
   "process": "SG13CMOS",
   "dependencies": {
     "BGR": {
