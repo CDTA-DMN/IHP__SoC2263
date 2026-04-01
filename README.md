@@ -6,7 +6,7 @@ Single-technology IP library.
 - dependencies/ : sub-cells and blocks
 - release/v.1.0.0 : immutable versioned deliveries
 
-![Chip](doc/fig/SoC2263.jpg)
+![Chip](doc/fig/SoC2263.png)
 
 <br>
 <br>
