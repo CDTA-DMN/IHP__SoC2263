@@ -121,7 +121,7 @@ jobs:
                       "/ihp-sg13g2/libs.ref/sg13g2_io/spice/sg13g2_io.spi" \
                       "/ihp-sg13g2/libs.ref/sg13g2_stdcell/cdl/sg13g2_stdcell.cdl"
             -   name: Run DRC on release GDS
-                if: steps.resolve-inputs.outputs.run_drc == 'false'
+                if: steps.resolve-inputs.outputs.run_drc == 'true'
                 run: |
                     mkdir -p /tmp/drc-results
                     python3 /tmp/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/run_drc.py --path="${{ steps.resolve-inputs.outputs.gds_path }}" --run_dir=/tmp/drc-results --mp=8 --precheck_drc --no_offgrid --no_recommended --density_thr=8 --no_angle --disable_extra_rules
